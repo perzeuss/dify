@@ -234,3 +234,41 @@ class MessageService:
         )
 
         return questions
+
+    @classmethod
+    def delete_message(cls, app_model: App, user: Optional[Union[Account | EndUser]], message_id: str):
+        if not user:
+            raise ValueError('user cannot be None')
+
+        message = cls.get_message(
+            app_model=app_model,
+            user=user,
+            message_id=message_id
+        )
+        
+        if not message:
+            raise MessageNotExistsError()
+
+        db.session.delete(message)
+        db.session.commit()
+
+        return message
+        
+    @classmethod
+    def edit_message(cls, app_model: App, user: Optional[Union[Account | EndUser]], message_id: str, text: str):
+        if not user:
+            raise ValueError('user cannot be None')
+
+        message = cls.get_message(
+            app_model=app_model,
+            user=user,
+            message_id=message_id
+        )
+        
+        if not message:
+            raise MessageNotExistsError()
+
+        message.text = text
+        db.session.commit()
+
+        return message

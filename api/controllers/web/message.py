@@ -24,6 +24,40 @@ from services.errors.message import MessageNotExistsError, SuggestedQuestionsAft
 from services.message_service import MessageService
 from fields.conversation_fields import message_file_fields
 
+class MessageApi(WebApiResource):
+    def delete(self, app_model, end_user, message_id):
+        message_id = str(message_id)
+
+        try:
+            MessageService.delete(app_model, message_id, end_user)
+        except services.errors.message.MessageNotExistsError:
+            raise NotFound("Message Not Exists.")
+        except ValueError as e:
+            yield "data: " + json.dumps(api.handle_error(e).get_json()) + "\n\n"
+        except Exception:
+            logging.exception("internal server error.")
+            yield "data: " + json.dumps(api.handle_error(InternalServerError()).get_json()) + "\n\n"
+
+        return {'result': 'success'}
+    
+    def edit(self, app_model, end_user, message_id):
+        message_id = str(message_id)
+
+        parser = reqparse.RequestParser()
+        parser.add_argument('query', type=str, required=True, location='json')
+        args = parser.parse_args()
+
+        try:
+            MessageService.edit(app_model, message_id, end_user, args['query'])
+        except services.errors.message.MessageNotExistsError:
+            raise NotFound("Message Not Exists.")
+        except ValueError as e:
+            yield "data: " + json.dumps(api.handle_error(e).get_json()) + "\n\n"
+        except Exception:
+            logging.exception("internal server error.")
+            yield "data: " + json.dumps(api.handle_error(InternalServerError()).get_json()) + "\n\n"
+
+        return {'result': 'success'}
 
 class MessageListApi(WebApiResource):
     feedback_fields = {
