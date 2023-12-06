@@ -108,7 +108,7 @@ const SettingsModal: FC<ISettingsModalProps> = ({
             icon={emoji.icon}
             background={emoji.icon_background}
           />
-          <input className={`flex-grow rounded-lg h-10 box-border px-3 ${s.projectName} bg-gray-100`}
+          <input className={`flex-grow rounded-lg h-10 box-border px-3 ${s.projectName} bg-gray-100 dark:bg-gray-900`}
             value={inputInfo.title}
             onChange={onChange('title')}
             placeholder={t('app.appNamePlaceholder') || ''}
@@ -118,7 +118,7 @@ const SettingsModal: FC<ISettingsModalProps> = ({
         <p className={`mt-1 ${s.settingsTip} text-gray-500`}>{t(`${prefixSettings}.webDescTip`)}</p>
         <textarea
           rows={3}
-          className={`mt-2 pt-2 pb-2 px-3 rounded-lg bg-gray-100 w-full ${s.settingsTip} text-gray-900`}
+          className={`mt-2 pt-2 pb-2 px-3 rounded-lg bg-gray-100 dark:bg-gray-900 w-full ${s.settingsTip} text-gray-900`}
           value={inputInfo.desc}
           onChange={onChange('desc')}
           placeholder={t(`${prefixSettings}.webDescPlaceholder`) as string}
@@ -141,7 +141,7 @@ const SettingsModal: FC<ISettingsModalProps> = ({
         {isShowMore && <>
           <hr className='w-full mt-6' />
           <div className={`mt-6 font-medium ${s.settingTitle} text-gray-900`}>{t(`${prefixSettings}.more.copyright`)}</div>
-          <input className={`w-full mt-2 rounded-lg h-10 box-border px-3 ${s.projectName} bg-gray-100`}
+          <input className={`w-full mt-2 rounded-lg h-10 box-border px-3 ${s.projectName} bg-gray-100 dark:bg-gray-900`}
             value={inputInfo.copyright}
             onChange={onChange('copyright')}
             placeholder={t(`${prefixSettings}.more.copyRightPlaceholder`) as string}
@@ -153,7 +153,7 @@ const SettingsModal: FC<ISettingsModalProps> = ({
               components={{ privacyPolicyLink: <Link href={'https://langgenius.ai/privacy-policy'} target='_blank' className='text-primary-600' /> }}
             />
           </p>
-          <input className={`w-full mt-2 rounded-lg h-10 box-border px-3 ${s.projectName} bg-gray-100`}
+          <input className={`w-full mt-2 rounded-lg h-10 box-border px-3 ${s.projectName} bg-gray-100 dark:bg-gray-900`}
             value={inputInfo.privacyPolicy}
             onChange={onChange('privacyPolicy')}
             placeholder={t(`${prefixSettings}.more.privacyPolicyPlaceholder`) as string}

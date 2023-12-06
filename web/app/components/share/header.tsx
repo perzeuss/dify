@@ -52,7 +52,7 @@ const Header: FC<IHeaderProps> = ({
   }
 
   return (
-    <div className="shrink-0 flex items-center justify-between h-14 px-4 bg-gray-100">
+    <div className="shrink-0 flex items-center justify-between h-14 px-4 bg-gray-100 dark:bg-gray-900">
       <div
         className='flex items-center justify-center h-8 w-8 cursor-pointer'
         onClick={() => onShowSideBar?.()}

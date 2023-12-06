@@ -121,7 +121,7 @@ const DataSourceNotion = ({
                         : t('common.dataSource.notion.disconnected')
                     }
                   </div>
-                  <div className='mr-2 w-[1px] h-3 bg-gray-100' />
+                  <div className='mr-2 w-[1px] h-3 bg-gray-100 dark:bg-gray-900' />
                   <Operate workspace={workspace} onAuthAgain={handleAuthAgain} />
                 </div>
               ))

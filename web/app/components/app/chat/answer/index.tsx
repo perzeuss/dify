@@ -33,7 +33,7 @@ const Divider: FC<{ name: string }> = ({ name }) => {
   </div>
 }
 const IconWrapper: FC<{ children: React.ReactNode | string }> = ({ children }) => {
-  return <div className={'rounded-lg h-6 w-6 flex items-center justify-center hover:bg-gray-100'}>
+  return <div className={'rounded-lg h-6 w-6 flex items-center justify-center hover:bg-gray-100 dark:bg-gray-900'}>
     {children}
   </div>
 }
@@ -197,7 +197,7 @@ const Answer: FC<IAnswerProps> = ({
         <div className={cn(s.answerWrapWrap, 'chat-answer-container group')}>
           <div className={`${s.answerWrap} ${showEdit ? 'w-full' : ''}`}>
             <div className={`${s.answer} relative text-sm text-gray-900`}>
-              <div className={'ml-2 py-3 px-4 bg-gray-100 rounded-tr-2xl rounded-b-2xl'}>
+              <div className={'ml-2 py-3 px-4 bg-gray-100 dark:bg-gray-900 rounded-tr-2xl rounded-b-2xl'}>
                 {item.isOpeningStatement && (
                   <div className='flex items-center mb-1 gap-1'>
                     <OpeningStatementIcon />

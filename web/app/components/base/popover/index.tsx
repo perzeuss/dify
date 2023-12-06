@@ -57,7 +57,7 @@ export default function CustomPopover({
             >
               <Popover.Button
                 ref={buttonRef}
-                className={`group ${s.popupBtn} ${open ? '' : 'bg-gray-100'} ${
+                className={`group ${s.popupBtn} ${open ? '' : 'bg-gray-100 dark:bg-gray-900'} ${
                   !btnClassName
                     ? ''
                     : typeof btnClassName === 'string'

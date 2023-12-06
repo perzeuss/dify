@@ -86,7 +86,7 @@ const NavSelector = ({ curNav, navs, createText, onCreate, onLoadmore }: INavSel
           {isCurrentWorkspaceManager && <Menu.Item>
             <div className='p-1' onClick={onCreate}>
               <div
-                className='flex items-center h-12 rounded-lg cursor-pointer hover:bg-gray-100'
+                className='flex items-center h-12 rounded-lg cursor-pointer hover:bg-gray-100 dark:bg-gray-900'
               >
                 <div
                   className='

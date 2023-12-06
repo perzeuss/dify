@@ -52,7 +52,7 @@ const ApiBasedExtensionSelector: FC<ApiBasedExtensionSelectorProps> = ({
         {
           currentItem
             ? (
-              <div className='flex items-center justify-between pl-3 pr-2.5 h-9 bg-gray-100 rounded-lg cursor-pointer'>
+              <div className='flex items-center justify-between pl-3 pr-2.5 h-9 bg-gray-100 dark:bg-gray-900 rounded-lg cursor-pointer'>
                 <div className='text-sm text-gray-900'>{currentItem.name}</div>
                 <div className='flex items-center'>
                   <div className='mr-1.5 w-[270px] text-xs text-gray-400 truncate text-right'>
@@ -63,7 +63,7 @@ const ApiBasedExtensionSelector: FC<ApiBasedExtensionSelectorProps> = ({
               </div>
             )
             : (
-              <div className='flex items-center justify-between pl-3 pr-2.5 h-9 bg-gray-100 rounded-lg text-sm text-gray-400 cursor-pointer'>
+              <div className='flex items-center justify-between pl-3 pr-2.5 h-9 bg-gray-100 dark:bg-gray-900 rounded-lg text-sm text-gray-400 cursor-pointer'>
                 {t('common.apiBasedExtension.selector.placeholder')}
                 <ChevronDown className={`w-4 h-4 text-gray-700 ${!open && 'opacity-60'}`} />
               </div>
@@ -100,7 +100,7 @@ const ApiBasedExtensionSelector: FC<ApiBasedExtensionSelectorProps> = ({
               }
             </div>
           </div>
-          <div className='h-[1px] bg-gray-100' />
+          <div className='h-[1px] bg-gray-100 dark:bg-gray-900' />
           <div className='p-1'>
             <div
               className='flex items-center px-3 h-8 text-sm text-primary-600 cursor-pointer'

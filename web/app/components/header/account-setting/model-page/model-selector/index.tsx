@@ -173,7 +173,7 @@ const ModelSelector: FC<Props> = ({
   return (
     <div className=''>
       <Popover className='relative'>
-        <Popover.Button className={cn('flex items-center px-2.5 w-full h-9 rounded-lg', readonly ? '!cursor-auto bg-gray-100 opacity-50' : 'bg-gray-100', hasRemoved && '!bg-[#FEF3F2]')}>
+        <Popover.Button className={cn('flex items-center px-2.5 w-full h-9 rounded-lg', readonly ? '!cursor-auto bg-gray-100 dark:bg-gray-900 opacity-50' : 'bg-gray-100', hasRemoved && '!bg-[#FEF3F2]')}>
           {
             ({ open }) => (
               <>
@@ -243,7 +243,7 @@ const ModelSelector: FC<Props> = ({
           >
             <Popover.Panel className={cn(popClassName, isShowModelModeType ? 'max-w-[312px]' : 'max-w-[260px]', 'absolute top-10 p-1 min-w-[232px] max-h-[366px] bg-white dark:bg-black border-[0.5px] border-gray-200 rounded-lg shadow-lg overflow-auto z-10')}>
               <div className='px-2 pt-2 pb-1'>
-                <div className='flex items-center px-2 h-8 bg-gray-100 rounded-lg'>
+                <div className='flex items-center px-2 h-8 bg-gray-100 dark:bg-gray-900 rounded-lg'>
                   <div className='mr-1.5 p-[1px]'><SearchLg className='w-[14px] h-[14px] text-gray-400' /></div>
                   <div className='grow px-0.5'>
                     <input

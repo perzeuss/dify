@@ -242,7 +242,7 @@ const VariablePicker: FC<VariablePickerProps> = ({
                         />
                       ))}
                     </div>
-                    <div className='h-[1px] bg-gray-100' />
+                    <div className='h-[1px] bg-gray-100 dark:bg-gray-900' />
                   </>
                 )
               }
@@ -266,7 +266,7 @@ const VariablePicker: FC<VariablePickerProps> = ({
                         />
                       ))}
                     </div>
-                    <div className='h-[1px] bg-gray-100' />
+                    <div className='h-[1px] bg-gray-100 dark:bg-gray-900' />
                   </>
                 )
               }

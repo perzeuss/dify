@@ -53,7 +53,7 @@ export default function Select({
                 return <Menu.Item key={item.value}>
                   {({ active }) => (
                     <button
-                      className={`${active ? 'bg-gray-100' : ''
+                      className={`${active ? 'bg-gray-100 dark:bg-gray-900' : ''
                       } group flex w-full items-center rounded-lg px-3 py-2 text-sm text-gray-700`}
                       onClick={(evt) => {
                         evt.preventDefault()
@@ -104,7 +104,7 @@ export function InputSelect({
                 return <Menu.Item key={item.value}>
                   {({ active }) => (
                     <button
-                      className={`${active ? 'bg-gray-100' : ''
+                      className={`${active ? 'bg-gray-100 dark:bg-gray-900' : ''
                       } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                       onClick={() => {
                         onChange && onChange(item.value)

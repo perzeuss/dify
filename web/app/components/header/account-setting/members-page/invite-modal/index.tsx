@@ -94,7 +94,7 @@ const InviteModal = ({
           </div>
           <Listbox value={role} onChange={setRole}>
             <div className="relative pb-6">
-              <Listbox.Button className="relative w-full py-2 pl-3 pr-10 text-left bg-gray-100 outline-none border-none appearance-none text-sm text-gray-900 rounded-lg">
+              <Listbox.Button className="relative w-full py-2 pl-3 pr-10 text-left bg-gray-100 dark:bg-gray-900 outline-none border-none appearance-none text-sm text-gray-900 rounded-lg">
                 <span className="block truncate capitalize">{t('common.members.invitedAsRole', { role: t(`common.members.${role.name}`) })}</span>
               </Listbox.Button>
               <Transition

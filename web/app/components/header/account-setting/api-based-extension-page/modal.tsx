@@ -92,7 +92,7 @@ const ApiBasedExtensionModal: FC<ApiBasedExtensionModalProps> = ({
         <input
           value={localeData.name || ''}
           onChange={e => handleDataChange('name', e.target.value)}
-          className='block px-3 w-full h-9 bg-gray-100 rounded-lg text-sm text-gray-900 outline-none appearance-none'
+          className='block px-3 w-full h-9 bg-gray-100 dark:bg-gray-900 rounded-lg text-sm text-gray-900 outline-none appearance-none'
           placeholder={t('common.apiBasedExtension.modal.name.placeholder') || ''}
         />
       </div>
@@ -111,7 +111,7 @@ const ApiBasedExtensionModal: FC<ApiBasedExtensionModalProps> = ({
         <input
           value={localeData.api_endpoint || ''}
           onChange={e => handleDataChange('api_endpoint', e.target.value)}
-          className='block px-3 w-full h-9 bg-gray-100 rounded-lg text-sm text-gray-900 outline-none appearance-none'
+          className='block px-3 w-full h-9 bg-gray-100 dark:bg-gray-900 rounded-lg text-sm text-gray-900 outline-none appearance-none'
           placeholder={t('common.apiBasedExtension.modal.apiEndpoint.placeholder') || ''}
         />
       </div>
@@ -123,7 +123,7 @@ const ApiBasedExtensionModal: FC<ApiBasedExtensionModalProps> = ({
           <input
             value={localeData.api_key || ''}
             onChange={e => handleDataChange('api_key', e.target.value)}
-            className='block grow mr-2 px-3 h-9 bg-gray-100 rounded-lg text-sm text-gray-900 outline-none appearance-none'
+            className='block grow mr-2 px-3 h-9 bg-gray-100 dark:bg-gray-900 rounded-lg text-sm text-gray-900 outline-none appearance-none'
             placeholder={t('common.apiBasedExtension.modal.apiKey.placeholder') || ''}
           />
         </div>

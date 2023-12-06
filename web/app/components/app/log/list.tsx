@@ -236,7 +236,7 @@ function DetailPanel<T extends ChatConversationFullDetailResponse | CompletionCo
             })}
           </div>}
         />
-        <div className='w-6 h-6 rounded-lg flex items-center justify-center hover:cursor-pointer hover:bg-gray-100'>
+        <div className='w-6 h-6 rounded-lg flex items-center justify-center hover:cursor-pointer hover:bg-gray-100 dark:bg-gray-900'>
           <XMarkIcon className='w-4 h-4 text-gray-500' onClick={onClose} />
         </div>
       </div>

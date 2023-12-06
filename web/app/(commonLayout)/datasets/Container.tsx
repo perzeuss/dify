@@ -28,8 +28,8 @@ const Container = () => {
   const { data } = useSWR(activeTab === 'dataset' ? null : '/datasets/api-base-info', fetchDatasetApiBaseUrl)
 
   return (
-    <div ref={containerRef} className='grow relative flex flex-col bg-gray-100 overflow-y-auto'>
-      <div className='sticky top-0 flex justify-between pt-4 px-12 pb-2 leading-[56px] bg-gray-100 z-10 flex-wrap gap-y-2'>
+    <div ref={containerRef} className='grow relative flex flex-col bg-gray-100 dark:bg-gray-900 overflow-y-auto'>
+      <div className='sticky top-0 flex justify-between pt-4 px-12 pb-2 leading-[56px] bg-gray-100 dark:bg-gray-900 z-10 flex-wrap gap-y-2'>
         <TabSlider
           value={activeTab}
           onChange={newActiveTab => setActiveTab(newActiveTab)}

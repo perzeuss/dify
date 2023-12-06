@@ -98,7 +98,7 @@ const RunOnce: FC<IRunOnceProps> = ({
             )
           }
           {promptConfig.prompt_variables.length > 0 && (
-            <div className='mt-4 h-[1px] bg-gray-100'></div>
+            <div className='mt-4 h-[1px] bg-gray-100 dark:bg-gray-900'></div>
           )}
           <div className='w-full mt-4'>
             <div className="flex items-center justify-between">

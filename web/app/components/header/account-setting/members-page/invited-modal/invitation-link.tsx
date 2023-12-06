@@ -35,9 +35,9 @@ const InvitationLink = ({
   }, [isCopied])
 
   return (
-    <div className='flex rounded-lg bg-gray-100 hover:bg-gray-100 border border-gray-200 py-2 items-center'>
+    <div className='flex rounded-lg bg-gray-100 dark:bg-gray-900 hover:bg-gray-100 border border-gray-200 py-2 items-center'>
       <div className="flex items-center flex-grow h-5">
-        <div className='flex-grow bg-gray-100 text-[13px] relative h-full'>
+        <div className='flex-grow bg-gray-100 dark:bg-gray-900 text-[13px] relative h-full'>
           <Tooltip
             selector={selector.current}
             content={isCopied ? `${t('appApi.copied')}` : `${t('appApi.copy')}`}
@@ -53,7 +53,7 @@ const InvitationLink = ({
           className='z-10'
         >
           <div className="px-0.5 flex-shrink-0">
-            <div className={`box-border w-[30px] h-[30px] flex items-center justify-center rounded-lg hover:bg-gray-100 cursor-pointer ${s.copyIcon} ${isCopied ? s.copied : ''}`} onClick={copyHandle}>
+            <div className={`box-border w-[30px] h-[30px] flex items-center justify-center rounded-lg hover:bg-gray-100 dark:bg-gray-900 cursor-pointer ${s.copyIcon} ${isCopied ? s.copied : ''}`} onClick={copyHandle}>
             </div>
           </div>
         </Tooltip>

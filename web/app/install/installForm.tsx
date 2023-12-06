@@ -151,7 +151,7 @@ const InstallForm = () => {
               {/* <div className="flex items-center justify-between">
               <div className="text-sm">
                 <div className="flex items-center mb-4">
-                  <input id="default-checkbox" type="checkbox" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 rounded" />
+                  <input id="default-checkbox" type="checkbox" className="w-4 h-4 text-blue-600 bg-gray-100 dark:bg-gray-900 border-gray-300 rounded focus:ring-blue-500 rounded" />
                   <label htmlFor="default-checkbox" className="ml-2 text-sm font-medium cursor-pointer text-primary-600 hover:text-gray-500">{t('login.acceptPP')}</label>
                 </div>
               </div>

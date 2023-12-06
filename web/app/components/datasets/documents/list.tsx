@@ -239,7 +239,7 @@ export const OperationAction: FC<{
             <DotsHorizontal className='w-4 h-4 text-gray-700' />
           </div>
         }
-        btnClassName={open => cn(isListScene ? s.actionIconWrapperList : s.actionIconWrapperDetail, open ? '!bg-gray-100 !shadow-none' : '!bg-transparent')}
+        btnClassName={open => cn(isListScene ? s.actionIconWrapperList : s.actionIconWrapperDetail, open ? '!bg-gray-100 dark:bg-gray-900 !shadow-none' : '!bg-transparent')}
         className={`!w-[200px] h-fit !z-20 ${className}`}
       />
     )}

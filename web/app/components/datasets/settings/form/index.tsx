@@ -183,7 +183,7 @@ const Form = () => {
             <div>{t('datasetSettings.form.embeddingModel')}</div>
           </div>
           <div className='w-[480px]'>
-            <div className='w-full h-9 rounded-lg bg-gray-100 opacity-60'>
+            <div className='w-full h-9 rounded-lg bg-gray-100 dark:bg-gray-900 opacity-60'>
               <ModelSelector
                 readonly
                 value={{

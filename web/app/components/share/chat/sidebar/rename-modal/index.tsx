@@ -31,7 +31,7 @@ const RenameModal: FC<IRenameModalProps> = ({
       wrapperClassName='!z-50'
     >
       <div className={'mt-6 font-medium text-sm leading-[21px] text-gray-900'}>{t('common.chat.conversationName')}</div>
-      <input className={'mt-2 w-full rounded-lg h-10 box-border px-3 text-sm leading-10 bg-gray-100'}
+      <input className={'mt-2 w-full rounded-lg h-10 box-border px-3 text-sm leading-10 bg-gray-100 dark:bg-gray-900'}
         value={tempName}
         onChange={e => setTempName(e.target.value)}
         placeholder={t('common.chat.conversationNamePlaceholder') || ''}
