@@ -61,8 +61,8 @@ const CSVDownload: FC<{ docForm: DocForm }> = ({ docForm }) => {
             </thead>
             <tbody className='text-gray-700 dark:text-gray-300'>
               <tr>
-                <td className='h-9 pl-3 pr-2 border-b border-gray-100 text-[13px]'>{t('datasetDocuments.list.batchModal.question')} 1</td>
-                <td className='h-9 pl-3 pr-2 border-b border-gray-100 text-[13px]'>{t('datasetDocuments.list.batchModal.answer')} 1</td>
+                <td className='h-9 pl-3 pr-2 border-b border-neutral-800 text-[13px]'>{t('datasetDocuments.list.batchModal.question')} 1</td>
+                <td className='h-9 pl-3 pr-2 border-b border-neutral-800 text-[13px]'>{t('datasetDocuments.list.batchModal.answer')} 1</td>
               </tr>
               <tr>
                 <td className='h-9 pl-3 pr-2 text-[13px]'>{t('datasetDocuments.list.batchModal.question')} 2</td>
@@ -80,7 +80,7 @@ const CSVDownload: FC<{ docForm: DocForm }> = ({ docForm }) => {
             </thead>
             <tbody className='text-gray-700 dark:text-gray-300'>
               <tr>
-                <td className='h-9 pl-3 pr-2 border-b border-gray-100 text-[13px]'>{t('datasetDocuments.list.batchModal.content')} 1</td>
+                <td className='h-9 pl-3 pr-2 border-b border-neutral-800 text-[13px]'>{t('datasetDocuments.list.batchModal.content')} 1</td>
               </tr>
               <tr>
                 <td className='h-9 pl-3 pr-2 text-[13px]'>{t('datasetDocuments.list.batchModal.content')} 2</td>

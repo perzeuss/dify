@@ -159,7 +159,7 @@ export default function AccountSetting({
       wrapperClassName='!z-20 pt-[60px]'
     >
       <div className='flex'>
-        <div className='w-[44px] sm:w-[200px] px-[1px] py-4 sm:p-4 border border-gray-100 shrink-0 sm:shrink-1 flex flex-col items-center sm:items-start'>
+        <div className='w-[44px] sm:w-[200px] px-[1px] py-4 sm:p-4 border border-neutral-800 shrink-0 sm:shrink-1 flex flex-col items-center sm:items-start'>
           <div className='mb-8 ml-0 sm:ml-2 text-sm sm:text-base font-medium leading-6 text-gray-900'>{t('common.userProfile.settings')}</div>
           <div className='w-full'>
             {

@@ -131,7 +131,7 @@ const DocumentDetail: FC<Props> = ({ datasetId, documentId }) => {
     <DocumentContext.Provider value={{ datasetId, documentId, docForm: documentDetail?.doc_form || '' }}>
       <div className='flex flex-col h-full'>
         <div className='flex min-h-16 border-b-gray-100 border-b items-center p-4 justify-between flex-wrap gap-y-2'>
-          <div onClick={backToPrev} className={'shrink-0 rounded-full w-8 h-8 flex justify-center items-center border-gray-100 cursor-pointer border hover:border-gray-300 shadow-[0px_12px_16px_-4px_rgba(16,24,40,0.08),0px_4px_6px_-2px_rgba(16,24,40,0.03)]'}>
+          <div onClick={backToPrev} className={'shrink-0 rounded-full w-8 h-8 flex justify-center items-center border-neutral-800 cursor-pointer border hover:border-gray-300 shadow-[0px_12px_16px_-4px_rgba(16,24,40,0.08),0px_4px_6px_-2px_rgba(16,24,40,0.03)]'}>
             <ArrowLeftIcon className='text-primary-600 fill-current stroke-current h-4 w-4' />
           </div>
           <Divider className='!h-4' type='vertical' />

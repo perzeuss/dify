@@ -203,7 +203,7 @@ const ConfigVar: FC<IConfigVarProps> = ({ promptVariables, readonly, onPromptVar
             <tbody className="text-gray-700 dark:text-gray-300">
               {promptVariables.map(({ key, name, type, required }, index) => (
                 <tr key={index} className="h-9 leading-9">
-                  <td className="w-[160px] border-b border-gray-100 pl-3">
+                  <td className="w-[160px] border-b border-neutral-800 pl-3">
                     <div className='flex items-center space-x-1'>
                       <IconTypeIcon type={type as IInputTypeIconProps['type']} className='text-gray-400' />
                       {!readonly
@@ -223,7 +223,7 @@ const ConfigVar: FC<IConfigVarProps> = ({ promptVariables, readonly, onPromptVar
                         )}
                     </div>
                   </td>
-                  <td className="py-1 border-b border-gray-100">
+                  <td className="py-1 border-b border-neutral-800">
                     {!readonly
                       ? (
                         <input
@@ -240,12 +240,12 @@ const ConfigVar: FC<IConfigVarProps> = ({ promptVariables, readonly, onPromptVar
                   </td>
                   {!readonly && (
                     <>
-                      <td className='w-[84px] border-b border-gray-100'>
+                      <td className='w-[84px] border-b border-neutral-800'>
                         <div className='flex items-center h-full'>
                           <Switch defaultValue={!required} size='md' onChange={value => updatePromptVariable(key, 'required', !value)} />
                         </div>
                       </td>
-                      <td className='w-20  border-b border-gray-100'>
+                      <td className='w-20  border-b border-neutral-800'>
                         <div className='flex h-full items-center space-x-1'>
                           <div className='flex items-center justify-items-center w-6 h-6 text-neutral-400 cursor-pointer' onClick={() => handleConfig(key)}>
                             <Cog8ToothIcon width={16} height={16} />

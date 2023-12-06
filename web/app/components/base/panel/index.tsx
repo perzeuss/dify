@@ -51,11 +51,11 @@ const Panel: FC<IPanelProps> = ({
 
   // overflow-hidden
   return (
-    <div className={cn(className, 'w-full rounded-xl border border-gray-100 overflow-hidden select-none')}>
+    <div className={cn(className, 'w-full rounded-xl border border-neutral-800 overflow-hidden select-none')}>
       {/* Header */}
       <div
         onClick={() => (!foldDisabled && !keepUnFold) && toggleFold()}
-        className={cn(!fold && 'border-b border-gray-100', 'flex justify-between items-center h-12 bg-gray-50 pl-4 pr-2')}>
+        className={cn(!fold && 'border-b border-neutral-800', 'flex justify-between items-center h-12 bg-gray-50 pl-4 pr-2')}>
         <div className='flex items-center gap-2'>
           {headerIcon}
           <div className='text-gray-900 text-sm'>{title}</div>

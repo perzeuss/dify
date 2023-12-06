@@ -32,7 +32,7 @@ const InvitedModal = ({
         <div className='flex justify-between mb-3'>
           <div className='
             w-12 h-12 flex items-center justify-center rounded-xl
-            bg-white border-[0.5px] border-gray-100
+            bg-white border-[0.5px] border-neutral-800
             shadow-xl
           '>
             <CheckCircleIcon className='w-[22px] h-[22px] text-[#039855]' />

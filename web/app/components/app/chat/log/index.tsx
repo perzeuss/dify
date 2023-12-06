@@ -42,7 +42,7 @@ const Log: FC<LogProps> = ({
             <Tooltip selector='prompt-log-modal-trigger' content={t('common.operation.log') || ''}>
               <div className={`
                 hidden absolute -left-[14px] -top-[14px] group-hover:block w-7 h-7
-                p-0.5 rounded-lg border-[0.5px] border-gray-100 bg-white shadow-md cursor-pointer
+                p-0.5 rounded-lg border-[0.5px] border-neutral-800 bg-white shadow-md cursor-pointer
               `}>
                 <div
                   className='flex items-center justify-center rounded-md w-full h-full hover:bg-gray-100 dark:bg-neutral-950'

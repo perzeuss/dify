@@ -25,7 +25,7 @@ const HistoryCard = (
         {history.source}
       </div>
       <div className="absolute inset-0 flex items-center m-4" aria-hidden="true">
-        <div className="w-full border-t border-gray-100" />
+        <div className="w-full border-t border-neutral-800" />
       </div>
       <div className='text-gray-700 dark:text-gray-300 text-sm'>
         {history.target}

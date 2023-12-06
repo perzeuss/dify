@@ -50,7 +50,7 @@ export const SimpleBtn = ({ className, isDisabled, onClick, children }: {
   children: React.ReactNode
 }) => (
   <div
-    className={cn(className, isDisabled ? 'border-gray-100 text-gray-300' : 'border-gray-200 text-gray-700 dark:text-gray-300 cursor-pointer hover:border-gray-300 hover:shadow-sm', 'flex items-center h-7 px-3 rounded-md border text-xs  font-medium')}
+    className={cn(className, isDisabled ? 'border-neutral-800 text-gray-300' : 'border-gray-200 text-gray-700 dark:text-gray-300 cursor-pointer hover:border-gray-300 hover:shadow-sm', 'flex items-center h-7 px-3 rounded-md border text-xs  font-medium')}
     onClick={() => !isDisabled && onClick?.()}
   >
     {children}

@@ -105,7 +105,7 @@ const ActivateForm = () => {
       {checkRes && !checkRes.is_valid && (
         <div className="flex flex-col md:w-[400px]">
           <div className="w-full mx-auto">
-            <div className="mb-3 flex justify-center items-center w-20 h-20 p-5 rounded-[20px] border border-gray-100 shadow-lg text-[40px] font-bold">🤷‍♂️</div>
+            <div className="mb-3 flex justify-center items-center w-20 h-20 p-5 rounded-[20px] border border-neutral-800 shadow-lg text-[40px] font-bold">🤷‍♂️</div>
             <h2 className="text-[32px] font-bold text-gray-900">{t('login.invalid')}</h2>
           </div>
           <div className="w-full mx-auto mt-6">
@@ -118,7 +118,7 @@ const ActivateForm = () => {
       {checkRes && checkRes.is_valid && !showSuccess && (
         <div className='flex flex-col md:w-[400px]'>
           <div className="w-full mx-auto">
-            <div className={`mb-3 flex justify-center items-center w-20 h-20 p-5 rounded-[20px] border border-gray-100 shadow-lg text-[40px] font-bold ${style.logo}`}>
+            <div className={`mb-3 flex justify-center items-center w-20 h-20 p-5 rounded-[20px] border border-neutral-800 shadow-lg text-[40px] font-bold ${style.logo}`}>
             </div>
             <h2 className="text-[32px] font-bold text-gray-900">
               {`${t('login.join')} ${checkRes.workspace_name}`}
@@ -218,7 +218,7 @@ const ActivateForm = () => {
       {checkRes && checkRes.is_valid && showSuccess && (
         <div className="flex flex-col md:w-[400px]">
           <div className="w-full mx-auto">
-            <div className="mb-3 flex justify-center items-center w-20 h-20 p-5 rounded-[20px] border border-gray-100 shadow-lg text-[40px] font-bold">
+            <div className="mb-3 flex justify-center items-center w-20 h-20 p-5 rounded-[20px] border border-neutral-800 shadow-lg text-[40px] font-bold">
               <CheckCircleIcon className='w-10 h-10 text-[#039855]' />
             </div>
             <h2 className="text-[32px] font-bold text-gray-900">

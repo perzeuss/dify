@@ -5,7 +5,7 @@ import s from './index.module.css'
 import type { DataSet } from '@/models/datasets'
 
 const itemClass = `
-  w-full sm:w-[234px] p-3 rounded-xl bg-gray-25 border border-gray-100 cursor-pointer
+  w-full sm:w-[234px] p-3 rounded-xl bg-gray-25 border border-neutral-800 cursor-pointer
 `
 const radioClass = `
   w-4 h-4 border-[2px] border-gray-200 rounded-full

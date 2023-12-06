@@ -184,7 +184,7 @@ const PromptValuePanel: FC<IPromptValuePanelProps> = ({
       {
         appType === AppType.completion && (
           <div>
-            <div className="mt-5 border-b border-gray-100"></div>
+            <div className="mt-5 border-b border-neutral-800"></div>
             <div className="flex justify-between mt-4 px-4">
               <Button
                 className='!h-8 !p-3'

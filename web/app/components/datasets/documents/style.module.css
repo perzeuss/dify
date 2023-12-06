@@ -48,7 +48,7 @@
   @apply mt-2 text-neutral-400 text-sm font-normal;
 }
 .emptySymbolIconWrapper {
-  @apply w-[44px] h-[44px] border border-solid border-gray-100 rounded-lg flex items-center justify-center mb-2;
+  @apply w-[44px] h-[44px] border border-solid border-neutral-800 rounded-lg flex items-center justify-center mb-2;
 }
 .commonIcon {
   @apply w-4 h-4 inline-block align-middle;
@@ -111,7 +111,7 @@
   box-shadow: 0px 20px 24px -4px rgba(16, 24, 40, 0.08),
     0px 8px 8px -4px rgba(16, 24, 40, 0.03);
   background: rgba(255, 255, 255, 0.9);
-  @apply h-12 w-12 border-[0.5px] border-gray-100 rounded-xl mb-3 flex items-center justify-center;
+  @apply h-12 w-12 border-[0.5px] border-neutral-800 rounded-xl mb-3 flex items-center justify-center;
 }
 .warningIcon {
   @apply w-[22px] h-[22px] fill-current text-red-600;

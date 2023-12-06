@@ -36,7 +36,7 @@
   @apply opacity-60;
 }
 .wrapper .item.disable:hover {
-  @apply bg-gray-25 border border-gray-100 shadow-none cursor-default opacity-60;
+  @apply bg-gray-25 border border-neutral-800 shadow-none cursor-default opacity-60;
 }
 .wrapper .item-active.disable:hover {
   @apply cursor-default opacity-60;

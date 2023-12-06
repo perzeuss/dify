@@ -78,7 +78,7 @@ const ContextBlockComponent: FC<ContextBlockComponentProps> = ({
                 }
               </div>
               <div className='flex items-center h-8 text-[#155EEF] cursor-pointer' onClick={onAddContext}>
-                <div className='shrink-0 flex justify-center items-center mr-2 w-6 h-6 rounded-md border-[0.5px] border-gray-100'>
+                <div className='shrink-0 flex justify-center items-center mr-2 w-6 h-6 rounded-md border-[0.5px] border-neutral-800'>
                   <Plus className='w-[14px] h-[14px]' />
                 </div>
                 <div className='text-[13px] font-medium' title=''>{t('common.promptEditor.context.modal.add')}</div>

@@ -46,7 +46,7 @@ const ConfirmAddVar: FC<IConfirmAddVarProps> = ({
       >
         <div className='flex items-start space-x-3'>
           <div
-            className='shrink-0 flex items-center justify-center h-10 w-10 rounded-xl border border-gray-100'
+            className='shrink-0 flex items-center justify-center h-10 w-10 rounded-xl border border-neutral-800'
             style={{
               backgroundColor: 'rgba(255, 255, 255, 0.9)',
               boxShadow: '0px 12px 16px -4px rgba(16, 24, 40, 0.08), 0px 4px 6px -2px rgba(16, 24, 40, 0.03)',

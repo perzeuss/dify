@@ -332,7 +332,7 @@ const ConfigModel: FC<IConfigModelProps> = ({
               />
             </div>
             {hasEnableParams && (
-              <div className="border-b border-gray-100"></div>
+              <div className="border-b border-neutral-800"></div>
             )}
 
             {/* Tone type */}

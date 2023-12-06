@@ -35,7 +35,7 @@ export default function IntegrationsPage() {
         {
           integrates.map(integrate => (
             <div key={integrate.provider} className='mb-2 flex items-center px-3 py-2 bg-gray-50 border-[0.5px] border-gray-200 rounded-lg'>
-              <div className={classNames('w-8 h-8 mr-3 bg-white dark:bg-neutral-900 rounded-lg border border-gray-100', s[`${integrate.provider}-icon`])} />
+              <div className={classNames('w-8 h-8 mr-3 bg-white dark:bg-neutral-900 rounded-lg border border-neutral-800', s[`${integrate.provider}-icon`])} />
               <div className='grow'>
                 <div className='leading-[21px] text-sm font-medium text-neutral-200'>{integrateMap[integrate.provider].name}</div>
                 <div className='leading-[18px] text-xs font-normal text-neutral-400'>{integrateMap[integrate.provider].description}</div>
@@ -59,7 +59,7 @@ export default function IntegrationsPage() {
         {
           services.map(service => (
             <div key={service.key} className='mb-2 flex items-center px-3 py-2 bg-gray-50 border-[0.5px] border-gray-200 rounded-lg'>
-              <div className={classNames('w-8 h-8 mr-3 bg-white dark:bg-neutral-900 rounded-lg border border-gray-100', s[`${service.key}-icon`])} />
+              <div className={classNames('w-8 h-8 mr-3 bg-white dark:bg-neutral-900 rounded-lg border border-neutral-800', s[`${service.key}-icon`])} />
               <div className='grow'>
                 <div className='leading-[21px] text-sm font-medium text-neutral-200'>{service.name}</div>
                 <div className='leading-[18px] text-xs font-normal text-neutral-400'>{service.description}</div>

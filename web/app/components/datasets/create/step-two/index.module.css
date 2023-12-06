@@ -87,7 +87,7 @@
 }
 
 .radioItem {
-  @apply relative mb-2 rounded-xl border border-gray-100 cursor-pointer;
+  @apply relative mb-2 rounded-xl border border-neutral-800 cursor-pointer;
   background-color: #fcfcfd;
 }
 
@@ -268,7 +268,7 @@
 }
 
 .source {
-  @apply flex justify-between items-center mt-8 px-6 py-4 rounded-xl bg-gray-50 border border-gray-100;
+  @apply flex justify-between items-center mt-8 px-6 py-4 rounded-xl bg-gray-50 border border-neutral-800;
 }
 
 .source .divider {

@@ -25,7 +25,7 @@ const NoData: FC<INoDataProps> = ({
 
   return (
     <div className='mt-[60px] px-5 py-4 rounded-2xl bg-gray-50 '>
-      <div className='flex items-center justify-center w-11 h-11 border border-gray-100 rounded-lg'>
+      <div className='flex items-center justify-center w-11 h-11 border border-neutral-800 rounded-lg'>
         {markIcon}
       </div>
       <div className='mt-2'>

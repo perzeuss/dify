@@ -196,7 +196,7 @@ function DetailPanel<T extends ChatConversationFullDetailResponse | CompletionCo
 
   return (<div className='rounded-xl border-[0.5px] border-gray-200 h-full flex flex-col overflow-auto'>
     {/* Panel Header */}
-    <div className='border-b border-gray-100 py-4 px-6 flex items-center justify-between'>
+    <div className='border-b border-neutral-800 py-4 px-6 flex items-center justify-between'>
       <div>
         <div className='text-neutral-400 text-[10px] leading-[14px]'>{isChatMode ? t('appLog.detail.conversationId') : t('appLog.detail.time')}</div>
         <div className='text-gray-700 dark:text-gray-300 text-[13px] leading-[18px]'>{isChatMode ? detail.id?.split('-').slice(-1)[0] : dayjs.unix(detail.created_at).format(t('appLog.dateTimeFormat') as string)}</div>

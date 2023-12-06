@@ -75,7 +75,7 @@ const ComponentPickerMenuItem: FC<ComponentPickerMenuItemProps> = ({
       ref={option.setRefElement}
       onMouseEnter={onMouseEnter}
       onClick={onClick}>
-      <div className='flex items-center justify-center mr-2 w-8 h-8 rounded-lg border border-gray-100'>
+      <div className='flex items-center justify-center mr-2 w-8 h-8 rounded-lg border border-neutral-800'>
         {option.icon}
       </div>
       <div className='grow'>

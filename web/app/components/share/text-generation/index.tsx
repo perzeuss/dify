@@ -476,7 +476,7 @@ const TextGeneration: FC<IMainProps> = ({
         <div className={cn(
           isPC ? 'w-[600px] max-w-[50%] p-8' : 'p-4',
           isInstalledApp && 'rounded-l-2xl',
-          'shrink-0 relative flex flex-col pb-10 h-full border-r border-gray-100 bg-white',
+          'shrink-0 relative flex flex-col pb-10 h-full border-r border-neutral-800 bg-white',
         )}>
           <div className='mb-6'>
             <div className='flex justify-between items-center'>

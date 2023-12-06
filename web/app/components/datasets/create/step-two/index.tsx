@@ -669,7 +669,7 @@ const StepTwo = ({
               </div>
             )}
             {IS_CE_EDITION && indexType === IndexingType.QUALIFIED && (
-              <div className='mt-3 rounded-xl bg-gray-50 border border-gray-100'>
+              <div className='mt-3 rounded-xl bg-gray-50 border border-neutral-800'>
                 <div className='flex justify-between items-center px-5 py-4'>
                   <div className='flex justify-center items-center w-8 h-8 rounded-lg bg-indigo-50'>
                     <MessageChatSquare className='w-4 h-4' />

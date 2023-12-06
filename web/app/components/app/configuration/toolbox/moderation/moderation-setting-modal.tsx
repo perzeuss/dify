@@ -250,7 +250,7 @@ const ModerationSettingModal: FC<ModerationSettingModalProps> = ({
                 key={provider.key}
                 className={`
                   flex items-center px-3 py-2 rounded-lg text-sm text-gray-900 cursor-pointer
-                  ${localeData.type === provider.key ? 'bg-white border-[1.5px] border-primary-400 shadow-sm' : 'border border-gray-100 bg-gray-25'}
+                  ${localeData.type === provider.key ? 'bg-white border-[1.5px] border-primary-400 shadow-sm' : 'border border-neutral-800 bg-gray-25'}
                   ${localeData.type === 'openai_moderation' && provider.key === 'openai_moderation' && !openaiProviderConfiged && 'opacity-50'}
                 `}
                 onClick={() => handleDataTypeChange(provider.key)}

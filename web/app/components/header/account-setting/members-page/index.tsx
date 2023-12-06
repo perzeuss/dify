@@ -91,7 +91,7 @@ const MembersPage = () => {
           <div className='min-w-[480px]'>
             {
               accounts.map(account => (
-                <div key={account.id} className='flex border-b border-gray-100'>
+                <div key={account.id} className='flex border-b border-neutral-800'>
                   <div className='grow flex items-center py-2 px-3'>
                     <Avatar size={24} className='mr-2' name={account.name} />
                     <div className=''>
