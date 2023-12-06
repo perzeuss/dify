@@ -90,7 +90,7 @@ const ApiBasedExtensionSelector: FC<ApiBasedExtensionSelectorProps> = ({
                 data?.map(item => (
                   <div
                     key={item.id}
-                    className='px-3 py-1.5 w-full cursor-pointer hover:bg-gray-50 rounded-md text-left'
+                    className='px-3 py-1.5 w-full cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-900 rounded-md text-left'
                     onClick={() => handleSelect(item.id!)}
                   >
                     <div className='text-sm text-gray-900'>{item.name}</div>

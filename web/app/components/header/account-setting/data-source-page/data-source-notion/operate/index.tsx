@@ -20,7 +20,7 @@ export default function Operate({
   onAuthAgain,
 }: OperateProps) {
   const itemClassName = `
-    flex px-3 py-2 hover:bg-gray-50 text-sm text-gray-700 dark:text-gray-300
+    flex px-3 py-2 hover:bg-gray-50 dark:hover:bg-gray-900  dark:hover:bg-gray-900 text-sm text-gray-700 dark:text-gray-300
     cursor-pointer
   `
   const itemIconClassName = `

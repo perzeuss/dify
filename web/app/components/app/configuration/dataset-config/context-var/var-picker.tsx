@@ -51,7 +51,7 @@ const VarPicker: FC<Props> = ({
       <PortalToFollowElemTrigger onClick={() => setOpen(v => !v)}>
         <div className={cn(
           s.trigger,
-          notSetVar ? 'bg-[#FFFCF5] border-[#FEDF89] text-[#DC6803]' : ' hover:bg-gray-50 border-gray-200 text-primary-600',
+          notSetVar ? 'bg-[#FFFCF5] border-[#FEDF89] text-[#DC6803]' : ' hover:bg-gray-50 dark:hover:bg-gray-900 border-gray-200 text-primary-600',
           open ? 'bg-gray-50' : 'bg-white',
           `
           flex items-center h-8 justify-center px-2 space-x-1 rounded-lg border  shadow-xs cursor-pointer
@@ -75,7 +75,7 @@ const VarPicker: FC<Props> = ({
             {options.map(({ name, value, type }, index) => (
               <div
                 key={index}
-                className='px-3 py-1 flex rounded-lg hover:bg-gray-50 cursor-pointer'
+                className='px-3 py-1 flex rounded-lg hover:bg-gray-50 dark:hover:bg-gray-900 cursor-pointer'
                 onClick={() => {
                   onChange(value)
                   setOpen(false)

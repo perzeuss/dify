@@ -11,7 +11,7 @@ import { deleteMemberOrCancelInvitation, updateMemberRole } from '@/service/comm
 import { ToastContext } from '@/app/components/base/toast'
 
 const itemClassName = `
-  flex px-3 py-2 cursor-pointer hover:bg-gray-50 rounded-lg
+  flex px-3 py-2 cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-900  dark:hover:bg-gray-900 rounded-lg
 `
 const itemIconClassName = `
   w-4 h-4 mt-[2px] mr-1 text-primary-600

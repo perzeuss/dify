@@ -57,7 +57,7 @@ export default function WorkspaceSelector({
                     items.map(item => (
                       <Menu.Item key={item.workspace_id}>
                         <div
-                          className='flex items-center px-3 h-9 hover:bg-gray-50 cursor-pointer'
+                          className='flex items-center px-3 h-9 hover:bg-gray-50 dark:hover:bg-gray-900 cursor-pointer'
                           onClick={() => onSelect(item.workspace_id)}
                         >
                           <NotionIcon

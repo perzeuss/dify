@@ -69,7 +69,7 @@ const ComponentPickerMenuItem: FC<ComponentPickerMenuItemProps> = ({
       className={`
         flex items-center px-3 py-1.5 rounded-lg 
         ${isSelected && !option.disabled && '!bg-gray-50'}
-        ${option.disabled ? 'cursor-not-allowed opacity-30' : 'hover:bg-gray-50 cursor-pointer'}
+        ${option.disabled ? 'cursor-not-allowed opacity-30' : 'hover:bg-gray-50 dark:hover:bg-gray-900 cursor-pointer'}
       `}
       tabIndex={-1}
       ref={option.setRefElement}

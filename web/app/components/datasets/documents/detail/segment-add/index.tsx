@@ -76,7 +76,7 @@ const SegmentAdd: FC<ISegmentAddProps> = ({
           <span className='pl-1'>{t('datasetDocuments.list.action.addButton')}</span>
         </div>
       }
-      btnClassName={open => cn('mr-2 !py-[6px] !text-[13px] !leading-[18px] hover:bg-gray-50 border border-gray-200 hover:border-gray-300 hover:shadow-[0_1px_2px_rgba(16,24,40,0.05)]', open ? '!bg-gray-100 dark:bg-gray-900 !shadow-none' : '!bg-transparent')}
+      btnClassName={open => cn('mr-2 !py-[6px] !text-[13px] !leading-[18px] hover:bg-gray-50 dark:hover:bg-gray-900 border border-gray-200 hover:border-gray-300 hover:shadow-[0_1px_2px_rgba(16,24,40,0.05)]', open ? '!bg-gray-100 dark:bg-gray-900 !shadow-none' : '!bg-transparent')}
       className='!w-[132px] h-fit !z-20  !translate-x-0 !left-0'
     />
   )

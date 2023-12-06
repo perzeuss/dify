@@ -339,7 +339,7 @@ const DocumentList: FC<IDocumentListProps> = ({ embeddingAvailable, documents = 
             const suffix = doc.name.split('.').pop() || 'txt'
             return <tr
               key={doc.id}
-              className={'border-b border-gray-200 h-8 hover:bg-gray-50 cursor-pointer'}
+              className={'border-b border-gray-200 h-8 hover:bg-gray-50 dark:hover:bg-gray-900 cursor-pointer'}
               onClick={() => {
                 router.push(`/datasets/${datasetId}/documents/${doc.id}`)
               }}>
