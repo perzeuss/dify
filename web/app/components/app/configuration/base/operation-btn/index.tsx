@@ -25,7 +25,7 @@ const OperationBtn: FC<IOperationBtnProps> = ({
   const { t } = useTranslation()
   return (
     <div
-      className='flex items-center rounded-md h-7 px-3 space-x-1 text-gray-700 dark:text-gray-300 cursor-pointer hover:bg-gray-200'
+      className='flex items-center rounded-md h-7 px-3 space-x-1 text-gray-700 dark:text-gray-300 cursor-pointer hover:bg-neutral-800'
       onClick={onClick}>
       <div>
         {iconMap[type]}

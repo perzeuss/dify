@@ -169,11 +169,11 @@ function AppCard({
                 </div>
               </div>
               <Divider type="vertical" className="!h-3.5 shrink-0 !mx-0.5" />
-              {isApp && <ShareQRCode content={isApp ? appUrl : apiUrl} selectorId={randomString(8)} className={'hover:bg-gray-200'} />}
+              {isApp && <ShareQRCode content={isApp ? appUrl : apiUrl} selectorId={randomString(8)} className={'hover:bg-neutral-800'} />}
               <CopyFeedback
                 content={isApp ? appUrl : apiUrl}
                 selectorId={randomString(8)}
-                className={'hover:bg-gray-200'}
+                className={'hover:bg-neutral-800'}
               />
               {/* button copy link/ button regenerate */}
               {isApp && isCurrentWorkspaceManager && (
@@ -182,7 +182,7 @@ function AppCard({
                   selector={`code-generate-${randomString(8)}`}
                 >
                   <div
-                    className="w-8 h-8 ml-0.5 cursor-pointer hover:bg-gray-200 rounded-lg"
+                    className="w-8 h-8 ml-0.5 cursor-pointer hover:bg-neutral-800 rounded-lg"
                     onClick={onGenCode}
                   >
                     <div

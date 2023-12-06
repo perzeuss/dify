@@ -23,7 +23,7 @@ const ApiServer: FC<ApiServerProps> = ({
         <CopyFeedback
           content={apiBaseUrl}
           selectorId={randomString(8)}
-          className={'!w-6 !h-6 hover:bg-gray-200'}
+          className={'!w-6 !h-6 hover:bg-neutral-800'}
         />
       </div>
       <div className='flex items-center mr-2 px-3 h-8 bg-[#ECFDF3] text-xs font-semibold text-[#039855] rounded-lg border-[0.5px] border-[#D1FADF]'>

@@ -91,7 +91,7 @@ const ItemComponent = ({ index, style, data }: ListChildComponentProps<{
     if (hasChild) {
       return (
         <div
-          className={cn(s.arrow, current.expand && s['arrow-expand'], 'shrink-0 mr-1 w-5 h-5 hover:bg-gray-200 rounded-md')}
+          className={cn(s.arrow, current.expand && s['arrow-expand'], 'shrink-0 mr-1 w-5 h-5 hover:bg-neutral-800 rounded-md')}
           style={{ marginLeft: current.deepth * 8 }}
           onClick={() => handleToggle(index)}
         />

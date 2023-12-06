@@ -36,7 +36,7 @@ const Nav = ({
     <div className={`
       flex items-center h-8 mr-0 sm:mr-3 px-0.5 rounded-xl text-sm shrink-0 font-medium
       ${isActived && 'bg-white dark:bg-neutral-900 shadow-md font-semibold'}
-      ${!curNav && !isActived && 'hover:bg-gray-200'}
+      ${!curNav && !isActived && 'hover:bg-neutral-800'}
     `}>
       <Link href={link}>
         <div

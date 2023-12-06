@@ -50,7 +50,7 @@ const PasteImageLinkButton: FC<PasteImageLinkButtonProps> = ({
     >
       <PortalToFollowElemTrigger onClick={handleToggle}>
         <div className={`
-          relative flex items-center justify-center px-3 h-8 bg-gray-100 hover:bg-gray-200 text-xs text-neutral-400 rounded-lg
+          relative flex items-center justify-center px-3 h-8 bg-gray-100 hover:bg-neutral-800 text-xs text-neutral-400 rounded-lg
           ${disabled ? 'cursor-not-allowed' : 'cursor-pointer'}
         `}>
           <Link03 className='mr-2 w-4 h-4' />

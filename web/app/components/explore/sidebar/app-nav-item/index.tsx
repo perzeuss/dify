@@ -43,7 +43,7 @@ export default function AppNavItem({
       key={id}
       className={cn(
         s.item,
-        isSelected ? s.active : 'hover:bg-gray-200',
+        isSelected ? s.active : 'hover:bg-neutral-800',
         'flex h-8 items-center justify-between mobile:justify-center px-2 mobile:px-1 rounded-lg text-sm font-normal',
       )}
       onClick={() => {

@@ -67,7 +67,7 @@ const Moderation = () => {
       <div
         className={`
           shrink-0 flex items-center px-3 h-7 cursor-pointer rounded-md
-          text-xs text-gray-700 font-medium hover:bg-gray-200
+          text-xs text-gray-700 font-medium hover:bg-neutral-800
         `}
         onClick={handleOpenModerationSettingModal}
       >

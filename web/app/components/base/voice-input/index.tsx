@@ -190,7 +190,7 @@ const VoiceInput = ({
         {
           startConvert && (
             <div
-              className='flex justify-center items-center mr-1 w-8 h-8 hover:bg-gray-200 rounded-lg  cursor-pointer'
+              className='flex justify-center items-center mr-1 w-8 h-8 hover:bg-neutral-800 rounded-lg  cursor-pointer'
               onClick={onCancel}
             >
               <XClose className='w-4 h-4 text-neutral-400' />

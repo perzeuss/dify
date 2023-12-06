@@ -37,7 +37,7 @@ export default function Radio({
   const isChecked = groupContext ? groupContext.value === value : checked
   const divClassName = `
     flex items-center py-1 relative
-    px-7 cursor-pointer hover:bg-gray-200 rounded
+    px-7 cursor-pointer hover:bg-neutral-800 rounded
   `
 
   return (
