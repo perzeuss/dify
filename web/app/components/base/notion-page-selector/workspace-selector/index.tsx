@@ -48,7 +48,7 @@ export default function WorkspaceSelector({
                 className={cn(
                   s.popup,
                   `absolute left-0 top-8 w-80
-                  origin-top-right rounded-lg bg-white
+                  origin-top-right rounded-lg bg-white dark:bg-black
                   border-[0.5px] border-gray-200`,
                 )}
               >

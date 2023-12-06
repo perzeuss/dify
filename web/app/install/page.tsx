@@ -15,7 +15,7 @@ const Install = () => {
     )}>
       <div className={
         classNames(
-          'flex w-full flex-col bg-white shadow rounded-2xl shrink-0',
+          'flex w-full flex-col bg-white dark:bg-black shadow rounded-2xl shrink-0',
           'md:w-[608px] space-between',
         )
       }>

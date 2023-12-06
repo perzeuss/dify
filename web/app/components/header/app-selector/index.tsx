@@ -56,7 +56,7 @@ export default function AppSelector({ appItems, curApp }: IAppSelectorProps) {
           <Menu.Items
             className="
               absolute -left-11 right-0 mt-1.5 w-60 max-w-80
-              divide-y divide-gray-100 origin-top-right rounded-lg bg-white
+              divide-y divide-gray-100 origin-top-right rounded-lg bg-white dark:bg-black
               shadow-lg
             "
           >
