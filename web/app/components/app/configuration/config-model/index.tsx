@@ -293,7 +293,7 @@ const ConfigModel: FC<IConfigModelProps> = ({
       </div>
       {isShowConfig && (
         <Panel
-          className='absolute z-20 top-8 left-0 sm:left-[unset] sm:right-0 !w-fit sm:!w-[496px] bg-white !overflow-visible shadow-md'
+          className='absolute z-20 top-8 left-0 sm:left-[unset] sm:right-0 !w-fit sm:!w-[496px] bg-white dark:bg-black !overflow-visible shadow-md'
           keepUnFold
           headerIcon={
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">

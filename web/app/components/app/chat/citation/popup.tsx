@@ -47,7 +47,7 @@ const Popup: FC<PopupProps> = ({
       }}
     >
       <PortalToFollowElemTrigger onClick={() => setOpen(v => !v)}>
-        <div className='flex items-center px-2 max-w-[240px] h-7 bg-white rounded-lg'>
+        <div className='flex items-center px-2 max-w-[240px] h-7 bg-white dark:bg-black rounded-lg'>
           <FileIcon type={fileType} className='mr-1 w-4 h-4' />
           <div className='text-xs text-gray-600 truncate'>{data.documentName}</div>
         </div>
@@ -60,7 +60,7 @@ const Popup: FC<PopupProps> = ({
               <div className='text-xs font-medium text-gray-600 truncate'>{data.documentName}</div>
             </div>
           </div>
-          <div className='px-4 py-0.5 max-h-[450px] bg-white rounded-lg overflow-auto'>
+          <div className='px-4 py-0.5 max-h-[450px] bg-white dark:bg-black rounded-lg overflow-auto'>
             {
               data.sources.map((source, index) => (
                 <Fragment key={index}>

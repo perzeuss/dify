@@ -73,7 +73,7 @@ const NavSelector = ({ curNav, navs, createText, onCreate, onLoadmore }: INavSel
                   <div className={itemClassName} onClick={() => router.push(nav.link)} title={nav.name}>
                     <div className='relative w-6 h-6 mr-2 bg-[#D5F5F6] rounded-[6px]'>
                       <AppIcon size='tiny' icon={nav.icon} background={nav.icon_background}/>
-                      <div className='flex justify-center items-center absolute -right-0.5 -bottom-0.5 w-2.5 h-2.5 bg-white rounded'>
+                      <div className='flex justify-center items-center absolute -right-0.5 -bottom-0.5 w-2.5 h-2.5 bg-white dark:bg-black rounded'>
                         <Indicator />
                       </div>
                     </div>

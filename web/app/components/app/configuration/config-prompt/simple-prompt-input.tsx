@@ -140,7 +140,7 @@ const Prompt: FC<ISimplePromptInput> = ({
           </div>
           <AutomaticBtn onClick={showAutomaticTrue}/>
         </div>
-        <div className='px-4 py-2 min-h-[228px] max-h-[156px] overflow-y-auto bg-white rounded-xl text-sm text-gray-700'>
+        <div className='px-4 py-2 min-h-[228px] max-h-[156px] overflow-y-auto bg-white dark:bg-black rounded-xl text-sm text-gray-700'>
           <PromptEditor
             className='min-h-[210px]'
             value={promptTemplate}

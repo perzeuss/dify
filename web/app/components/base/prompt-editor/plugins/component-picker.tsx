@@ -193,7 +193,7 @@ const ComponentPicker: FC<ComponentPickerProps> = ({
       ) =>
         (anchorElementRef.current && options.length)
           ? ReactDOM.createPortal(
-            <div className='mt-[25px] p-1 w-[400px] bg-white rounded-lg border-[0.5px] border-gray-200 shadow-lg'>
+            <div className='mt-[25px] p-1 w-[400px] bg-white dark:bg-black rounded-lg border-[0.5px] border-gray-200 shadow-lg'>
               {options.map((option, i: number) => (
                 <ComponentPickerMenuItem
                   isSelected={selectedIndex === i}

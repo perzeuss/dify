@@ -104,7 +104,7 @@ const Citation: FC<CitationProps> = ({
         {
           limitNumberInOneLine < resourcesLength && (
             <div
-              className='flex items-center px-2 h-7 bg-white rounded-lg text-xs font-medium text-gray-500 cursor-pointer'
+              className='flex items-center px-2 h-7 bg-white dark:bg-black rounded-lg text-xs font-medium text-gray-500 cursor-pointer'
               onClick={() => setShowMore(v => !v)}
             >
               {

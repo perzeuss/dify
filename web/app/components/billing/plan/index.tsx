@@ -75,7 +75,7 @@ const PlanComp: FC<Props> = ({
       </div>
 
       {/* Plan detail */}
-      <div className='rounded-xl bg-white px-6 py-3'>
+      <div className='rounded-xl bg-white dark:bg-black px-6 py-3'>
         <VectorSpaceInfo className='py-3' />
         <AppsInfo className='py-3' />
         {isInHeader && type === Plan.sandbox && (

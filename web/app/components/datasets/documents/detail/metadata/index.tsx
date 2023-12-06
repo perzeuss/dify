@@ -307,7 +307,7 @@ const Metadata: FC<IMetadataProps> = ({ docDetail, loading, onUpdate }) => {
   }
 
   return (
-    <div className={`${s.main} ${editStatus ? 'bg-white' : 'bg-gray-25'}`}>
+    <div className={`${s.main} ${editStatus ? 'bg-white dark:bg-black' : 'bg-gray-25'}`}>
       {loading
         ? (<Loading type='app' />)
         : (

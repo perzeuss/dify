@@ -147,11 +147,11 @@ const AdvancedPromptInput: FC<Props> = ({
   )
   return (
     <div className={`relative ${!isContextMissing ? s.gradientBorder : s.warningBorder}`}>
-      <div className='rounded-xl bg-white'>
+      <div className='rounded-xl bg-white dark:bg-black'>
         {isContextMissing
           ? contextMissing
           : (
-            <div className={cn(s.boxHeader, 'flex justify-between items-center h-11 pt-2 pr-3 pb-1 pl-4 rounded-tl-xl rounded-tr-xl bg-white hover:shadow-xs')}>
+            <div className={cn(s.boxHeader, 'flex justify-between items-center h-11 pt-2 pr-3 pb-1 pl-4 rounded-tl-xl rounded-tr-xl bg-white dark:bg-black hover:shadow-xs')}>
               {isChatMode
                 ? (
                   <MessageTypeSelector value={type} onChange={onTypeChange} />

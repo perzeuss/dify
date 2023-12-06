@@ -106,7 +106,7 @@ const SystemModel: FC<SystemModelProps> = ({
         </div>
       </PortalToFollowElemTrigger>
       <PortalToFollowElemContent className='z-50'>
-        <div className='pt-4 w-[360px] rounded-xl border-[0.5px] border-black/5 bg-white shadow-xl'>
+        <div className='pt-4 w-[360px] rounded-xl border-[0.5px] border-black/5 bg-white dark:bg-black shadow-xl'>
           <div className='px-6 py-1'>
             <div className='flex items-center h-8 text-[13px] font-medium text-gray-900'>
               {t('common.modelProvider.systemReasoningModel.key')}

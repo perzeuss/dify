@@ -73,7 +73,7 @@ const Summary: FC<ISummaryProps> = ({
                 {pluginIds.map(pluginId => (
                   <div
                     key={pluginId}
-                    className={`flex items-center justify-center w-6 h-6 rounded-md ${s.border} bg-white`}
+                    className={`flex items-center justify-center w-6 h-6 rounded-md ${s.border} bg-white dark:bg-black`}
                   >
                     {getPlugIcon(pluginId)}</div>
                 ))}

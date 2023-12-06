@@ -197,7 +197,7 @@ const SegmentCard: FC<ISegmentCardProps> = ({
               <div className="h-[140px] overflow-hidden text-ellipsis text-sm font-normal text-gray-800">
                 {renderContent()}
               </div>
-              <div className={cn('w-full bg-gray-50 group-hover:bg-white')}>
+              <div className={cn('w-full bg-gray-50 group-hover:bg-white dark:bg-black')}>
                 <Divider />
                 <div className="relative flex items-center w-full">
                   <DocumentTitle

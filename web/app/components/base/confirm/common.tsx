@@ -54,7 +54,7 @@ const ConfirmCommon: FC<ConfirmCommonProps> = ({
         <div className='flex items-center justify-center absolute top-4 right-4 w-8 h-8 cursor-pointer' onClick={onCancel}>
           <XClose className='w-4 h-4 text-gray-500' />
         </div>
-        <div className='flex items-center justify-center mb-3 w-12 h-12 bg-white shadow-xl rounded-xl'>
+        <div className='flex items-center justify-center mb-3 w-12 h-12 bg-white dark:bg-black shadow-xl rounded-xl'>
           {CONFIRM_MAP[type].icon}
         </div>
         <div className='text-xl font-semibold text-gray-900'>{title}</div>

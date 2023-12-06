@@ -92,7 +92,7 @@ const Answer: FC<IAnswerProps> = ({
 
     const isLike = rating === 'like'
     const ratingIconClassname = isLike ? 'text-primary-600 bg-primary-100 hover:bg-primary-200' : 'text-red-600 bg-red-100 hover:bg-red-200'
-    const UserSymbol = <UserCircleIcon className='absolute top-[-2px] left-[18px] w-3 h-3 rounded-lg text-gray-400 bg-white' />
+    const UserSymbol = <UserCircleIcon className='absolute top-[-2px] left-[18px] w-3 h-3 rounded-lg text-gray-400 bg-white dark:bg-black' />
     // The tooltip is always displayed, but the content is different for different scenarios.
     return (
       <Tooltip
@@ -100,7 +100,7 @@ const Answer: FC<IAnswerProps> = ({
         content={((isWebScene || (!isUserFeedback && !isWebScene)) ? isLike ? t('appDebug.operation.cancelAgree') : t('appDebug.operation.cancelDisagree') : (!isWebScene && isUserFeedback) ? `${t('appDebug.operation.userAction')}${isLike ? t('appDebug.operation.agree') : t('appDebug.operation.disagree')}` : '') as string}
       >
         <div
-          className={`relative box-border flex items-center justify-center h-7 w-7 p-0.5 rounded-lg bg-white cursor-pointer text-gray-500 hover:text-gray-800 ${(!isWebScene && isUserFeedback) ? '!cursor-default' : ''}`}
+          className={`relative box-border flex items-center justify-center h-7 w-7 p-0.5 rounded-lg bg-white dark:bg-black cursor-pointer text-gray-500 hover:text-gray-800 ${(!isWebScene && isUserFeedback) ? '!cursor-default' : ''}`}
           style={{ boxShadow: '0px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 2px 4px -2px rgba(0, 0, 0, 0.05)' }}
           {...((isWebScene || (!isUserFeedback && !isWebScene))
             ? {

@@ -90,7 +90,7 @@ const NotionPageSelector = ({
         data?.notion_info?.length
           ? (
             <>
-              <div className='flex items-center pl-[10px] pr-2 h-11 bg-white border-b border-b-gray-200 rounded-t-xl'>
+              <div className='flex items-center pl-[10px] pr-2 h-11 bg-white dark:bg-black border-b border-b-gray-200 rounded-t-xl'>
                 <WorkspaceSelector
                   value={currentWorkspaceId || firstWorkspaceId}
                   items={notionWorkspaces}

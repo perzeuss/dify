@@ -236,7 +236,7 @@ const Chat: FC<IChatProps> = ({
             {/* Thinking is sync and can not be stopped */}
             {(isResponsing && canStopResponsing && !!chatList[chatList.length - 1]?.content) && (
               <div className='flex justify-center mb-4'>
-                <Button className='flex items-center space-x-1 bg-white' onClick={() => abortResponsing?.()}>
+                <Button className='flex items-center space-x-1 bg-white dark:bg-black' onClick={() => abortResponsing?.()}>
                   {stopIcon}
                   <span className='text-xs text-gray-500 font-normal'>{t('appDebug.operation.stopResponding')}</span>
                 </Button>
@@ -274,7 +274,7 @@ const Chat: FC<IChatProps> = ({
                   </div>
                 </div>)
             }
-            <div className={cn('p-[5.5px] max-h-[150px] bg-white border-[1.5px] border-gray-200 rounded-xl overflow-y-auto', isDragActive && 'border-primary-600')}>
+            <div className={cn('p-[5.5px] max-h-[150px] bg-white dark:bg-black border-[1.5px] border-gray-200 rounded-xl overflow-y-auto', isDragActive && 'border-primary-600')}>
               {
                 visionConfig?.enabled && (
                   <>

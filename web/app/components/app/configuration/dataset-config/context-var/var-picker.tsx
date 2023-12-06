@@ -71,7 +71,7 @@ const VarPicker: FC<Props> = ({
       </PortalToFollowElemTrigger>
       <PortalToFollowElemContent style={{ zIndex: 1000 }}>
         {options.length > 0
-          ? (<div className='w-[240px] max-h-[50vh] overflow-y-auto p-1  border bg-white border-gray-200 rounded-lg shadow-lg'>
+          ? (<div className='w-[240px] max-h-[50vh] overflow-y-auto p-1  border bg-white dark:bg-black border-gray-200 rounded-lg shadow-lg'>
             {options.map(({ name, value, type }, index) => (
               <div
                 key={index}
@@ -86,7 +86,7 @@ const VarPicker: FC<Props> = ({
             ))}
           </div>)
           : (
-            <div className='w-[240px] p-6 bg-white border border-gray-200 rounded-lg shadow-lg'>
+            <div className='w-[240px] p-6 bg-white dark:bg-black border border-gray-200 rounded-lg shadow-lg'>
               <div className='mb-1 text-sm font-medium text-gray-700'>{t('appDebug.feature.dataSet.queryVariable.noVar')}</div>
               <div className='text-xs leading-normal text-gray-500'>{t('appDebug.feature.dataSet.queryVariable.noVarTip')}</div>
             </div>

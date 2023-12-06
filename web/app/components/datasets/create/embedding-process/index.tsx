@@ -199,7 +199,7 @@ const EmbeddingProcess: FC<Props> = ({ datasetId, batchId, documents = [], index
       </div>
       {
         enableBilling && (
-          <div className='flex items-center mb-3 p-3 h-14 bg-white border-[0.5px] border-black/5 shadow-md rounded-xl'>
+          <div className='flex items-center mb-3 p-3 h-14 bg-white dark:bg-black border-[0.5px] border-black/5 shadow-md rounded-xl'>
             <div className='shrink-0 flex items-center justify-center w-8 h-8 bg-[#FFF6ED] rounded-lg'>
               <ZapFast className='w-4 h-4 text-[#FB6514]' />
             </div>

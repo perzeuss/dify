@@ -27,7 +27,7 @@ const FeatureItem: FC<IFeatureItemProps> = ({
       <div className='flex space-x-3 mr-2'>
         {/* icon */}
         <div
-          className='shrink-0 flex items-center justify-center w-8 h-8 rounded-lg border border-gray-200 bg-white'
+          className='shrink-0 flex items-center justify-center w-8 h-8 rounded-lg border border-gray-200 bg-white dark:bg-black'
           style={{
             boxShadow: '0px 1px 2px rgba(16, 24, 40, 0.05)',
           }}

@@ -29,7 +29,7 @@ const PromptLogModal: FC<PromptLogModalProps> = ({
 
   return (
     <div
-      className='fixed top-16 left-2 bottom-2 flex flex-col bg-white border-[0.5px] border-gray-200 rounded-xl shadow-xl z-10'
+      className='fixed top-16 left-2 bottom-2 flex flex-col bg-white dark:bg-black border-[0.5px] border-gray-200 rounded-xl shadow-xl z-10'
       style={{ width }}
       ref={ref}
     >

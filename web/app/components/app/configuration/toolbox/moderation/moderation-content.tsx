@@ -45,7 +45,7 @@ const ModerationContent: FC<ModerationContentProps> = ({
         </div>
         {
           config.enabled && showPreset && (
-            <div className='px-3 pt-1 pb-3 bg-white rounded-lg'>
+            <div className='px-3 pt-1 pb-3 bg-white dark:bg-black rounded-lg'>
               <div className='flex items-center justify-between h-8 text-[13px] font-medium text-gray-700'>
                 {t('appDebug.feature.moderation.modal.content.preset')}
                 <span className='text-xs font-normal text-gray-500'>{t('appDebug.feature.moderation.modal.content.supportMarkdown')}</span>

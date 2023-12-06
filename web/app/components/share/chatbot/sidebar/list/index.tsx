@@ -65,7 +65,7 @@ const List: FC<IListProps> = ({
   return (
     <nav
       ref={listRef}
-      className={cn(className, 'shrink-0 space-y-1 bg-white overflow-y-auto')}
+      className={cn(className, 'shrink-0 space-y-1 bg-white dark:bg-black overflow-y-auto')}
     >
       {list.map((item) => {
         const isCurrent = item.id === currentId

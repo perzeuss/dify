@@ -53,7 +53,7 @@ const ICON_MAP = {
   api: <AppIcon innerIcon={ApiSvg} className='border !bg-purple-50 !border-purple-200' />,
   dataset: <AppIcon innerIcon={DatasetSvg} className='!border-[0.5px] !border-indigo-100 !bg-indigo-25' />,
   webapp: <AppIcon innerIcon={WebappSvg} className='border !bg-primary-100 !border-primary-200' />,
-  notion: <AppIcon innerIcon={NotionSvg} className='!border-[0.5px] !border-indigo-100 !bg-white' />,
+  notion: <AppIcon innerIcon={NotionSvg} className='!border-[0.5px] !border-indigo-100 !bg-white dark:bg-black' />,
 }
 
 export default function AppBasic({ icon, icon_background, name, type, hoverTip, textStyle, mode = 'expand', iconType = 'app', isExtraInLine }: IAppBasicProps) {

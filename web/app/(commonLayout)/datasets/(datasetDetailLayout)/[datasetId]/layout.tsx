@@ -135,7 +135,7 @@ const ExtraInfo = ({ isMobile, relatedApps }: IExtraInfoProps) => {
           </div>
         }
       >
-        <div className={classNames('mt-5 p-3', isMobile && 'border-[0.5px] border-gray-200 shadow-lg rounded-lg bg-white w-[150px]')}>
+        <div className={classNames('mt-5 p-3', isMobile && 'border-[0.5px] border-gray-200 shadow-lg rounded-lg bg-white dark:bg-black w-[150px]')}>
           <div className='flex items-center justify-start gap-2'>
             <div className={s.emptyIconDiv}>
               <Squares2X2Icon className='w-3 h-3 text-gray-500' />
@@ -212,7 +212,7 @@ const DatasetDetailLayout: FC<IAppDetailLayoutProps> = (props) => {
         dataset: datasetRes,
         mutateDatasetRes: () => mutateDatasetRes(),
       }}>
-        <div className="bg-white grow overflow-hidden">{children}</div>
+        <div className="bg-white dark:bg-black grow overflow-hidden">{children}</div>
       </DatasetDetailContext.Provider>
     </div>
   )

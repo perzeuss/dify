@@ -22,7 +22,7 @@ const ConfigViewPanel: FC<Props> = ({
 }) => {
   const { t } = useTranslation()
   return (
-    <div className={cn('absolute top-9 right-0 z-20 p-4 bg-white rounded-2xl shadow-md', s.panelBorder)}>
+    <div className={cn('absolute top-9 right-0 z-20 p-4 bg-white dark:bg-black rounded-2xl shadow-md', s.panelBorder)}>
       <div className='w-[368px]'>
         <Config
           readonly

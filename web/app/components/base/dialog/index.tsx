@@ -57,7 +57,7 @@ const CustomDialog = ({
               leaveFrom="opacity-100 scale-100"
               leaveTo="opacity-0 scale-95"
             >
-              <Dialog.Panel className={classNames('w-full max-w-[800px] p-0 overflow-hidden text-left text-gray-900 align-middle transition-all transform bg-white shadow-xl rounded-2xl', className)}>
+              <Dialog.Panel className={classNames('w-full max-w-[800px] p-0 overflow-hidden text-left text-gray-900 align-middle transition-all transform bg-white dark:bg-black shadow-xl rounded-2xl', className)}>
                 {Boolean(title) && (
                   <Dialog.Title
                     as={titleAs || 'h3'}

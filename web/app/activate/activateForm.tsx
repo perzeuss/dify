@@ -129,7 +129,7 @@ const ActivateForm = () => {
           </div>
 
           <div className="w-full mx-auto mt-6">
-            <div className="bg-white">
+            <div className="bg-white dark:bg-black">
               {/* username */}
               <div className='mb-5'>
                 <label htmlFor="name" className="my-2 flex items-center justify-between text-sm font-medium text-gray-900">

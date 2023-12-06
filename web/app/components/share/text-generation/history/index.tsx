@@ -48,7 +48,7 @@ const History = ({
       </div>
       <div className="relative flex justify-center flex-col items-center">
         {!showHistory ? <ChevronUpIcon className="h-3 w-3 text-gray-500" aria-hidden="true" /> : <div className='h-3 w-3' />}
-        <span className="px-2 bg-white text-sm font-medium text-gray-600 cursor-pointer">{dictionary.app.textGeneration.history}</span>
+        <span className="px-2 bg-white dark:bg-black text-sm font-medium text-gray-600 cursor-pointer">{dictionary.app.textGeneration.history}</span>
         {!showHistory ? <div className='h-3 w-3' /> : <ChevronDownIcon className="h-3 w-3 text-gray-500" aria-hidden="true" />}
       </div>
     </div>

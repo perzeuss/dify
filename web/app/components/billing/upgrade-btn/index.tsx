@@ -23,7 +23,7 @@ const PlainBtn = ({ className, onClick }: { className?: string; onClick: () => v
 
   return (
     <div
-      className={cn(className, 'flex items-center h-8 px-3 rounded-lg border border-gray-200 bg-white shadow-sm cursor-pointer')}
+      className={cn(className, 'flex items-center h-8 px-3 rounded-lg border border-gray-200 bg-white dark:bg-black shadow-sm cursor-pointer')}
       onClick={onClick}
     >
       <div className='leading-[18px] text-[13px] font-medium text-gray-700'>
