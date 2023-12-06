@@ -55,7 +55,7 @@ const Item: FC<ItemProps> = ({
       }
       <div className='grow'>
         <div className='flex items-center h-[18px]'>
-          <div className='grow text-[13px] font-medium text-gray-800 truncate' title={config.name}>{config.name}</div>
+          <div className='grow text-[13px] font-medium text-neutral-200 truncate' title={config.name}>{config.name}</div>
           <div className='shrink-0 text-xs text-neutral-400'>
             {formatNumber(config.word_count)} {t('appDebug.feature.dataSet.words')} · {formatNumber(config.document_count)} {t('appDebug.feature.dataSet.textBlocks')}
           </div>

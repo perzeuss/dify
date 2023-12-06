@@ -21,7 +21,7 @@ const ModelConfig: FC<IModelConfigProps> = ({
 
   return (
     <div className='flex items-center justify-between h-[52px] px-3 rounded-xl bg-gray-50'>
-      <div className='text-sm font-semibold text-gray-800'>{t('explore.universalChat.model')}</div>
+      <div className='text-sm font-semibold text-neutral-200'>{t('explore.universalChat.model')}</div>
       <ModelSelector
         popClassName="right-0"
         triggerIconSmall

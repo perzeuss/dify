@@ -162,7 +162,7 @@ const NormalForm = () => {
                           'w-5 h-5 mr-2',
                         )
                       } />
-                      <span className="truncate text-gray-800">{t('login.withGitHub')}</span>
+                      <span className="truncate text-neutral-200">{t('login.withGitHub')}</span>
                     </>
                   </Button>
                 </a>
@@ -181,7 +181,7 @@ const NormalForm = () => {
                           'w-5 h-5 mr-2',
                         )
                       } />
-                      <span className="truncate text-gray-800">{t('login.withGoogle')}</span>
+                      <span className="truncate text-neutral-200">{t('login.withGoogle')}</span>
                     </>
                   </Button>
                 </a>

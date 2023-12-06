@@ -17,7 +17,7 @@ type IAccountSettingProps = {
 }
 const buttonClassName = `
 shrink-0 flex items-center h-8 px-3 rounded-lg border border-gray-200
-text-xs text-gray-800 font-medium
+text-xs text-neutral-200 font-medium
 `
 export default function AccountAbout({
   langeniusVersionInfo,
@@ -56,7 +56,7 @@ export default function AccountAbout({
         </div>
         <div className='mb-4 -mx-8 h-[0.5px] bg-gray-200' />
         <div className='flex justify-between items-center'>
-          <div className='text-xs font-medium text-gray-800'>
+          <div className='text-xs font-medium text-neutral-200'>
             {
               isLatest
                 ? t('common.about.latestAvailable', { version: langeniusVersionInfo.latest_version })

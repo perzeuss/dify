@@ -581,7 +581,7 @@ const StepTwo = ({
                       {rules.map(rule => (
                         <div key={rule.id} className={s.ruleItem}>
                           <input id={rule.id} type="checkbox" checked={rule.enabled} onChange={() => ruleChangeHandle(rule.id)} className="w-4 h-4 rounded border-gray-300 text-blue-700 focus:ring-blue-700" />
-                          <label htmlFor={rule.id} className="ml-2 text-sm font-normal cursor-pointer text-gray-800">{getRuleName(rule.id)}</label>
+                          <label htmlFor={rule.id} className="ml-2 text-sm font-normal cursor-pointer text-neutral-200">{getRuleName(rule.id)}</label>
                         </div>
                       ))}
                     </div>
@@ -624,7 +624,7 @@ const StepTwo = ({
                     {
                       estimateTokes
                         ? (
-                          <div className='text-xs font-medium text-gray-800'>{formatNumber(estimateTokes.tokens)} tokens(<span className='text-yellow-500'>${formatNumber(estimateTokes.total_price)}</span>)</div>
+                          <div className='text-xs font-medium text-neutral-200'>{formatNumber(estimateTokes.tokens)} tokens(<span className='text-yellow-500'>${formatNumber(estimateTokes.total_price)}</span>)</div>
                         )
                         : (
                           <div className={s.calculating}>{t('datasetCreation.stepTwo.calculating')}</div>
@@ -657,7 +657,7 @@ const StepTwo = ({
                     <div className={s.title}>{t('datasetCreation.stepTwo.economical')}</div>
                     <div className={s.tip}>{t('datasetCreation.stepTwo.economicalTip')}</div>
                     <div className='pb-0.5 text-xs font-medium text-neutral-400'>{t('datasetCreation.stepTwo.emstimateCost')}</div>
-                    <div className='text-xs font-medium text-gray-800'>0 tokens</div>
+                    <div className='text-xs font-medium text-neutral-200'>0 tokens</div>
                   </div>
                 </div>
               )}
@@ -752,7 +752,7 @@ const StepTwo = ({
                 {dataSourceType === DataSourceType.FILE && (
                   <>
                     <div className='mb-2 text-xs font-medium text-neutral-400'>{t('datasetCreation.stepTwo.fileSource')}</div>
-                    <div className='flex items-center text-sm leading-6 font-medium text-gray-800'>
+                    <div className='flex items-center text-sm leading-6 font-medium text-neutral-200'>
                       <span className={cn(s.fileIcon, files.length && s[files[0].extension || ''])} />
                       {getFileName(files[0].name || '')}
                       {files.length > 1 && (
@@ -768,7 +768,7 @@ const StepTwo = ({
                 {dataSourceType === DataSourceType.NOTION && (
                   <>
                     <div className='mb-2 text-xs font-medium text-neutral-400'>{t('datasetCreation.stepTwo.notionSource')}</div>
-                    <div className='flex items-center text-sm leading-6 font-medium text-gray-800'>
+                    <div className='flex items-center text-sm leading-6 font-medium text-neutral-200'>
                       <NotionIcon
                         className='shrink-0 mr-1'
                         type='page'
@@ -789,11 +789,11 @@ const StepTwo = ({
               <div className={s.divider} />
               <div className={s.segmentCount}>
                 <div className='mb-2 text-xs font-medium text-neutral-400'>{t('datasetCreation.stepTwo.emstimateSegment')}</div>
-                <div className='flex items-center text-sm leading-6 font-medium text-gray-800'>
+                <div className='flex items-center text-sm leading-6 font-medium text-neutral-200'>
                   {
                     fileIndexingEstimate
                       ? (
-                        <div className='text-xs font-medium text-gray-800'>{formatNumber(fileIndexingEstimate.total_segments)} </div>
+                        <div className='text-xs font-medium text-neutral-200'>{formatNumber(fileIndexingEstimate.total_segments)} </div>
                       )
                       : (
                         <div className={s.calculating}>{t('datasetCreation.stepTwo.calculating')}</div>

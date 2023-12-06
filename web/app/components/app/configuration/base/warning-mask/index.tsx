@@ -25,7 +25,7 @@ const WarningMask: FC<IWarningMaskProps> = ({
     >
       <div className='mx-auto w-[535px]'>
         <div className={`${s.icon} flex items-center justify-center w-11 h-11 rounded-xl bg-white dark:bg-neutral-900`}>{warningIcon}</div>
-        <div className='mt-4 text-[24px] leading-normal font-semibold text-gray-800'>
+        <div className='mt-4 text-[24px] leading-normal font-semibold text-neutral-200'>
           {title}
         </div>
         <div className='mt-3 text-base text-neutral-400'>

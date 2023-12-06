@@ -132,7 +132,7 @@ const SelectDataSet: FC<ISelectDataSetProps> = ({
                   <div className={cn('mr-2', !item.embedding_available && 'opacity-50')}>
                     <TypeIcon type="upload_file" size='md' />
                   </div>
-                  <div className={cn('max-w-[200px] text-[13px] font-medium text-gray-800 overflow-hidden text-ellipsis whitespace-nowrap', !item.embedding_available && 'opacity-50 !max-w-[120px]')}>{item.name}</div>
+                  <div className={cn('max-w-[200px] text-[13px] font-medium text-neutral-200 overflow-hidden text-ellipsis whitespace-nowrap', !item.embedding_available && 'opacity-50 !max-w-[120px]')}>{item.name}</div>
                   {!item.embedding_available && (
                     <span className='ml-1 shrink-0 px-1 border boder-gray-200 rounded-md text-neutral-400 text-xs font-normal leading-[18px]'>{t('dataset.unavailable')}</span>
                   )}

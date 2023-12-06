@@ -55,7 +55,7 @@ const PreviewItem: FC<IPreviewItemProps> = ({
           <span>{charNums} {t('datasetCreation.stepTwo.characters')}</span>
         </div>
       </div>
-      <div className='mt-2 max-h-[120px] line-clamp-6 overflow-hidden text-sm text-gray-800'>
+      <div className='mt-2 max-h-[120px] line-clamp-6 overflow-hidden text-sm text-neutral-200'>
         {type === PreviewType.TEXT && (
           <div style={{ whiteSpace: 'pre-line' }}>{content}</div>
         )}

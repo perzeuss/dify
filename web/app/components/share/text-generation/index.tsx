@@ -414,7 +414,7 @@ const TextGeneration: FC<IMainProps> = ({
         <div className='shrink-0 flex items-center justify-between'>
           <div className='flex items-center space-x-3'>
             <div className={s.starIcon}></div>
-            <div className='text-lg text-gray-800 font-semibold'>{t('share.generation.title')}</div>
+            <div className='text-lg text-neutral-200 font-semibold'>{t('share.generation.title')}</div>
           </div>
           <div className='flex items-center space-x-2'>
             {allFailedTaskList.length > 0 && (
@@ -440,7 +440,7 @@ const TextGeneration: FC<IMainProps> = ({
                 className='flex items-center justify-center cursor-pointer'
                 onClick={hideResSidebar}
               >
-                <XMarkIcon className='w-4 h-4 text-gray-800' />
+                <XMarkIcon className='w-4 h-4 text-neutral-200' />
               </div>
             )}
           </div>
@@ -482,7 +482,7 @@ const TextGeneration: FC<IMainProps> = ({
             <div className='flex justify-between items-center'>
               <div className='flex items-center space-x-3'>
                 <AppIcon size="small" icon={siteInfo.icon} background={siteInfo.icon_background || appDefaultIconBackground} />
-                <div className='text-lg text-gray-800 font-semibold'>{siteInfo.title}</div>
+                <div className='text-lg text-neutral-200 font-semibold'>{siteInfo.title}</div>
               </div>
               {!isPC && (
                 <Button

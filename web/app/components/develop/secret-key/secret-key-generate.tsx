@@ -30,7 +30,7 @@ const SecretKeyGenerateModal = ({
       </div>
       <div className='flex justify-end my-4'>
         <Button type='default' className={`flex-shrink-0 ${s.w64}`} onClick={onClose}>
-          <span className='text-xs font-medium text-gray-800'>{t('appApi.actionMsg.ok')}</span>
+          <span className='text-xs font-medium text-neutral-200'>{t('appApi.actionMsg.ok')}</span>
         </Button>
       </div>
 

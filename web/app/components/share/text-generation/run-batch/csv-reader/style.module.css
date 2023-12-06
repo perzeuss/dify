@@ -7,5 +7,5 @@
 }
 
 .info {
-    @apply text-gray-800 text-sm;
+    @apply text-neutral-200 text-sm;
 }

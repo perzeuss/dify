@@ -28,7 +28,7 @@
 }
 .segContent {
   white-space: wrap;
-  @apply flex-1 h-0 min-h-0 mt-2 text-sm text-gray-800 overflow-ellipsis overflow-hidden from-gray-800 to-white;
+  @apply flex-1 h-0 min-h-0 mt-2 text-sm text-neutral-200 overflow-ellipsis overflow-hidden from-gray-800 to-white;
 }
 .segData {
   @apply hidden text-neutral-400 text-xs pt-2;
@@ -44,7 +44,7 @@
   @apply h-8 py-0 bg-gray-50 hover:bg-gray-100 rounded-lg shadow-none !important;
 }
 .segModalContent {
-  @apply h-96 text-gray-800 text-base break-all overflow-y-scroll;
+  @apply h-96 text-neutral-200 text-base break-all overflow-y-scroll;
   white-space: pre-line;
 }
 .footer {

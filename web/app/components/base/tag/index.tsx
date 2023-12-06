@@ -23,7 +23,7 @@ const COLOR_MAP = {
     bg: 'bg-red-100',
   },
   gray: {
-    text: 'text-gray-800',
+    text: 'text-neutral-200',
     bg: 'bg-gray-100',
   },
 }

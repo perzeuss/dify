@@ -205,7 +205,7 @@ const ModelSelector: FC<Props> = ({
                         </div>
                       )
                       : (
-                        <div className='grow text-left text-sm text-gray-800 opacity-60'>{t('common.modelProvider.selectModel')}</div>
+                        <div className='grow text-left text-sm text-neutral-200 opacity-60'>{t('common.modelProvider.selectModel')}</div>
                       )
                 }
                 {

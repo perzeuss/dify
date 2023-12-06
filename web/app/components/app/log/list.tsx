@@ -221,7 +221,7 @@ function DetailPanel<T extends ChatConversationFullDetailResponse | CompletionCo
           btnClassName='mr-4 !bg-gray-50 !py-1.5 !px-2.5 border-none font-normal'
           btnElement={<>
             <span className='text-[13px]'>{targetTone}</span>
-            <InformationCircleIcon className='h-4 w-4 text-gray-800 ml-1.5' />
+            <InformationCircleIcon className='h-4 w-4 text-neutral-200 ml-1.5' />
           </>}
           htmlContent={<div className='w-[280px]'>
             <div className='flex justify-between py-2 px-4 font-medium text-sm text-gray-700 dark:text-gray-300'>
@@ -231,7 +231,7 @@ function DetailPanel<T extends ChatConversationFullDetailResponse | CompletionCo
             {['temperature', 'top_p', 'presence_penalty', 'max_tokens', 'stop'].map((param: string, index: number) => {
               return <div className='flex justify-between py-2 px-4 bg-gray-50' key={index}>
                 <span className='text-xs text-gray-700 dark:text-gray-300'>{PARAM_MAP[param as keyof typeof PARAM_MAP]}</span>
-                <span className='text-gray-800 font-medium text-xs'>{getParamValue(param)}</span>
+                <span className='text-neutral-200 font-medium text-xs'>{getParamValue(param)}</span>
               </div>
             })}
           </div>}

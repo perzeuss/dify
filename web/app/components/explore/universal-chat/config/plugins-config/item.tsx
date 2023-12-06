@@ -30,7 +30,7 @@ const Item: FC<IItemProps> = ({
         <div className='flex items-center space-x-2'>
           {icon}
           <div className='leading-[18px]'>
-            <div className='text-[13px] font-medium text-gray-800'>{name}</div>
+            <div className='text-[13px] font-medium text-neutral-200'>{name}</div>
             {description && <div className='text-xs leading-[18px] text-neutral-400'>{description}</div>}
           </div>
         </div>

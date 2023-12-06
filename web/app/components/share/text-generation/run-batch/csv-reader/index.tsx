@@ -49,7 +49,7 @@ const CSVReader: FC<Props> = ({
                   <div className='w-full flex items-center space-x-2'>
                     <CSVIcon className="shrink-0" />
                     <div className='flex w-0 grow'>
-                      <span className='max-w-[calc(100%_-_30px)] text-ellipsis whitespace-nowrap overflow-hidden text-gray-800'>{acceptedFile.name.replace(/.csv$/, '')}</span>
+                      <span className='max-w-[calc(100%_-_30px)] text-ellipsis whitespace-nowrap overflow-hidden text-neutral-200'>{acceptedFile.name.replace(/.csv$/, '')}</span>
                       <span className='shrink-0 text-neutral-400'>.csv</span>
                     </div>
                   </div>

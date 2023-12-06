@@ -38,7 +38,7 @@ const FeaturePanel: FC<IFeaturePanelProps> = ({
         <div className='flex justify-between items-center h-8'>
           <div className='flex items-center space-x-1 shrink-0'>
             {headerIcon && <div className='flex items-center justify-center w-6 h-6'>{headerIcon}</div>}
-            <div className='text-sm font-semibold text-gray-800'>{title}</div>
+            <div className='text-sm font-semibold text-neutral-200'>{title}</div>
           </div>
           <div>
             {headerRight}

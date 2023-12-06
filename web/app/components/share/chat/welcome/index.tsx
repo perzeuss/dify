@@ -75,7 +75,7 @@ const Welcome: FC<IWelcomeProps> = ({
     if (!promptConfig)
       return ''
     const res = promptConfig.prompt_template.replace(regex, (match, p1) => {
-      return `<span class='text-gray-800 font-bold'>${inputs?.[p1] ? inputs?.[p1] : match}</span>`
+      return `<span class='text-neutral-200 font-bold'>${inputs?.[p1] ? inputs?.[p1] : match}</span>`
     })
     return res
   })()

@@ -48,7 +48,7 @@ const DataSourceNotion = ({
       <div className='flex items-center px-3 py-[9px]'>
         <div className={cn(s['notion-icon'], 'w-8 h-8 mr-3 border border-gray-100 rounded-lg')} />
         <div className='grow'>
-          <div className='leading-5 text-sm font-medium text-gray-800'>
+          <div className='leading-5 text-sm font-medium text-neutral-200'>
             {t('common.dataSource.notion.title')}
           </div>
           {

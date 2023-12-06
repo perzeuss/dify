@@ -66,7 +66,7 @@ const TextAreaWithButton = ({
       <div className={s.wrapper}>
         <div className='pt-2 rounded-tl-xl rounded-tr-xl bg-[#EEF4FF]'>
           <div className="px-4 pb-2 flex justify-between h-8 items-center">
-            <span className="text-gray-800 font-semibold text-sm">
+            <span className="text-neutral-200 font-semibold text-sm">
               {t('datasetHitTesting.input.title')}
             </span>
             <Tooltip

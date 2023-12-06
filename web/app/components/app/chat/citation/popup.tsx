@@ -81,7 +81,7 @@ const Popup: FC<PopupProps> = ({
                         </div>
                       )
                     }
-                    <div className='text-[13px] text-gray-800'>{source.content}</div>
+                    <div className='text-[13px] text-neutral-200'>{source.content}</div>
                     {
                       showHitInfo && (
                         <div className='flex items-center mt-2 text-xs font-medium text-neutral-400'>

@@ -216,7 +216,7 @@ const ModelPage = () => {
                 {t('common.modelProvider.notConfigured')}
               </div>
             )
-            : <div className='text-sm font-medium text-gray-800'>{t('common.modelProvider.models')}</div>
+            : <div className='text-sm font-medium text-neutral-200'>{t('common.modelProvider.models')}</div>
         }
         <SystemModel onUpdate={() => mutateProviders()} />
       </div>

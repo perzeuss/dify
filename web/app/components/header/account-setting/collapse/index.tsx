@@ -26,7 +26,7 @@ const Collapse = ({
 
   return (
     <div className={classNames('border border-gray-200 bg-gray-50 rounded-lg', wrapperClassName)}>
-      <div className='flex items-center justify-between leading-[18px] px-3 py-2 text-xs font-medium text-gray-800 cursor-pointer' onClick={toggle}>
+      <div className='flex items-center justify-between leading-[18px] px-3 py-2 text-xs font-medium text-neutral-200 cursor-pointer' onClick={toggle}>
         {title}
         {
           open

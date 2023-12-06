@@ -54,9 +54,9 @@ const HitDetail: FC<IHitDetailProps> = ({ segInfo, vectorInfo }) => {
       return (
         <>
           <div className='mt-2 mb-1 text-xs font-medium text-neutral-400'>QUESTION</div>
-          <div className='mb-4 text-md text-gray-800'>{segInfo.content}</div>
+          <div className='mb-4 text-md text-neutral-200'>{segInfo.content}</div>
           <div className='mb-1 text-xs font-medium text-neutral-400'>ANSWER</div>
-          <div className='text-md text-gray-800'>{segInfo.answer}</div>
+          <div className='text-md text-neutral-200'>{segInfo.answer}</div>
         </>
       )
     }

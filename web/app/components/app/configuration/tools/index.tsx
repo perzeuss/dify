@@ -101,7 +101,7 @@ const Tools = () => {
               )
             }
           </div>
-          <div className='mr-1 text-sm font-semibold text-gray-800'>
+          <div className='mr-1 text-sm font-semibold text-neutral-200'>
             {t('appDebug.feature.tools.title')}
           </div>
           <TooltipPlus popupContent={<div className='max-w-[160px]'>{t('appDebug.feature.tools.tips')}</div>}>
@@ -139,7 +139,7 @@ const Tools = () => {
                       icon={item.icon}
                       background={item.icon_background}
                     />
-                    <div className='mr-2 text-[13px] font-medium text-gray-800'>{item.label}</div>
+                    <div className='mr-2 text-[13px] font-medium text-neutral-200'>{item.label}</div>
                     <TooltipPlus
                       popupContent={copied ? t('appApi.copied') : `${item.variable}, ${t('appApi.copy')}`}
                     >

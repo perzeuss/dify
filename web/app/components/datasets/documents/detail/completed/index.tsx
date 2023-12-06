@@ -96,7 +96,7 @@ const SegmentDetailComponent: FC<ISegmentDetailProps> = ({
           <div className='mb-1 text-xs font-medium text-neutral-400'>QUESTION</div>
           <AutoHeightTextarea
             outerClassName='mb-4'
-            className='leading-6 text-md text-gray-800'
+            className='leading-6 text-md text-neutral-200'
             value={question}
             placeholder={t('datasetDocuments.segment.questionPlaceholder') || ''}
             onChange={e => setQuestion(e.target.value)}
@@ -105,7 +105,7 @@ const SegmentDetailComponent: FC<ISegmentDetailProps> = ({
           <div className='mb-1 text-xs font-medium text-neutral-400'>ANSWER</div>
           <AutoHeightTextarea
             outerClassName='mb-4'
-            className='leading-6 text-md text-gray-800'
+            className='leading-6 text-md text-neutral-200'
             value={answer}
             placeholder={t('datasetDocuments.segment.answerPlaceholder') || ''}
             onChange={e => setAnswer(e.target.value)}
@@ -118,7 +118,7 @@ const SegmentDetailComponent: FC<ISegmentDetailProps> = ({
 
     return (
       <AutoHeightTextarea
-        className='leading-6 text-md text-gray-800'
+        className='leading-6 text-md text-neutral-200'
         value={question}
         placeholder={t('datasetDocuments.segment.contentPlaceholder') || ''}
         onChange={e => setQuestion(e.target.value)}

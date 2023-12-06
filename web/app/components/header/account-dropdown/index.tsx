@@ -85,7 +85,7 @@ export default function AppSelector({ isMobile }: IAppSelecotr) {
                     <div className='flex flex-nowrap items-center px-4 py-[13px]'>
                       <Avatar name={userProfile.name} size={36} className='mr-3' />
                       <div className='grow'>
-                        <div className='leading-5 font-normal text-[14px] text-gray-800 break-all'>{userProfile.name}</div>
+                        <div className='leading-5 font-normal text-[14px] text-neutral-200 break-all'>{userProfile.name}</div>
                         <div className='leading-[18px] text-xs font-normal text-neutral-400 break-all'>{userProfile.email}</div>
                       </div>
                     </div>

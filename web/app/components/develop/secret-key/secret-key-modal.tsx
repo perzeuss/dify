@@ -157,7 +157,7 @@ const SecretKeyModal = ({
       <div className='flex'>
         <Button type='default' className={`flex flex-shrink-0 mt-4 ${s.autoWidth}`} onClick={onCreate} disabled={ !currentWorkspace || currentWorkspace.role === 'normal'}>
           <PlusIcon className='flex flex-shrink-0 w-4 h-4' />
-          <div className='text-xs font-medium text-gray-800'>{t('appApi.apiKeyModal.createNewSecretKey')}</div>
+          <div className='text-xs font-medium text-neutral-200'>{t('appApi.apiKeyModal.createNewSecretKey')}</div>
         </Button>
       </div>
       <SecretKeyGenerateModal className='flex-shrink-0' isShow={isVisible} onClose={() => setVisible(false)} newKey={newKey} />

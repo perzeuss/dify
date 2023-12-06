@@ -37,7 +37,7 @@ const CardItem: FC<ICardItemProps> = ({
         </div>
         <div>
           <div className='flex items-center w-[160px] mr-1'>
-            <div className={cn('text-[13px] leading-[18px] font-medium text-gray-800 overflow-hidden text-ellipsis whitespace-nowrap', !config.embedding_available && 'opacity-50')}>{config.name}</div>
+            <div className={cn('text-[13px] leading-[18px] font-medium text-neutral-200 overflow-hidden text-ellipsis whitespace-nowrap', !config.embedding_available && 'opacity-50')}>{config.name}</div>
             {!config.embedding_available && (
               <Tooltip
                 selector={`unavailable-tag-${config.id}`}

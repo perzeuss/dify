@@ -72,7 +72,7 @@ const ContextBlockComponent: FC<ContextBlockComponentProps> = ({
                       <div className='flex items-center justify-center shrink-0 mr-2 w-6 h-6 bg-[#F5F8FF] rounded-md border-[0.5px] border-[#EAECF5]'>
                         <Folder className='w-4 h-4 text-[#444CE7]' />
                       </div>
-                      <div className='text-sm text-gray-800 truncate' title=''>{dataset.name}</div>
+                      <div className='text-sm text-neutral-200 truncate' title=''>{dataset.name}</div>
                     </div>
                   ))
                 }

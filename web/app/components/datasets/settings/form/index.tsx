@@ -30,7 +30,7 @@ const labelClass = `
   flex items-center w-[168px] h-9
 `
 const inputClass = `
-  w-full max-w-[480px] px-3 bg-gray-100 text-sm text-gray-800 rounded-lg outline-none appearance-none
+  w-full max-w-[480px] px-3 bg-gray-100 text-sm text-neutral-200 rounded-lg outline-none appearance-none
 `
 const useInitialValue: <T>(depend: T, dispatch: Dispatch<T>) => void = (depend, dispatch) => {
   useEffect(() => {

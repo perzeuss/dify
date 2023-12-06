@@ -105,7 +105,7 @@ const PromptValuePanel: FC<IPromptValuePanelProps> = ({
                 ? <ChevronRight className='w-3 h-3 text-gray-300' />
                 : <ChevronDown className='w-3 h-3 text-gray-300' />
             }
-            <div className='text-xs font-medium text-gray-800 uppercase'>{t('appDebug.inputs.userInputField')}</div>
+            <div className='text-xs font-medium text-neutral-200 uppercase'>{t('appDebug.inputs.userInputField')}</div>
           </div>
           {appType === AppType.completion && promptVariables.length > 0 && !userInputFieldCollapse && (
             <div className="mt-1 text-xs leading-normal text-neutral-400">{t('appDebug.inputs.completionVarTip')}</div>

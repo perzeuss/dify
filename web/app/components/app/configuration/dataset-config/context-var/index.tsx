@@ -20,7 +20,7 @@ const ContextVar: FC<Props> = (props) => {
         <div className='p-1'>
           <BracketsX className='w-4 h-4 text-primary-500'/>
         </div>
-        <div className='mr-1 text-sm font-medium text-gray-800'>{t('appDebug.feature.dataSet.queryVariable.title')}</div>
+        <div className='mr-1 text-sm font-medium text-neutral-200'>{t('appDebug.feature.dataSet.queryVariable.title')}</div>
         <Tooltip
           htmlContent={<div className='w-[180px]'>
             {t('appDebug.feature.dataSet.queryVariable.tip')}

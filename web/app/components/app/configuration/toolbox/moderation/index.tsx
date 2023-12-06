@@ -55,7 +55,7 @@ const Moderation = () => {
       <div className='shrink-0 flex items-center justify-center mr-1 w-6 h-6'>
         <FileSearch02 className='shrink-0 w-4 h-4 text-[#039855]' />
       </div>
-      <div className='shrink-0 mr-2 whitespace-nowrap text-sm text-gray-800 font-semibold'>
+      <div className='shrink-0 mr-2 whitespace-nowrap text-sm text-neutral-200 font-semibold'>
         {t('appDebug.feature.moderation.title')}
       </div>
       <div
