@@ -116,7 +116,7 @@ const SegmentCard: FC<ISegmentCardProps> = ({
                 )
                 : (
                   <>
-                    <StatusItem status={enabled ? 'enabled' : 'disabled'} reverse textCls="text-gray-500 text-xs" />
+                    <StatusItem status={enabled ? 'enabled' : 'disabled'} reverse textCls="text-neutral-400 text-xs" />
                     {embeddingAvailable && (
                       <div className="hidden group-hover:inline-flex items-center">
                         <Divider type="vertical" className="!h-2" />
@@ -188,7 +188,7 @@ const SegmentCard: FC<ISegmentCardProps> = ({
                     e.stopPropagation()
                     setShowModal(true)
                   }}>
-                    <Trash03 className='w-[14px] h-[14px] text-gray-500 group-hover/delete:text-red-600' />
+                    <Trash03 className='w-[14px] h-[14px] text-neutral-400 group-hover/delete:text-red-600' />
                   </div>
                 )}
               </div>

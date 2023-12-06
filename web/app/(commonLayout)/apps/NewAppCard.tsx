@@ -23,7 +23,7 @@ const CreateAppCard = forwardRef<HTMLAnchorElement, CreateAppCardProps>(({ onSuc
           {t('app.createApp')}
         </div>
       </div>
-      {/* <div className='text-xs text-gray-500'>{t('app.createFromConfigFile')}</div> */}
+      {/* <div className='text-xs text-neutral-400'>{t('app.createFromConfigFile')}</div> */}
       <NewAppDialog show={showNewAppDialog} onSuccess={onSuccess} onClose={() => setShowNewAppDialog(false)} />
     </a>
   )

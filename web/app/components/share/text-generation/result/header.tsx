@@ -35,8 +35,8 @@ const Header: FC<IResultHeaderProps> = ({
           }}
         >
           <>
-            <ClipboardDocumentIcon className='text-gray-500 w-4 h-3 mr-1' />
-            <span className='text-gray-500 text-xs leading-3'>{t('share.generation.copy')}</span>
+            <ClipboardDocumentIcon className='text-neutral-400 w-4 h-3 mr-1' />
+            <span className='text-neutral-400 text-xs leading-3'>{t('share.generation.copy')}</span>
           </>
         </Button>
 

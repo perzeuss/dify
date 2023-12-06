@@ -60,7 +60,7 @@ const UsageInfo: FC<Props> = ({
             color: percent < LOW ? '#344054' : color,
           }}>{usage}{unit}</div>
           <div className='mx-1 text-gray-300'>/</div>
-          <div className='text-gray-500'>{total === NUM_INFINITE ? t('billing.plansCommon.unlimited') : `${total}${unit}`}</div>
+          <div className='text-neutral-400'>{total === NUM_INFINITE ? t('billing.plansCommon.unlimited') : `${total}${unit}`}</div>
         </div>
       </div>
       <div className='mt-2'>

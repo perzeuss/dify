@@ -16,7 +16,7 @@ const SuggestedQuestionsAfterAnswer: FC = () => {
       }
       headerIcon={<Microphone01 className='w-4 h-4 text-[#7839EE]' />}
       headerRight={
-        <div className='text-xs text-gray-500'>{t('appDebug.feature.speechToText.resDes')}</div>
+        <div className='text-xs text-neutral-400'>{t('appDebug.feature.speechToText.resDes')}</div>
       }
       noBodySpacing
     />

@@ -36,7 +36,7 @@ const Item: FC<ItemProps> = ({
     <div className='group flex items-center mb-2 px-4 py-2 border-[0.5px] border-transparent rounded-xl bg-gray-50 hover:border-gray-200 hover:shadow-xs'>
       <div className='grow'>
         <div className='mb-0.5 text-[13px] font-medium text-gray-700 dark:text-gray-300'>{data.name}</div>
-        <div className='text-xs text-gray-500'>{data.api_endpoint}</div>
+        <div className='text-xs text-neutral-400'>{data.api_endpoint}</div>
       </div>
       <div className='hidden group-hover:flex items-center'>
         <div

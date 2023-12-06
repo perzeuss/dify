@@ -43,11 +43,11 @@ const CardItem: FC<ICardItemProps> = ({
                 selector={`unavailable-tag-${config.id}`}
                 htmlContent={t('dataset.unavailableTip')}
               >
-                <span className='shrink-0 inline-flex whitespace-nowrap px-1 border boder-gray-200 rounded-md text-gray-500 text-xs font-normal leading-[18px]'>{t('dataset.unavailable')}</span>
+                <span className='shrink-0 inline-flex whitespace-nowrap px-1 border boder-gray-200 rounded-md text-neutral-400 text-xs font-normal leading-[18px]'>{t('dataset.unavailable')}</span>
               </Tooltip>
             )}
           </div>
-          <div className={cn('max-w-[150px] flex text-xs text-gray-500', !config.embedding_available && 'opacity-50')}>
+          <div className={cn('max-w-[150px] flex text-xs text-neutral-400', !config.embedding_available && 'opacity-50')}>
             {formatNumber(config.word_count)} {t('appDebug.feature.dataSet.words')} · {formatNumber(config.document_count)} {t('appDebug.feature.dataSet.textBlocks')}
           </div>
         </div>

@@ -107,14 +107,14 @@
 }
 
 .listItemDescription {
-  @apply mb-3 px-[14px] h-9 text-xs leading-normal text-gray-500 line-clamp-2;
+  @apply mb-3 px-[14px] h-9 text-xs leading-normal text-neutral-400 line-clamp-2;
 }
 
 .listItemFooter {
   @apply flex items-center flex-wrap min-h-[42px] px-[14px] pt-2 pb-[10px];
 }
 .listItemFooter.datasetCardFooter {
-  @apply flex items-center gap-4 text-xs text-gray-500;
+  @apply flex items-center gap-4 text-xs text-neutral-400;
 }
 
 .listItemStats {

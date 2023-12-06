@@ -32,7 +32,7 @@ const PriorityLabel = () => {
         <div className='mb-1 text-xs font-semibold text-gray-700 dark:text-gray-300'>{`${t('billing.plansCommon.documentProcessingPriority')}: ${t(`billing.plansCommon.priority.${priority}`)}`}</div>
         {
           priority !== DocumentProcessingPriority.topPriority && (
-            <div className='text-xs text-gray-500'>{t('billing.plansCommon.documentProcessingPriorityTip')}</div>
+            <div className='text-xs text-neutral-400'>{t('billing.plansCommon.documentProcessingPriorityTip')}</div>
           )
         }
       </div>

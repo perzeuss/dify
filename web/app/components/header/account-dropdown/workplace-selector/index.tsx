@@ -54,7 +54,7 @@ const WorkplaceSelector = () => {
             )}>
               <div className={itemIconClassName}>{currentWorkspace?.name[0].toLocaleUpperCase()}</div>
               <div className={`${itemNameClassName} truncate`}>{currentWorkspace?.name}</div>
-              <ChevronRight className='shrink-0 w-[14px] h-[14px] text-gray-500' />
+              <ChevronRight className='shrink-0 w-[14px] h-[14px] text-neutral-400' />
             </Menu.Button>
             <Transition
               as={Fragment}

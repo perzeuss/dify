@@ -59,12 +59,12 @@ export default function Modal({
                 >
                   {title}
                 </Dialog.Title>}
-                {description && <Dialog.Description className='text-gray-500 text-xs font-normal mt-2'>
+                {description && <Dialog.Description className='text-neutral-400 text-xs font-normal mt-2'>
                   {description}
                 </Dialog.Description>}
                 {closable
                   && <div className='absolute top-6 right-6 w-5 h-5 rounded-2xl flex items-center justify-center hover:cursor-pointer hover:bg-gray-100 dark:bg-neutral-950'>
-                    <XMarkIcon className='w-4 h-4 text-gray-500' onClick={onClose} />
+                    <XMarkIcon className='w-4 h-4 text-neutral-400' onClick={onClose} />
                   </div>}
                 {children}
               </Dialog.Panel>

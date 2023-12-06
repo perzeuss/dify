@@ -139,7 +139,7 @@ const GetAutomaticRes: FC<IGetAutomaticResProps> = ({
         {isShowAutoPromptInput() && <div className='w-full sm:w-[360px] xl:w-[480px] shrink-0 px-8 py-6 h-full overflow-y-auto border-r border-gray-100'>
           <div>
             <div className='mb-1 text-xl font-semibold text-primary-600'>{t('appDebug.automatic.title')}</div>
-            <div className='text-[13px] font-normal text-gray-500'>{t('appDebug.automatic.description')}</div>
+            <div className='text-[13px] font-normal text-neutral-400'>{t('appDebug.automatic.description')}</div>
           </div>
           {/* inputs */}
           <div className='mt-12 space-y-5'>

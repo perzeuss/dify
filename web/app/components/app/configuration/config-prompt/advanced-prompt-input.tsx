@@ -171,17 +171,17 @@ const AdvancedPromptInput: FC<Props> = ({
                   </div>)}
               <div className={cn(s.optionWrap, 'items-center space-x-1')}>
                 {canDelete && (
-                  <Trash03 onClick={onDelete} className='h-6 w-6 p-1 text-gray-500 cursor-pointer' />
+                  <Trash03 onClick={onDelete} className='h-6 w-6 p-1 text-neutral-400 cursor-pointer' />
                 )}
                 {!isCopied
                   ? (
-                    <Clipboard className='h-6 w-6 p-1 text-gray-500 cursor-pointer' onClick={() => {
+                    <Clipboard className='h-6 w-6 p-1 text-neutral-400 cursor-pointer' onClick={() => {
                       copy(value)
                       setIsCopied(true)
                     }} />
                   )
                   : (
-                    <ClipboardCheck className='h-6 w-6 p-1 text-gray-500' />
+                    <ClipboardCheck className='h-6 w-6 p-1 text-neutral-400' />
                   )}
               </div>
             </div>
@@ -232,7 +232,7 @@ const AdvancedPromptInput: FC<Props> = ({
           />
         </div>
         <div className='pl-4 pb-2 flex'>
-          <div className="h-[18px] leading-[18px] px-1 rounded-md bg-gray-100 dark:bg-neutral-950 text-xs text-gray-500">{value.length}</div>
+          <div className="h-[18px] leading-[18px] px-1 rounded-md bg-gray-100 dark:bg-neutral-950 text-xs text-neutral-400">{value.length}</div>
         </div>
       </div>
 

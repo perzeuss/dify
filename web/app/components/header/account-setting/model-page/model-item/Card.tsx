@@ -40,7 +40,7 @@ const Card: FC<CardProps> = ({
                 {model.model_name}
                 <div className='ml-2 px-1.5 rounded-md border border-[rgba(0,0,0,0.08)] text-xs text-gray-600'>{model.model_type}</div>
               </div>
-              <div className='text-xs text-gray-500'>
+              <div className='text-xs text-neutral-400'>
                 {renderDesc(model)}
               </div>
             </div>

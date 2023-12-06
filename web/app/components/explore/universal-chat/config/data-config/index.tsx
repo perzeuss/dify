@@ -77,7 +77,7 @@ const DatasetConfig: FC<Props> = ({
           </div>
         )
         : (
-          <div className='pt-2 pb-1 text-xs text-gray-500'>{t('appDebug.feature.dataSet.noData')}</div>
+          <div className='pt-2 pb-1 text-xs text-neutral-400'>{t('appDebug.feature.dataSet.noData')}</div>
         )}
 
       {isShowSelectDataSet && (

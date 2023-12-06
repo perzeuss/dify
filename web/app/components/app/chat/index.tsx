@@ -238,7 +238,7 @@ const Chat: FC<IChatProps> = ({
               <div className='flex justify-center mb-4'>
                 <Button className='flex items-center space-x-1 bg-white dark:bg-neutral-900' onClick={() => abortResponsing?.()}>
                   {stopIcon}
-                  <span className='text-xs text-gray-500 font-normal'>{t('appDebug.operation.stopResponding')}</span>
+                  <span className='text-xs text-neutral-400 font-normal'>{t('appDebug.operation.stopResponding')}</span>
                 </Button>
               </div>
             )}
@@ -252,7 +252,7 @@ const Chat: FC<IChatProps> = ({
                       }}></div>
                     <div className='shrink-0 flex items-center px-3 space-x-1'>
                       {TryToAskIcon}
-                      <span className='text-xs text-gray-500 font-medium'>{t('appDebug.feature.suggestedQuestionsAfterAnswer.tryToAsk')}</span>
+                      <span className='text-xs text-neutral-400 font-medium'>{t('appDebug.feature.suggestedQuestionsAfterAnswer.tryToAsk')}</span>
                     </div>
                     <div className='grow h-[1px]'
                       style={{
@@ -315,7 +315,7 @@ const Chat: FC<IChatProps> = ({
                 autoSize
               />
               <div className="absolute bottom-2 right-2 flex items-center h-8">
-                <div className={`${s.count} mr-4 h-5 leading-5 text-sm bg-gray-50 text-gray-500`}>{query.trim().length}</div>
+                <div className={`${s.count} mr-4 h-5 leading-5 text-sm bg-gray-50 text-neutral-400`}>{query.trim().length}</div>
                 {
                   query
                     ? (
@@ -329,7 +329,7 @@ const Chat: FC<IChatProps> = ({
                           className='group flex justify-center items-center w-8 h-8 hover:bg-primary-50 rounded-lg cursor-pointer'
                           onClick={handleVoiceInputShow}
                         >
-                          <Microphone01 className='block w-4 h-4 text-gray-500 group-hover:hidden' />
+                          <Microphone01 className='block w-4 h-4 text-neutral-400 group-hover:hidden' />
                           <Microphone01Solid className='hidden w-4 h-4 text-primary-600 group-hover:block' />
                         </div>
                       )

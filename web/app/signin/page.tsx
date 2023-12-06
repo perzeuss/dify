@@ -22,7 +22,7 @@ const SignIn = () => {
         }>
           <Header />
           <Forms />
-          <div className='px-8 py-6 text-sm font-normal text-gray-500'>
+          <div className='px-8 py-6 text-sm font-normal text-neutral-400'>
             © {new Date().getFullYear()} LangGenius, Inc. All rights reserved.
           </div>
         </div>

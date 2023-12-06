@@ -142,7 +142,7 @@ const Form = () => {
             value={description}
             onChange={e => setDescription(e.target.value)}
           />
-          <a className='flex items-center h-[18px] px-3 text-xs text-gray-500' href="https://docs.dify.ai/advanced/datasets#how-to-write-a-good-dataset-description" target='_blank'>
+          <a className='flex items-center h-[18px] px-3 text-xs text-neutral-400' href="https://docs.dify.ai/advanced/datasets#how-to-write-a-good-dataset-description" target='_blank'>
             <BookOpenIcon className='w-3 h-[18px] mr-1' />
             {t('datasetSettings.form.descWrite')}
           </a>
@@ -194,7 +194,7 @@ const Form = () => {
                 onChange={() => {}}
               />
             </div>
-            <div className='mt-2 w-full text-xs leading-6 text-gray-500'>
+            <div className='mt-2 w-full text-xs leading-6 text-neutral-400'>
               {t('datasetSettings.form.embeddingModelTip')}
               <span className='text-[#155eef] cursor-pointer' onClick={() => setShowAccountSettingModal({ payload: 'provider' })}>{t('datasetSettings.form.embeddingModelTipLink')}</span>
             </div>
@@ -206,7 +206,7 @@ const Form = () => {
         <div className={labelClass}>
           <div>
             <div>{t('datasetSettings.form.retrievalSetting.title')}</div>
-            <div className='leading-[18px] text-xs font-normal text-gray-500'>
+            <div className='leading-[18px] text-xs font-normal text-neutral-400'>
               <a target='_blank' href='https://docs.dify.ai/advanced/retrieval-augment' className='text-[#155eef]'>{t('datasetSettings.form.retrievalSetting.learnMore')}</a>
               {t('datasetSettings.form.retrievalSetting.description')}
             </div>

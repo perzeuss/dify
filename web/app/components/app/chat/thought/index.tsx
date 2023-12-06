@@ -73,7 +73,7 @@ const Thought: FC<IThoughtProps> = ({
     </div>
   )
   return (
-    <div className={cn(s.wrap, !isShowDetail && s.wrapHoverEffect, 'inline-block mb-2 px-2 py-0.5 rounded-md text-xs text-gray-500 font-medium')} >
+    <div className={cn(s.wrap, !isShowDetail && s.wrapHoverEffect, 'inline-block mb-2 px-2 py-0.5 rounded-md text-xs text-neutral-400 font-medium')} >
       <div className='flex items-center h-6 space-x-1 cursor-pointer' onClick={() => setIsShowDetail(!isShowDetail)} >
         {!isThinking ? <ThoughtList /> : <div className='animate-spin'><LodingIcon /></div>}
         <div dangerouslySetInnerHTML= {{

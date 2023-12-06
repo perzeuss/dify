@@ -16,7 +16,7 @@ const Citation: FC = () => {
       }
       headerIcon={<Citations className='w-4 h-4 text-[#FD853A]' />}
       headerRight={
-        <div className='text-xs text-gray-500'>{t('appDebug.feature.citation.resDes')}</div>
+        <div className='text-xs text-neutral-400'>{t('appDebug.feature.citation.resDes')}</div>
       }
       noBodySpacing
     />

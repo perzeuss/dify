@@ -59,7 +59,7 @@ const DatasetCard = ({
               selector={`dataset-tag-${dataset.id}`}
               htmlContent={t('dataset.unavailableTip')}
             >
-              <span className='px-1 border boder-gray-200 rounded-md text-gray-500 text-xs font-normal leading-[18px]'>{t('dataset.unavailable')}</span>
+              <span className='px-1 border boder-gray-200 rounded-md text-neutral-400 text-xs font-normal leading-[18px]'>{t('dataset.unavailable')}</span>
             </Tooltip>
           )}
           <span className={style.deleteDatasetIcon} onClick={onDeleteClick} />

@@ -34,7 +34,7 @@ const HistoryPanel: FC<Props> = ({
         </div>}
       headerRight={
         <div className='flex items-center'>
-          <div className='text-xs text-gray-500'>{t('appDebug.feature.conversationHistory.description')}</div>
+          <div className='text-xs text-neutral-400'>{t('appDebug.feature.conversationHistory.description')}</div>
           <div className='ml-3 w-[1px] h-[14px] bg-gray-200'></div>
           <OperationBtn type="edit" onClick={onShowEditModal} />
         </div>

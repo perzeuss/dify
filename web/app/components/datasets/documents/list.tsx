@@ -196,7 +196,7 @@ export const OperationAction: FC<{
                   </div>
                 </Tooltip>
               </div>
-              <div className='mx-4 pb-1 pt-0.5 text-xs text-gray-500'>
+              <div className='mx-4 pb-1 pt-0.5 text-xs text-neutral-400'>
                 {!archived && enabled ? t('datasetDocuments.list.index.enableTip') : t('datasetDocuments.list.index.disableTip')}
               </div>
               <Divider />
@@ -227,7 +227,7 @@ export const OperationAction: FC<{
               </div>
             )}
             <div className={cn(s.actionItem, s.deleteActionItem, 'group')} onClick={() => setShowModal(true)}>
-              <TrashIcon className={'w-4 h-4 stroke-current text-gray-500 stroke-2 group-hover:text-red-500'} />
+              <TrashIcon className={'w-4 h-4 stroke-current text-neutral-400 stroke-2 group-hover:text-red-500'} />
               <span className={cn(s.actionName, 'group-hover:text-red-500')}>{t('datasetDocuments.list.action.delete')}</span>
             </div>
           </div>
@@ -249,7 +249,7 @@ export const OperationAction: FC<{
           <ExclamationCircleIcon className={s.warningIcon} />
         </div>
         <div className='text-xl font-semibold text-gray-900 mb-1'>{t('datasetDocuments.list.delete.title')}</div>
-        <div className='text-sm text-gray-500 mb-10'>{t('datasetDocuments.list.delete.content')}</div>
+        <div className='text-sm text-neutral-400 mb-10'>{t('datasetDocuments.list.delete.content')}</div>
         <div className='flex gap-2 justify-end'>
           <Button onClick={() => setShowModal(false)}>{t('common.operation.cancel')}</Button>
           <Button
@@ -318,7 +318,7 @@ const DocumentList: FC<IDocumentListProps> = ({ embeddingAvailable, documents = 
   return (
     <div className='w-full h-full overflow-x-auto'>
       <table className={`min-w-[700px] max-w-full w-full border-collapse border-0 text-sm mt-3 ${s.documentTable}`}>
-        <thead className="h-8 leading-8 border-b border-gray-200 text-gray-500 font-medium text-xs uppercase">
+        <thead className="h-8 leading-8 border-b border-gray-200 text-neutral-400 font-medium text-xs uppercase">
           <tr>
             <td className='w-12'>#</td>
             <td>{t('datasetDocuments.list.table.header.fileName')}</td>
@@ -327,7 +327,7 @@ const DocumentList: FC<IDocumentListProps> = ({ embeddingAvailable, documents = 
             <td className='w-44'>
               <div className='flex justify-between items-center'>
                 {t('datasetDocuments.list.table.header.uploadTime')}
-                <ArrowDownIcon className={cn('h-3 w-3 stroke-current stroke-2 cursor-pointer', enableSort ? 'text-gray-500' : 'text-gray-300')} onClick={onClickSort} />
+                <ArrowDownIcon className={cn('h-3 w-3 stroke-current stroke-2 cursor-pointer', enableSort ? 'text-neutral-400' : 'text-gray-300')} onClick={onClickSort} />
               </div>
             </td>
             <td className='w-40'>{t('datasetDocuments.list.table.header.status')}</td>
@@ -343,7 +343,7 @@ const DocumentList: FC<IDocumentListProps> = ({ embeddingAvailable, documents = 
               onClick={() => {
                 router.push(`/datasets/${datasetId}/documents/${doc.id}`)
               }}>
-              <td className='text-left align-middle text-gray-500 text-xs'>{doc.position}</td>
+              <td className='text-left align-middle text-neutral-400 text-xs'>{doc.position}</td>
               <td className={s.tdValue}>
                 {
                   doc?.data_source_type === DataSourceType.NOTION
@@ -353,12 +353,12 @@ const DocumentList: FC<IDocumentListProps> = ({ embeddingAvailable, documents = 
                 {
                   doc.data_source_type === DataSourceType.NOTION
                     ? <span>{doc.name}</span>
-                    : <span>{doc?.name?.replace(/\.[^/.]+$/, '')}<span className='text-gray-500'>.{suffix}</span></span>
+                    : <span>{doc?.name?.replace(/\.[^/.]+$/, '')}<span className='text-neutral-400'>.{suffix}</span></span>
                 }
               </td>
               <td>{renderCount(doc.word_count)}</td>
               <td>{renderCount(doc.hit_count)}</td>
-              <td className='text-gray-500 text-[13px]'>
+              <td className='text-neutral-400 text-[13px]'>
                 {dayjs.unix(doc.created_at).format(t('datasetHitTesting.dateTimeFormat') as string)}
               </td>
               <td>

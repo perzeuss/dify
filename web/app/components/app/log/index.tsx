@@ -43,7 +43,7 @@ const EmptyElement: FC<{ appUrl: string }> = ({ appUrl }) => {
   return <div className='flex items-center justify-center h-full'>
     <div className='bg-gray-50 w-[560px] h-fit box-border px-5 py-4 rounded-2xl'>
       <span className='text-gray-700 dark:text-gray-300 font-semibold'>{t('appLog.table.empty.element.title')}<ThreeDotsIcon className='inline relative -top-3 -left-1.5' /></span>
-      <div className='mt-2 text-gray-500 text-sm font-normal'>
+      <div className='mt-2 text-neutral-400 text-sm font-normal'>
         <Trans
           i18nKey="appLog.table.empty.element.content"
           components={{ shareLink: <Link href={`${pathSegments.join('/')}/overview`} className='text-primary-600' />, testLink: <Link href={appUrl} className='text-primary-600' target='_blank' /> }}
@@ -95,7 +95,7 @@ const Logs: FC<ILogsProps> = ({ appId }) => {
     <div className='flex flex-col h-full'>
       <div className='flex flex-col justify-center px-6 pt-4'>
         <h1 className='flex text-xl font-medium text-gray-900'>{t('appLog.title')}</h1>
-        <p className='flex text-sm font-normal text-gray-500'>{t('appLog.description')}</p>
+        <p className='flex text-sm font-normal text-neutral-400'>{t('appLog.description')}</p>
       </div>
       <div className='flex flex-col px-6 py-4 flex-1'>
         <Filter appId={appId} queryParams={queryParams} setQueryParams={setQueryParams} />
@@ -119,7 +119,7 @@ const Logs: FC<ILogsProps> = ({ appId }) => {
           >
             <Pagination.PrevButton
               disabled={currPage === 0}
-              className={`flex items-center mr-2 text-gray-500  focus:outline-none ${currPage === 0 ? 'cursor-not-allowed opacity-50' : 'cursor-pointer hover:text-gray-600 dark:hover:text-gray-200'}`} >
+              className={`flex items-center mr-2 text-neutral-400  focus:outline-none ${currPage === 0 ? 'cursor-not-allowed opacity-50' : 'cursor-pointer hover:text-gray-600 dark:hover:text-gray-200'}`} >
               <ArrowLeftIcon className="mr-3 h-3 w-3" />
               {t('appLog.table.pagination.previous')}
             </Pagination.PrevButton>
@@ -127,12 +127,12 @@ const Logs: FC<ILogsProps> = ({ appId }) => {
               <Pagination.PageButton
                 activeClassName="bg-primary-50 dark:bg-opacity-0 text-primary-600 dark:text-white"
                 className="flex items-center justify-center h-8 w-8 rounded-full cursor-pointer"
-                inactiveClassName="text-gray-500"
+                inactiveClassName="text-neutral-400"
               />
             </div>
             <Pagination.NextButton
               disabled={currPage === Math.ceil(total / limit) - 1}
-              className={`flex items-center mr-2 text-gray-500 focus:outline-none ${currPage === Math.ceil(total / limit) - 1 ? 'cursor-not-allowed opacity-50' : 'cursor-pointer hover:text-gray-600 dark:hover:text-gray-200'}`} >
+              className={`flex items-center mr-2 text-neutral-400 focus:outline-none ${currPage === Math.ceil(total / limit) - 1 ? 'cursor-not-allowed opacity-50' : 'cursor-pointer hover:text-gray-600 dark:hover:text-gray-200'}`} >
               {t('appLog.table.pagination.next')}
               <ArrowRightIcon className="ml-3 h-3 w-3" />
             </Pagination.NextButton>

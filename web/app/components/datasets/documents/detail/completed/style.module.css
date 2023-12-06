@@ -31,7 +31,7 @@
   @apply flex-1 h-0 min-h-0 mt-2 text-sm text-gray-800 overflow-ellipsis overflow-hidden from-gray-800 to-white;
 }
 .segData {
-  @apply hidden text-gray-500 text-xs pt-2;
+  @apply hidden text-neutral-400 text-xs pt-2;
 }
 .segDataText {
   @apply max-w-[80px] truncate;
@@ -51,10 +51,10 @@
   @apply flex items-center justify-between box-border border-t-gray-200 border-t-[0.5px] pt-3 mt-4 flex-wrap gap-y-2;
 }
 .numberInfo {
-  @apply text-gray-500 text-xs font-medium;
+  @apply text-neutral-400 text-xs font-medium;
 }
 .keywordTitle {
-  @apply text-gray-500 mb-2 mt-1 text-xs uppercase;
+  @apply text-neutral-400 mb-2 mt-1 text-xs uppercase;
 }
 .keywordWrapper {
   @apply text-gray-700 w-full max-h-[200px] overflow-auto flex flex-wrap;

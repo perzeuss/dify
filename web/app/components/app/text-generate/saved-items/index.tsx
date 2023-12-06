@@ -70,7 +70,7 @@ const SavedItems: FC<ISavedItemsProps> = ({
                     <div>{t('common.operation.remove')}</div>
                   </SimpleBtn>
                 </div>
-                <div className='text-xs text-gray-500'>{answer?.length} {t('common.unit.char')}</div>
+                <div className='text-xs text-neutral-400'>{answer?.length} {t('common.unit.char')}</div>
               </div>
             </div>
           ))}

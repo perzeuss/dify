@@ -198,7 +198,7 @@ function DetailPanel<T extends ChatConversationFullDetailResponse | CompletionCo
     {/* Panel Header */}
     <div className='border-b border-gray-100 py-4 px-6 flex items-center justify-between'>
       <div>
-        <div className='text-gray-500 text-[10px] leading-[14px]'>{isChatMode ? t('appLog.detail.conversationId') : t('appLog.detail.time')}</div>
+        <div className='text-neutral-400 text-[10px] leading-[14px]'>{isChatMode ? t('appLog.detail.conversationId') : t('appLog.detail.time')}</div>
         <div className='text-gray-700 dark:text-gray-300 text-[13px] leading-[18px]'>{isChatMode ? detail.id?.split('-').slice(-1)[0] : dayjs.unix(detail.created_at).format(t('appLog.dateTimeFormat') as string)}</div>
       </div>
       <div className='flex items-center flex-wrap gap-y-1 justify-end'>
@@ -237,7 +237,7 @@ function DetailPanel<T extends ChatConversationFullDetailResponse | CompletionCo
           </div>}
         />
         <div className='w-6 h-6 rounded-lg flex items-center justify-center hover:cursor-pointer hover:bg-gray-100 dark:bg-neutral-950'>
-          <XMarkIcon className='w-4 h-4 text-gray-500' onClick={onClose} />
+          <XMarkIcon className='w-4 h-4 text-neutral-400' onClick={onClose} />
         </div>
       </div>
 
@@ -426,7 +426,7 @@ const ConversationList: FC<IConversationList> = ({ logs, appDetail, onRefresh })
     return (
       <Tooltip
         htmlContent={
-          <span className='text-xs text-gray-500 inline-flex items-center'>
+          <span className='text-xs text-neutral-400 inline-flex items-center'>
             <EditIconSolid className='mr-1' />{`${t('appLog.detail.annotationTip', { user: annotation?.account?.name })} ${dayjs.unix(annotation?.created_at || dayjs().unix()).format('MM-DD hh:mm A')}`}
           </span>
         }
@@ -452,7 +452,7 @@ const ConversationList: FC<IConversationList> = ({ logs, appDetail, onRefresh })
   return (
     <div className='overflow-x-auto'>
       <table className={`w-full min-w-[440px] border-collapse border-0 text-sm mt-3 ${s.logTable}`}>
-        <thead className="h-8 leading-8 border-b border-gray-200 text-gray-500 font-bold">
+        <thead className="h-8 leading-8 border-b border-gray-200 text-neutral-400 font-bold">
           <tr>
             <td className='w-[1.375rem] whitespace-nowrap'></td>
             <td className='whitespace-nowrap'>{t('appLog.table.header.time')}</td>
@@ -463,7 +463,7 @@ const ConversationList: FC<IConversationList> = ({ logs, appDetail, onRefresh })
             <td className='whitespace-nowrap'>{t('appLog.table.header.adminRate')}</td>
           </tr>
         </thead>
-        <tbody className="text-gray-500">
+        <tbody className="text-neutral-400">
           {logs.data.map((log: any) => {
             const endUser = log.from_end_user_session_id
             const leftValue = get(log, isChatMode ? 'name' : 'message.inputs.query') || (!isChatMode ? (get(log, 'message.query') || get(log, 'message.inputs.default_input')) : '') || ''

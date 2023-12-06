@@ -42,7 +42,7 @@ const BatchModal: FC<IBatchModalProps> = ({
     <Modal isShow={isShow} onClose={() => {}} className='px-8 py-6 !max-w-[520px] !rounded-xl'>
       <div className='relative pb-1 text-xl font-medium leading-[30px] text-gray-900'>{t('datasetDocuments.list.batchModal.title')}</div>
       <div className='absolute right-4 top-4 p-2 cursor-pointer' onClick={onCancel}>
-        <XClose className='w-4 h-4 text-gray-500' />
+        <XClose className='w-4 h-4 text-neutral-400' />
       </div>
       <CSVUploader
         file={currentCSV}

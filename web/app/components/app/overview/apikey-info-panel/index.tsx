@@ -118,7 +118,7 @@ const APIKeyInfoPanel: FC = () => {
       <div
         onClick={() => setIsShow(false)}
         className='absolute right-4 top-4 flex items-center justify-center w-8 h-8 cursor-pointer '>
-        <XClose className='w-4 h-4 text-gray-500' />
+        <XClose className='w-4 h-4 text-neutral-400' />
       </div>
     </div>
   )

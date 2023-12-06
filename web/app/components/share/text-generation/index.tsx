@@ -497,7 +497,7 @@ const TextGeneration: FC<IMainProps> = ({
               )}
             </div>
             {siteInfo.description && (
-              <div className='mt-2 text-xs text-gray-500'>{siteInfo.description}</div>
+              <div className='mt-2 text-xs text-neutral-400'>{siteInfo.description}</div>
             )}
           </div>
           <TabHeader
@@ -510,7 +510,7 @@ const TextGeneration: FC<IMainProps> = ({
                 isRight: true,
                 extra: savedMessages.length > 0
                   ? (
-                    <div className='ml-1 flext items-center h-5 px-1.5 rounded-md border border-gray-200 text-gray-500 text-xs font-medium'>
+                    <div className='ml-1 flext items-center h-5 px-1.5 rounded-md border border-gray-200 text-neutral-400 text-xs font-medium'>
                       {savedMessages.length}
                     </div>
                   )
@@ -561,7 +561,7 @@ const TextGeneration: FC<IMainProps> = ({
                 <div>·</div>
                 <div>{t('share.chat.privacyPolicyLeft')}
                   <a
-                    className='text-gray-500'
+                    className='text-neutral-400'
                     href={siteInfo.privacy_policy}
                     target='_blank'>{t('share.chat.privacyPolicyMiddle')}</a>
                   {t('share.chat.privacyPolicyRight')}

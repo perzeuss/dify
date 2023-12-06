@@ -62,7 +62,7 @@ const ContextBlockComponent: FC<ContextBlockComponentProps> = ({
         <PortalToFollowElemContent style={{ zIndex: 100 }}>
           <div className='w-[360px] bg-white dark:bg-neutral-900 rounded-xl shadow-lg'>
             <div className='p-4'>
-              <div className='mb-2 text-xs font-medium text-gray-500'>
+              <div className='mb-2 text-xs font-medium text-neutral-400'>
                 {t('common.promptEditor.context.modal.title', { num: localDatasets.length })}
               </div>
               <div className='max-h-[270px] overflow-y-auto'>
@@ -84,7 +84,7 @@ const ContextBlockComponent: FC<ContextBlockComponentProps> = ({
                 <div className='text-[13px] font-medium' title=''>{t('common.promptEditor.context.modal.add')}</div>
               </div>
             </div>
-            <div className='px-4 py-3 text-xs text-gray-500 bg-gray-50 border-t-[0.5px] border-gray-50 rounded-b-xl'>
+            <div className='px-4 py-3 text-xs text-neutral-400 bg-gray-50 border-t-[0.5px] border-gray-50 rounded-b-xl'>
               {t('common.promptEditor.context.modal.footer')}
             </div>
           </div>

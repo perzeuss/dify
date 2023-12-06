@@ -22,7 +22,7 @@ const MoreLikeThis: FC = () => {
   })
 
   const headerRight = (
-    <div className='text-xs text-gray-500'>{t('appDebug.feature.moreLikeThis.generateNumTip')} {GENERATE_NUM}</div>
+    <div className='text-xs text-neutral-400'>{t('appDebug.feature.moreLikeThis.generateNumTip')} {GENERATE_NUM}</div>
   )
   return (
     <Panel

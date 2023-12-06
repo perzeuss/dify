@@ -74,7 +74,7 @@ const TagInput: FC<TagInputProps> = ({
             {
               !disableRemove && (
                 <X
-                  className='ml-0.5 w-3 h-3 text-gray-500 cursor-pointer'
+                  className='ml-0.5 w-3 h-3 text-neutral-400 cursor-pointer'
                   onClick={() => handleRemove(index)}
                 />
               )

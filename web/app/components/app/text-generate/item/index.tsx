@@ -186,7 +186,7 @@ const GenerationItem: FC<IGenerationItemProps> = ({
             style={mainStyle}
           >
             {(isTop && taskId) && (
-              <div className='mb-2 text-gray-500 border border-gray-200 box-border flex items-center rounded-md italic text-[11px] pl-1 pr-1.5 font-medium w-fit group-hover:opacity-100'>
+              <div className='mb-2 text-neutral-400 border border-gray-200 box-border flex items-center rounded-md italic text-[11px] pl-1 pr-1.5 font-medium w-fit group-hover:opacity-100'>
                 <HashtagIcon className='w-3 h-3 text-gray-400 fill-current mr-1 stroke-current stroke-1' />
                 {taskId}
               </div>)
@@ -310,7 +310,7 @@ const GenerationItem: FC<IGenerationItemProps> = ({
                   </>
                 )}
               </div>
-              <div className='text-xs text-gray-500'>{content?.length} {t('common.unit.char')}</div>
+              <div className='text-xs text-neutral-400'>{content?.length} {t('common.unit.char')}</div>
             </div>
 
           </div>

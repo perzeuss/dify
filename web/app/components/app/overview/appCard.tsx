@@ -157,7 +157,7 @@ function AppCard({
         </div>
         <div className="flex flex-col justify-center py-2">
           <div className="py-1">
-            <div className="pb-1 text-xs text-gray-500">
+            <div className="pb-1 text-xs text-neutral-400">
               {isApp
                 ? t('appOverview.overview.appInfo.accessibleAddress')
                 : t('appOverview.overview.apiInfo.accessibleAddress')}

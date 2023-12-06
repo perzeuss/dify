@@ -28,7 +28,7 @@ const CustomizedPagination: FC<Props> = ({ current, onChange, total, limit = 10 
     >
       <Pagination.PrevButton
         disabled={current === 0}
-        className={`flex items-center mr-2 text-gray-500  focus:outline-none ${current === 0 ? 'cursor-not-allowed opacity-50' : 'cursor-pointer hover:text-gray-600'}`} >
+        className={`flex items-center mr-2 text-neutral-400  focus:outline-none ${current === 0 ? 'cursor-not-allowed opacity-50' : 'cursor-pointer hover:text-gray-600'}`} >
         <ArrowLeftIcon className="mr-3 h-3 w-3" />
         {t('appLog.table.pagination.previous')}
       </Pagination.PrevButton>
@@ -36,12 +36,12 @@ const CustomizedPagination: FC<Props> = ({ current, onChange, total, limit = 10 
         <Pagination.PageButton
           activeClassName="bg-primary-50 text-primary-600"
           className="flex items-center justify-center h-8 w-8 rounded-lg cursor-pointer"
-          inactiveClassName="text-gray-500"
+          inactiveClassName="text-neutral-400"
         />
       </div>
       <Pagination.NextButton
         disabled={current === totalPages - 1}
-        className={`flex items-center mr-2 text-gray-500 focus:outline-none ${current === totalPages - 1 ? 'cursor-not-allowed opacity-50' : 'cursor-pointer hover:text-gray-600'}`} >
+        className={`flex items-center mr-2 text-neutral-400 focus:outline-none ${current === totalPages - 1 ? 'cursor-not-allowed opacity-50' : 'cursor-pointer hover:text-gray-600'}`} >
         {t('appLog.table.pagination.next')}
         <ArrowRightIcon className="ml-3 h-3 w-3" />
       </Pagination.NextButton>

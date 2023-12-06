@@ -48,7 +48,7 @@ const Log: FC<LogProps> = ({
                   className='flex items-center justify-center rounded-md w-full h-full hover:bg-gray-100 dark:bg-neutral-950'
                   onClick={() => setShowModal(true)}
                 >
-                  <File02 className='w-4 h-4 text-gray-500' />
+                  <File02 className='w-4 h-4 text-neutral-400' />
                 </div>
               </div>
             </Tooltip>

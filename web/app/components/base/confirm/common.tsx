@@ -52,14 +52,14 @@ const ConfirmCommon: FC<ConfirmCommonProps> = ({
     <Modal isShow={isShow} onClose={() => {}} className='!w-[480px] !max-w-[480px] !p-0 !rounded-2xl' wrapperClassName={confirmWrapperClassName}>
       <div className={cn(s[`wrapper-${type}`], 'relative p-8')}>
         <div className='flex items-center justify-center absolute top-4 right-4 w-8 h-8 cursor-pointer' onClick={onCancel}>
-          <XClose className='w-4 h-4 text-gray-500' />
+          <XClose className='w-4 h-4 text-neutral-400' />
         </div>
         <div className='flex items-center justify-center mb-3 w-12 h-12 bg-white dark:bg-neutral-900 shadow-xl rounded-xl'>
           {CONFIRM_MAP[type].icon}
         </div>
         <div className='text-xl font-semibold text-gray-900'>{title}</div>
         {
-          desc && <div className='mt-1 text-sm text-gray-500'>{desc}</div>
+          desc && <div className='mt-1 text-sm text-neutral-400'>{desc}</div>
         }
         {
           showOperate && (

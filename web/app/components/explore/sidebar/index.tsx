@@ -111,7 +111,7 @@ const SideBar: FC<IExploreSideBarProps> = ({
       </div>
       {installedApps.length > 0 && (
         <div className='mt-10'>
-          <p className='pl-2 mobile:px-0 text-xs text-gray-500 break-all font-medium uppercase'>{t('explore.sidebar.workspace')}</p>
+          <p className='pl-2 mobile:px-0 text-xs text-neutral-400 break-all font-medium uppercase'>{t('explore.sidebar.workspace')}</p>
           <div className='mt-3 space-y-1 overflow-y-auto overflow-x-hidden'
             style={{
               height: 'calc(100vh - 250px)',

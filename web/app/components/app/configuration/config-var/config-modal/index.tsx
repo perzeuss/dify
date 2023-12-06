@@ -92,7 +92,7 @@ const ConfigModal: FC<IConfigModalProps> = ({
       onClose={onClose}
     >
       <div className='mb-8'>
-        <div className='mt-2 mb-8 text-sm text-gray-500'>{t('appDebug.variableConig.description', { varName: `{{${name || key}}}` })}</div>
+        <div className='mt-2 mb-8 text-sm text-neutral-400'>{t('appDebug.variableConig.description', { varName: `{{${name || key}}}` })}</div>
         <div className='mb-2'>
           <div className={s.title}>{t('appDebug.variableConig.fieldType')}</div>
           <div className='flex space-x-2'>

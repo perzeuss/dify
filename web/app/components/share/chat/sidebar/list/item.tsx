@@ -50,7 +50,7 @@ const Item: FC<IItemProps> = ({
           className={cn(
             isCurrent
               ? 'text-primary-600'
-              : 'text-gray-400 group-hover:text-gray-500',
+              : 'text-gray-400 group-hover:text-neutral-400',
             'mr-3 h-5 w-5 flex-shrink-0',
           )}
           aria-hidden="true"

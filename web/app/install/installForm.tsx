@@ -138,13 +138,13 @@ const InstallForm = () => {
                     <button
                       type="button"
                       onClick={() => setShowPassword(!showPassword)}
-                      className="text-gray-400 hover:text-gray-500 focus:outline-none focus:text-gray-500"
+                      className="text-gray-400 hover:text-neutral-400 focus:outline-none focus:text-neutral-400"
                     >
                       {showPassword ? '👀' : '😝'}
                     </button>
                   </div>
                 </div>
-                <div className='mt-1 text-xs text-gray-500'>{t('login.error.passwordInvalid')}</div>
+                <div className='mt-1 text-xs text-neutral-400'>{t('login.error.passwordInvalid')}</div>
 
               </div>
 
@@ -152,7 +152,7 @@ const InstallForm = () => {
               <div className="text-sm">
                 <div className="flex items-center mb-4">
                   <input id="default-checkbox" type="checkbox" className="w-4 h-4 text-blue-600 bg-gray-100 dark:bg-neutral-950 border-gray-300 rounded focus:ring-blue-500 rounded" />
-                  <label htmlFor="default-checkbox" className="ml-2 text-sm font-medium cursor-pointer text-primary-600 hover:text-gray-500">{t('login.acceptPP')}</label>
+                  <label htmlFor="default-checkbox" className="ml-2 text-sm font-medium cursor-pointer text-primary-600 hover:text-neutral-400">{t('login.acceptPP')}</label>
                 </div>
               </div>
             </div> */}

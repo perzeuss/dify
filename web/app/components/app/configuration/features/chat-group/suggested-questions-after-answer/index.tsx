@@ -24,7 +24,7 @@ const SuggestedQuestionsAfterAnswer: FC = () => {
       }
       headerIcon={<SuggestedQuestionsAfterAnswerIcon />}
       headerRight={
-        <div className='text-xs text-gray-500'>{t('appDebug.feature.suggestedQuestionsAfterAnswer.resDes')}</div>
+        <div className='text-xs text-neutral-400'>{t('appDebug.feature.suggestedQuestionsAfterAnswer.resDes')}</div>
       }
       noBodySpacing
     />

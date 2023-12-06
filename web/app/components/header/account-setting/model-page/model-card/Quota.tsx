@@ -78,7 +78,7 @@ const Quota: FC<QuotaProps> = ({
     <div className='flex justify-between px-4 py-3 border-b-[0.5px] border-b-[rgba(0, 0, 0, 0.5)]'>
       <div>
         <div className='flex items-center mb-1 h-5'>
-          <div className='mr-1 text-xs font-medium text-gray-500'>
+          <div className='mr-1 text-xs font-medium text-neutral-400'>
             {t('common.modelProvider.card.quota')}
           </div>
           {renderStatus()}
@@ -91,7 +91,7 @@ const Quota: FC<QuotaProps> = ({
           <Tooltip
             selector='setting-model-card'
             htmlContent={
-              <div className='w-[261px] text-gray-500'>{t('common.modelProvider.card.tip')}</div>
+              <div className='w-[261px] text-neutral-400'>{t('common.modelProvider.card.tip')}</div>
             }
           >
             <InfoCircle className='w-3 h-3 text-gray-400 hover:text-gray-700 dark:text-gray-300' />

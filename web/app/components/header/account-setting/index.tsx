@@ -165,7 +165,7 @@ export default function AccountSetting({
             {
               menuItems.map(menuItem => (
                 <div key={menuItem.key} className='mb-4'>
-                  <div className='px-2 mb-[6px] text-[10px] sm:text-xs font-medium text-gray-500'>{menuItem.name}</div>
+                  <div className='px-2 mb-[6px] text-[10px] sm:text-xs font-medium text-neutral-400'>{menuItem.name}</div>
                   <div>
                     {
                       menuItem.items.map(item => (
@@ -193,7 +193,7 @@ export default function AccountSetting({
           <div className={cn('sticky top-0 px-6 py-4 flex items-center justify-between h-14 mb-4 bg-white dark:bg-neutral-900 text-base font-medium text-gray-900 z-20', scrolled && scrolledClassName)}>
             {[...menuItems[0].items, ...menuItems[1].items].find(item => item.key === activeMenu)?.name}
             <div className='flex items-center justify-center -mr-4 w-6 h-6 cursor-pointer' onClick={onCancel}>
-              <XClose className='w-4 h-4 text-gray-500' />
+              <XClose className='w-4 h-4 text-neutral-400' />
             </div>
           </div>
           <div className='px-4 sm:px-8 pt-2'>

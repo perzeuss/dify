@@ -161,7 +161,7 @@ const ActivateForm = () => {
                     className={'appearance-none block w-full rounded-lg pl-[14px] px-3 py-2 border border-gray-200 hover:border-gray-300 hover:shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500 placeholder-gray-400 caret-primary-600 sm:text-sm pr-10'}
                   />
                 </div>
-                <div className='mt-1 text-xs text-gray-500'>{t('login.error.passwordInvalid')}</div>
+                <div className='mt-1 text-xs text-neutral-400'>{t('login.error.passwordInvalid')}</div>
               </div>
               {/* language */}
               <div className='mb-5'>

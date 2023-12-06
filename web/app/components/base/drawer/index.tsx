@@ -56,9 +56,9 @@ export default function Drawer({
               {title}
             </Dialog.Title>}
             {showClose && <Dialog.Title className="flex items-center mb-4" as="div">
-              <XMarkIcon className='w-4 h-4 text-gray-500' onClick={onClose} />
+              <XMarkIcon className='w-4 h-4 text-neutral-400' onClick={onClose} />
             </Dialog.Title>}
-            {description && <Dialog.Description className='text-gray-500 text-xs font-normal mt-2'>{description}</Dialog.Description>}
+            {description && <Dialog.Description className='text-neutral-400 text-xs font-normal mt-2'>{description}</Dialog.Description>}
             {children}
           </>
           {footer || (footer === null

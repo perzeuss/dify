@@ -77,7 +77,7 @@ const NewSegmentModal: FC<NewSegmentModalProps> = ({
     if (docForm === 'qa_model') {
       return (
         <>
-          <div className='mb-1 text-xs font-medium text-gray-500'>QUESTION</div>
+          <div className='mb-1 text-xs font-medium text-neutral-400'>QUESTION</div>
           <AutoHeightTextarea
             outerClassName='mb-4'
             className='leading-6 text-md text-gray-800'
@@ -86,7 +86,7 @@ const NewSegmentModal: FC<NewSegmentModalProps> = ({
             onChange={e => setQuestion(e.target.value)}
             autoFocus
           />
-          <div className='mb-1 text-xs font-medium text-gray-500'>ANSWER</div>
+          <div className='mb-1 text-xs font-medium text-neutral-400'>ANSWER</div>
           <AutoHeightTextarea
             outerClassName='mb-4'
             className='leading-6 text-md text-gray-800'
@@ -114,13 +114,13 @@ const NewSegmentModal: FC<NewSegmentModalProps> = ({
       <div className={'flex flex-col relative'}>
         <div className='absolute right-0 -top-0.5 flex items-center h-6'>
           <div className='flex justify-center items-center w-6 h-6 cursor-pointer' onClick={handleCancel}>
-            <XClose className='w-4 h-4 text-gray-500' />
+            <XClose className='w-4 h-4 text-neutral-400' />
           </div>
         </div>
         <div className='mb-[14px]'>
           <span className='inline-flex items-center px-1.5 h-5 border border-gray-200 rounded-md'>
             <Hash02 className='mr-0.5 w-3 h-3 text-gray-400' />
-            <span className='text-[11px] font-medium text-gray-500 italic'>
+            <span className='text-[11px] font-medium text-neutral-400 italic'>
               {
                 docForm === 'qa_model'
                   ? t('datasetDocuments.segment.newQaSegment')
@@ -130,7 +130,7 @@ const NewSegmentModal: FC<NewSegmentModalProps> = ({
           </span>
         </div>
         <div className='mb-4 py-1.5 h-[420px] overflow-auto'>{renderContent()}</div>
-        <div className='text-xs font-medium text-gray-500'>{t('datasetDocuments.segment.keywords')}</div>
+        <div className='text-xs font-medium text-neutral-400'>{t('datasetDocuments.segment.keywords')}</div>
         <div className='mb-8'>
           <TagInput items={keywords} onChange={newKeywords => setKeywords(newKeywords)} />
         </div>

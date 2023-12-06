@@ -32,7 +32,7 @@ const RadioCard: FC<Props> = ({
           <div className='leading-5 text-sm font-medium text-gray-900'>{title}</div>
           <div className={s.radio}></div>
         </div>
-        <div className='leading-[18px] text-xs font-normal text-gray-500'>{description}</div>
+        <div className='leading-[18px] text-xs font-normal text-neutral-400'>{description}</div>
       </div>
     </div>
   )

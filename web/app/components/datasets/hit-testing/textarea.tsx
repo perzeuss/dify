@@ -110,7 +110,7 @@ const TextAreaWithButton = ({
               : (
                 <Tag
                   color="gray"
-                  className={cn('!text-gray-500', text?.length ? '' : 'opacity-50')}
+                  className={cn('!text-neutral-400', text?.length ? '' : 'opacity-50')}
                 >
                   {text?.length}
                   <span className="text-gray-300 mx-0.5">/</span>

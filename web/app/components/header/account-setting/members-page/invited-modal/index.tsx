@@ -41,11 +41,11 @@ const InvitedModal = ({
         </div>
         <div className='mb-1 text-xl font-semibold text-gray-900'>{t('common.members.invitationSent')}</div>
         {!IS_CE_EDITION && (
-          <div className='mb-10 text-sm text-gray-500'>{t('common.members.invitationSentTip')}</div>
+          <div className='mb-10 text-sm text-neutral-400'>{t('common.members.invitationSentTip')}</div>
         )}
         {IS_CE_EDITION && (
           <>
-            <div className='mb-5 text-sm text-gray-500'>{t('common.members.invitationSentTip')}</div>
+            <div className='mb-5 text-sm text-neutral-400'>{t('common.members.invitationSentTip')}</div>
             <div className='flex flex-col gap-2 mb-9'>
               {
                 !!successInvationResults.length

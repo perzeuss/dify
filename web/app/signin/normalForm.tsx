@@ -226,7 +226,7 @@ const NormalForm = () => {
                       htmlContent={
                         <div>
                           <div className='font-medium'>{t('login.forget')}</div>
-                          <div className='font-medium text-gray-500'>
+                          <div className='font-medium text-neutral-400'>
                             <code>
                               sudo rm -rf /
                             </code>
@@ -255,7 +255,7 @@ const NormalForm = () => {
                       <button
                         type="button"
                         onClick={() => setShowPassword(!showPassword)}
-                        className="text-gray-400 hover:text-gray-500 focus:outline-none focus:text-gray-500"
+                        className="text-gray-400 hover:text-neutral-400 focus:outline-none focus:text-neutral-400"
                       >
                         {showPassword ? '👀' : '😝'}
                       </button>

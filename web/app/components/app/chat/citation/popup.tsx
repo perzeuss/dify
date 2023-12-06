@@ -70,7 +70,7 @@ const Popup: FC<PopupProps> = ({
                         <div className='flex items-center justify-between mb-2'>
                           <div className='flex items-center px-1.5 h-5 border border-gray-200 rounded-md'>
                             <Hash02 className='mr-0.5 w-3 h-3 text-gray-400' />
-                            <div className='text-[11px] font-medium text-gray-500'>{source.segment_position}</div>
+                            <div className='text-[11px] font-medium text-neutral-400'>{source.segment_position}</div>
                           </div>
                           <Link
                             href={`/datasets/${source.dataset_id}/documents/${source.document_id}`}
@@ -84,7 +84,7 @@ const Popup: FC<PopupProps> = ({
                     <div className='text-[13px] text-gray-800'>{source.content}</div>
                     {
                       showHitInfo && (
-                        <div className='flex items-center mt-2 text-xs font-medium text-gray-500'>
+                        <div className='flex items-center mt-2 text-xs font-medium text-neutral-400'>
                           <Tooltip
                             text={t('common.chat.citation.characters')}
                             data={source.word_count}

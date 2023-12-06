@@ -14,7 +14,7 @@ const QuotaCard: FC<QuotaCardProps> = ({
   return (
     <div className='px-3 pb-3'>
       <div className='px-3 py-2 bg-white dark:bg-neutral-900 rounded-lg shadow-xs last:mb-0'>
-        <div className='flex items-center h-[18px] text-xs font-medium text-gray-500'>
+        <div className='flex items-center h-[18px] text-xs font-medium text-neutral-400'>
           {t('common.modelProvider.item.freeQuota')}
         </div>
         <div className='flex items-center h-5 text-sm font-medium text-gray-700 dark:text-gray-300'>

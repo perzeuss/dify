@@ -33,7 +33,7 @@ const ModerationContent: FC<ModerationContentProps> = ({
           <div className='grow flex items-center justify-end'>
             {
               info && (
-                <div className='mr-2 text-xs text-gray-500 truncate' title={info}>{info}</div>
+                <div className='mr-2 text-xs text-neutral-400 truncate' title={info}>{info}</div>
               )
             }
             <Switch
@@ -48,7 +48,7 @@ const ModerationContent: FC<ModerationContentProps> = ({
             <div className='px-3 pt-1 pb-3 bg-white dark:bg-neutral-900 rounded-lg'>
               <div className='flex items-center justify-between h-8 text-[13px] font-medium text-gray-700 dark:text-gray-300'>
                 {t('appDebug.feature.moderation.modal.content.preset')}
-                <span className='text-xs font-normal text-gray-500'>{t('appDebug.feature.moderation.modal.content.supportMarkdown')}</span>
+                <span className='text-xs font-normal text-neutral-400'>{t('appDebug.feature.moderation.modal.content.supportMarkdown')}</span>
               </div>
               <div className='relative px-3 py-2 h-20 rounded-lg bg-gray-100 dark:bg-neutral-950'>
                 <textarea
@@ -58,7 +58,7 @@ const ModerationContent: FC<ModerationContentProps> = ({
                   onChange={e => handleConfigChange('preset_response', e.target.value)}
                 />
                 <div className='absolute bottom-2 right-2 flex items-center px-1 h-5 rounded-md bg-gray-50 text-xs font-medium text-gray-300'>
-                  <span>{(config.preset_response || '').length}</span>/<span className='text-gray-500'>100</span>
+                  <span>{(config.preset_response || '').length}</span>/<span className='text-neutral-400'>100</span>
                 </div>
               </div>
             </div>

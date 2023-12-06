@@ -35,11 +35,11 @@ export default function AccountAbout({
     >
       <div className='relative pt-4'>
         <div className='absolute -top-2 -right-4 flex justify-center items-center w-8 h-8 cursor-pointer' onClick={onCancel}>
-          <XClose className='w-4 h-4 text-gray-500' />
+          <XClose className='w-4 h-4 text-neutral-400' />
         </div>
         <div>
           <LogoSite className='mx-auto mb-2' />
-          <div className='mb-3 text-center text-xs font-normal text-gray-500'>Version {langeniusVersionInfo?.current_version}</div>
+          <div className='mb-3 text-center text-xs font-normal text-neutral-400'>Version {langeniusVersionInfo?.current_version}</div>
           <div className='mb-4 text-center text-xs font-normal text-gray-700 dark:text-gray-300'>
             <div>© 2023 LangGenius, Inc., Contributors.</div>
             <div className='text-[#1C64F2]'>

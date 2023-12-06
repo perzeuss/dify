@@ -86,12 +86,12 @@ export default function AppSelector({ isMobile }: IAppSelecotr) {
                       <Avatar name={userProfile.name} size={36} className='mr-3' />
                       <div className='grow'>
                         <div className='leading-5 font-normal text-[14px] text-gray-800 break-all'>{userProfile.name}</div>
-                        <div className='leading-[18px] text-xs font-normal text-gray-500 break-all'>{userProfile.email}</div>
+                        <div className='leading-[18px] text-xs font-normal text-neutral-400 break-all'>{userProfile.email}</div>
                       </div>
                     </div>
                   </Menu.Item>
                   <div className='px-1 py-1'>
-                    <div className='mt-2 px-3 text-xs font-medium text-gray-500'>{t('common.userProfile.workspace')}</div>
+                    <div className='mt-2 px-3 text-xs font-medium text-neutral-400'>{t('common.userProfile.workspace')}</div>
                     <WorkplaceSelector />
                   </div>
                   <div className="px-1 py-1">
@@ -108,7 +108,7 @@ export default function AppSelector({ isMobile }: IAppSelecotr) {
                         }
                         target='_blank'>
                         <div>{t('common.userProfile.helpCenter')}</div>
-                        <ArrowUpRight className='hidden w-[14px] h-[14px] text-gray-500 group-hover:flex' />
+                        <ArrowUpRight className='hidden w-[14px] h-[14px] text-neutral-400 group-hover:flex' />
                       </Link>
                     </Menu.Item>
                     {
@@ -117,7 +117,7 @@ export default function AppSelector({ isMobile }: IAppSelecotr) {
                           <div className={classNames(itemClassName, 'justify-between')} onClick={() => setAboutVisible(true)}>
                             <div>{t('common.userProfile.about')}</div>
                             <div className='flex items-center'>
-                              <div className='mr-2 text-xs font-normal text-gray-500'>{langeniusVersionInfo.current_version}</div>
+                              <div className='mr-2 text-xs font-normal text-neutral-400'>{langeniusVersionInfo.current_version}</div>
                               <Indicator color={langeniusVersionInfo.current_version === langeniusVersionInfo.latest_version ? 'green' : 'orange'} />
                             </div>
                           </div>
@@ -131,7 +131,7 @@ export default function AppSelector({ isMobile }: IAppSelecotr) {
                         className='flex items-center justify-between h-9 px-3 rounded-lg cursor-pointer group hover:bg-gray-50'
                       >
                         <div className='font-normal text-[14px] text-gray-700 dark:text-gray-300'>{t('common.userProfile.logout')}</div>
-                        <LogOut01 className='hidden w-[14px] h-[14px] text-gray-500 group-hover:flex' />
+                        <LogOut01 className='hidden w-[14px] h-[14px] text-neutral-400 group-hover:flex' />
                       </div>
                     </div>
                   </Menu.Item>

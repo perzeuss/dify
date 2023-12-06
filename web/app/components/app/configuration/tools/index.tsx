@@ -111,7 +111,7 @@ const Tools = () => {
         {
           !expanded && !!externalDataToolsConfig.length && (
             <>
-              <div className='mr-3 text-xs text-gray-500'>{t('appDebug.feature.tools.toolsInUse', { count: externalDataToolsConfig.length })}</div>
+              <div className='mr-3 text-xs text-neutral-400'>{t('appDebug.feature.tools.toolsInUse', { count: externalDataToolsConfig.length })}</div>
               <div className='mr-1 w-[1px] h-3.5 bg-gray-200' />
             </>
           )
@@ -144,7 +144,7 @@ const Tools = () => {
                       popupContent={copied ? t('appApi.copied') : `${item.variable}, ${t('appApi.copy')}`}
                     >
                       <div
-                        className='text-xs text-gray-500'
+                        className='text-xs text-neutral-400'
                         onClick={() => {
                           copy(item.variable || '')
                           setCopied(true)
@@ -158,13 +158,13 @@ const Tools = () => {
                     className='hidden group-hover:flex items-center justify-center mr-1 w-6 h-6 hover:bg-black/5 rounded-md cursor-pointer'
                     onClick={() => handleOpenExternalDataToolModal(item, index)}
                   >
-                    <Settings01 className='w-4 h-4 text-gray-500' />
+                    <Settings01 className='w-4 h-4 text-neutral-400' />
                   </div>
                   <div
                     className='hidden group/action group-hover:flex items-center justify-center w-6 h-6 hover:bg-[#FEE4E2] rounded-md cursor-pointer'
                     onClick={() => setExternalDataToolsConfig([...externalDataToolsConfig.slice(0, index), ...externalDataToolsConfig.slice(index + 1)])}
                   >
-                    <Trash03 className='w-4 h-4 text-gray-500 group-hover/action:text-[#D92D20]' />
+                    <Trash03 className='w-4 h-4 text-neutral-400 group-hover/action:text-[#D92D20]' />
                   </div>
                   <div className='hidden group-hover:block ml-2 mr-3 w-[1px] h-3.5 bg-gray-200' />
                   <Switch

@@ -19,7 +19,7 @@ type Props = {
 const KeyValue = ({ label, value }: { label: string; value: string | number | JSX.Element }) => {
   return (
     <div className='mt-3.5 leading-[125%] text-[13px] font-medium'>
-      <div className='text-gray-500'>{label}</div>
+      <div className='text-neutral-400'>{label}</div>
       <div className='mt-0.5 text-gray-900'>{value}</div>
     </div>
   )
@@ -165,7 +165,7 @@ const PlanItem: FC<Props> = ({
       )}
       <div className={cn(style[plan].bg, 'grow px-6 pt-6 rounded-[10px]')}>
         <div className={cn(style[plan].title, 'mb-1 leading-[125%] text-lg font-semibold')}>{t(`${i18nPrefix}.name`)}</div>
-        <div className={cn(isFreePlan ? 'text-[#FB6514]' : 'text-gray-500', 'mb-4 h-8 leading-[125%] text-[13px] font-normal')}>{t(`${i18nPrefix}.description`)}</div>
+        <div className={cn(isFreePlan ? 'text-[#FB6514]' : 'text-neutral-400', 'mb-4 h-8 leading-[125%] text-[13px] font-normal')}>{t(`${i18nPrefix}.description`)}</div>
 
         {/* Price */}
         {isFreePlan && (
@@ -179,7 +179,7 @@ const PlanItem: FC<Props> = ({
             <div className={priceClassName}>${isYear ? planInfo.price * 10 : planInfo.price}</div>
             <div className='ml-1'>
               {isYear && <div className='leading-[18px] text-xs font-medium text-[#F26725]'>{t('billing.plansCommon.save')}${planInfo.price * 2}</div>}
-              <div className='leading-[18px] text-[15px] font-normal text-gray-500'>/{t(`billing.plansCommon.${!isYear ? 'month' : 'year'}`)}</div>
+              <div className='leading-[18px] text-[15px] font-normal text-neutral-400'>/{t(`billing.plansCommon.${!isYear ? 'month' : 'year'}`)}</div>
             </div>
           </div>
         )}

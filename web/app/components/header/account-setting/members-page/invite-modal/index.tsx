@@ -68,7 +68,7 @@ const InviteModal = ({
           <div className='text-xl font-semibold text-gray-900'>{t('common.members.inviteTeamMember')}</div>
           <XMarkIcon className='w-4 h-4 cursor-pointer' onClick={onCancel} />
         </div>
-        <div className='mb-7 text-[13px] text-gray-500'>{t('common.members.inviteTeamMemberTip')}</div>
+        <div className='mb-7 text-[13px] text-neutral-400'>{t('common.members.inviteTeamMemberTip')}</div>
         <div>
           <div className='mb-2 text-sm font-medium text-gray-900'>{t('common.members.email')}</div>
           <div className='mb-8 h-36 flex items-stretch'>

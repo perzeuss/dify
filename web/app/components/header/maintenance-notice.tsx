@@ -30,7 +30,7 @@ const MaintenanceNotice = () => {
     <div className='shrink-0 flex items-center px-4 h-[38px] bg-[#FFFAEB] border-b border-[0.5px] border-b-[#FEF0C7] z-20'>
       <div className='shrink-0 flex items-center mr-2 px-2 h-[22px] bg-[#F79009] text-white text-[11px] font-medium rounded-xl'>{NOTICE_I18N.title[locale]}</div>
       <div className='grow text-xs font-medium text-gray-700 dark:text-gray-300'>{NOTICE_I18N.desc[locale]}</div>
-      <X className='shrink-0 w-4 h-4 text-gray-500 cursor-pointer' onClick={handleCloseNotice} />
+      <X className='shrink-0 w-4 h-4 text-neutral-400 cursor-pointer' onClick={handleCloseNotice} />
     </div>
   )
 }

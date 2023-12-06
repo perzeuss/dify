@@ -30,7 +30,7 @@ const Init: FC<IConfigProps> = ({
       <div>
         <div className='text-center'>
           <div className={cn(s.textGradient, 'mb-2 leading-[32px] font-semibold text-[24px]')}>{t('explore.universalChat.welcome')}</div>
-          <div className='mb-2 font-normal text-sm text-gray-500'>{t('explore.universalChat.welcomeDescribe')}</div>
+          <div className='mb-2 font-normal text-sm text-neutral-400'>{t('explore.universalChat.welcomeDescribe')}</div>
         </div>
         <div className='flex mb-2 h-8 items-center'>
           {Line}

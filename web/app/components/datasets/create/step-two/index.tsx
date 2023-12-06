@@ -620,7 +620,7 @@ const StepTwo = ({
                       {!hasSetIndexType && <span className={s.recommendTag}>{t('datasetCreation.stepTwo.recommend')}</span>}
                     </div>
                     <div className={s.tip}>{t('datasetCreation.stepTwo.qualifiedTip')}</div>
-                    <div className='pb-0.5 text-xs font-medium text-gray-500'>{t('datasetCreation.stepTwo.emstimateCost')}</div>
+                    <div className='pb-0.5 text-xs font-medium text-neutral-400'>{t('datasetCreation.stepTwo.emstimateCost')}</div>
                     {
                       estimateTokes
                         ? (
@@ -656,14 +656,14 @@ const StepTwo = ({
                   <div className={s.typeHeader}>
                     <div className={s.title}>{t('datasetCreation.stepTwo.economical')}</div>
                     <div className={s.tip}>{t('datasetCreation.stepTwo.economicalTip')}</div>
-                    <div className='pb-0.5 text-xs font-medium text-gray-500'>{t('datasetCreation.stepTwo.emstimateCost')}</div>
+                    <div className='pb-0.5 text-xs font-medium text-neutral-400'>{t('datasetCreation.stepTwo.emstimateCost')}</div>
                     <div className='text-xs font-medium text-gray-800'>0 tokens</div>
                   </div>
                 </div>
               )}
             </div>
             {hasSetIndexType && (
-              <div className='mt-2 text-xs text-gray-500 font-medium'>
+              <div className='mt-2 text-xs text-neutral-400 font-medium'>
                 {t('datasetCreation.stepTwo.indexSettedTip')}
                 <Link className='text-[#155EEF]' href={`/datasets/${datasetId}/settings`}>{t('datasetCreation.stepTwo.datasetSettingLink')}</Link>
               </div>
@@ -676,7 +676,7 @@ const StepTwo = ({
                   </div>
                   <div className='grow mx-3'>
                     <div className='mb-[2px] text-md font-medium text-gray-900'>{t('datasetCreation.stepTwo.QATitle')}</div>
-                    <div className='inline-flex items-center text-[13px] leading-[18px] text-gray-500'>
+                    <div className='inline-flex items-center text-[13px] leading-[18px] text-neutral-400'>
                       <span className='pr-1'>{t('datasetCreation.stepTwo.QALanguage')}</span>
                       <LanguageSelect currentLanguage={docLanguage} onSelect={handleSelect} />
                     </div>
@@ -692,7 +692,7 @@ const StepTwo = ({
                 {docForm === DocForm.QA && !QATipHide && (
                   <div className='flex justify-between items-center px-5 py-2 bg-orange-50 border-t border-amber-100 rounded-b-xl text-[13px] leading-[18px] text-medium text-amber-500'>
                     {t('datasetCreation.stepTwo.QATip')}
-                    <XClose className='w-4 h-4 text-gray-500 cursor-pointer' onClick={() => setQATipHide(true)} />
+                    <XClose className='w-4 h-4 text-neutral-400 cursor-pointer' onClick={() => setQATipHide(true)} />
                   </div>
                 )}
               </div>
@@ -703,7 +703,7 @@ const StepTwo = ({
                 ? (
                   <div className={s.label}>
                     {t('datasetSettings.form.retrievalSetting.title')}
-                    <div className='leading-[18px] text-xs font-normal text-gray-500'>
+                    <div className='leading-[18px] text-xs font-normal text-neutral-400'>
                       <a target='_blank' href='https://docs.dify.ai/advanced/retrieval-augment' className='text-[#155eef]'>{t('datasetSettings.form.retrievalSetting.learnMore')}</a>
                       {t('datasetSettings.form.retrievalSetting.longDescription')}
                     </div>
@@ -737,7 +737,7 @@ const StepTwo = ({
                       <RetrievalMethodInfo
                         value={retrievalConfig}
                       />
-                      <div className='mt-2 text-xs text-gray-500 font-medium'>
+                      <div className='mt-2 text-xs text-neutral-400 font-medium'>
                         {t('datasetCreation.stepTwo.retrivalSettedTip')}
                         <Link className='text-[#155EEF]' href={`/datasets/${datasetId}/settings`}>{t('datasetCreation.stepTwo.datasetSettingLink')}</Link>
                       </div>
@@ -751,7 +751,7 @@ const StepTwo = ({
               <div className={s.sourceContent}>
                 {dataSourceType === DataSourceType.FILE && (
                   <>
-                    <div className='mb-2 text-xs font-medium text-gray-500'>{t('datasetCreation.stepTwo.fileSource')}</div>
+                    <div className='mb-2 text-xs font-medium text-neutral-400'>{t('datasetCreation.stepTwo.fileSource')}</div>
                     <div className='flex items-center text-sm leading-6 font-medium text-gray-800'>
                       <span className={cn(s.fileIcon, files.length && s[files[0].extension || ''])} />
                       {getFileName(files[0].name || '')}
@@ -767,7 +767,7 @@ const StepTwo = ({
                 )}
                 {dataSourceType === DataSourceType.NOTION && (
                   <>
-                    <div className='mb-2 text-xs font-medium text-gray-500'>{t('datasetCreation.stepTwo.notionSource')}</div>
+                    <div className='mb-2 text-xs font-medium text-neutral-400'>{t('datasetCreation.stepTwo.notionSource')}</div>
                     <div className='flex items-center text-sm leading-6 font-medium text-gray-800'>
                       <NotionIcon
                         className='shrink-0 mr-1'
@@ -788,7 +788,7 @@ const StepTwo = ({
               </div>
               <div className={s.divider} />
               <div className={s.segmentCount}>
-                <div className='mb-2 text-xs font-medium text-gray-500'>{t('datasetCreation.stepTwo.emstimateSegment')}</div>
+                <div className='mb-2 text-xs font-medium text-neutral-400'>{t('datasetCreation.stepTwo.emstimateSegment')}</div>
                 <div className='flex items-center text-sm leading-6 font-medium text-gray-800'>
                   {
                     fileIndexingEstimate
@@ -834,7 +834,7 @@ const StepTwo = ({
               </div>
             </div>
             {docForm === DocForm.QA && !previewSwitched && (
-              <div className='px-8 pr-12 text-xs text-gray-500'>
+              <div className='px-8 pr-12 text-xs text-neutral-400'>
                 <span>{t('datasetCreation.stepTwo.previewSwitchTipStart')}</span>
                 <span className='text-amber-600'>{t('datasetCreation.stepTwo.previewSwitchTipEnd')}</span>
               </div>

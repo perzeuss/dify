@@ -43,7 +43,7 @@ const Setting: FC<SettingProps> = ({
       }
       {
         modelItem.disable && !IS_CE_EDITION && (
-          <div className='flex items-center text-xs text-gray-500'>
+          <div className='flex items-center text-xs text-neutral-400'>
             {modelItem.disable.tip[locale]}
             <a
               className={`${locale === 'en' && 'ml-1'} text-primary-600 cursor-pointer`}

@@ -28,7 +28,7 @@ const WarningMask: FC<IWarningMaskProps> = ({
         <div className='mt-4 text-[24px] leading-normal font-semibold text-gray-800'>
           {title}
         </div>
-        <div className='mt-3 text-base text-gray-500'>
+        <div className='mt-3 text-base text-neutral-400'>
           {description}
         </div>
         <div className='mt-6'>

@@ -37,7 +37,7 @@ const RecordsEmpty: FC = () => {
     <div className={s.clockWrapper}>
       <div className={cn(s.clockIcon, 'w-5 h-5')}></div>
     </div>
-    <div className='my-2 text-gray-500 text-sm'>{t('datasetHitTesting.noRecentTip')}</div>
+    <div className='my-2 text-neutral-400 text-sm'>{t('datasetHitTesting.noRecentTip')}</div>
   </div>
 }
 
@@ -107,14 +107,14 @@ const HitTesting: FC<Props> = ({ datasetId }: Props) => {
               <>
                 <div className='grow overflow-y-auto'>
                   <table className={`w-full border-collapse border-0 mt-3 ${s.table}`}>
-                    <thead className="sticky top-0 h-8 bg-white dark:bg-neutral-900 leading-8 border-b border-gray-200 text-gray-500 font-bold">
+                    <thead className="sticky top-0 h-8 bg-white dark:bg-neutral-900 leading-8 border-b border-gray-200 text-neutral-400 font-bold">
                       <tr>
                         <td className='w-28'>{t('datasetHitTesting.table.header.source')}</td>
                         <td>{t('datasetHitTesting.table.header.text')}</td>
                         <td className='w-48'>{t('datasetHitTesting.table.header.time')}</td>
                       </tr>
                     </thead>
-                    <tbody className="text-gray-500">
+                    <tbody className="text-neutral-400">
                       {recordsRes?.data?.map((record) => {
                         return <tr
                           key={record.id}

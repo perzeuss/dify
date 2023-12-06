@@ -20,7 +20,7 @@ const CreateAppCard = forwardRef<HTMLAnchorElement>((_, ref) => {
         </div>
       </div>
       <div className={style.listItemDescription}>{t('dataset.createDatasetIntro')}</div>
-      {/* <div className='text-xs text-gray-500'>{t('app.createFromConfigFile')}</div> */}
+      {/* <div className='text-xs text-neutral-400'>{t('app.createFromConfigFile')}</div> */}
     </a>
   )
 })

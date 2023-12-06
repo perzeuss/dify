@@ -51,7 +51,7 @@
   @apply flex items-center justify-between;
 }
 .desc {
-  @apply text-gray-500 text-xs;
+  @apply text-neutral-400 text-xs;
 }
 .fieldInfo {
   /* height: 1.75rem; */
@@ -59,7 +59,7 @@
   @apply flex flex-row items-center gap-4;
 }
 .fieldInfo > .label {
-  @apply w-2/5 max-w-[128px] text-gray-500 text-xs font-medium overflow-hidden text-ellipsis whitespace-nowrap;
+  @apply w-2/5 max-w-[128px] text-neutral-400 text-xs font-medium overflow-hidden text-ellipsis whitespace-nowrap;
 }
 .fieldInfo > .value {
   overflow-wrap: anywhere;
@@ -100,7 +100,7 @@
   @apply flex items-center h-8
 }
 .documentTypeShow {
-  @apply flex items-center text-xs text-gray-500;
+  @apply flex items-center text-xs text-neutral-400;
 }
 .iconShow {
   mask-size: contain;

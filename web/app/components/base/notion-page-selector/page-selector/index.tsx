@@ -132,7 +132,7 @@ const ItemComponent = ({ index, style, data }: ListChildComponentProps<{
       {
         canPreview && (
           <div
-            className='shrink-0 hidden group-hover:flex items-center ml-1 px-2 h-6 rounded-md text-xs font-medium text-gray-500 cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-900 hover:text-gray-700 dark:text-gray-300'
+            className='shrink-0 hidden group-hover:flex items-center ml-1 px-2 h-6 rounded-md text-xs font-medium text-neutral-400 cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-900 hover:text-gray-700 dark:text-gray-300'
             onClick={() => handlePreview(index)}>
             {t('common.dataSource.notion.selector.preview')}
           </div>
@@ -266,7 +266,7 @@ const PageSelector = ({
 
   if (!currentDataList.length) {
     return (
-      <div className='flex items-center justify-center h-[296px] text-[13px] text-gray-500'>
+      <div className='flex items-center justify-center h-[296px] text-[13px] text-neutral-400'>
         {t('common.dataSource.notion.selector.noSearchResult')}
       </div>
     )

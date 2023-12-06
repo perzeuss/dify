@@ -83,7 +83,7 @@ const ComponentPickerMenuItem: FC<ComponentPickerMenuItemProps> = ({
           {option.title}
           <span className='text-xs text-gray-400'>{option.disabled && t('common.promptEditor.existed')}</span>
         </div>
-        <div className='text-xs text-gray-500'>{option.desc}</div>
+        <div className='text-xs text-neutral-400'>{option.desc}</div>
       </div>
     </div>
   )

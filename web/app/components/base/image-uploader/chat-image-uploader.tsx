@@ -31,7 +31,7 @@ const UploadOnlyFromLocal: FC<UploadOnlyFromLocalProps> = ({
             relative flex items-center justify-center w-8 h-8 rounded-lg cursor-pointer
             ${hovering && 'bg-gray-100'}
           `}>
-            <ImagePlus className='w-4 h-4 text-gray-500' />
+            <ImagePlus className='w-4 h-4 text-neutral-400' />
           </div>
         )
       }
@@ -79,7 +79,7 @@ const UploaderButton: FC<UploaderButtonProps> = ({
           relative flex items-center justify-center w-8 h-8 hover:bg-gray-100 rounded-lg
           ${disabled ? 'cursor-not-allowed' : 'cursor-pointer'}
         `}>
-          <ImagePlus className='w-4 h-4 text-gray-500' />
+          <ImagePlus className='w-4 h-4 text-neutral-400' />
         </div>
       </PortalToFollowElemTrigger>
       <PortalToFollowElemContent className='z-50'>

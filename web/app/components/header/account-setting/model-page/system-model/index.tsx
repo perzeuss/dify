@@ -101,7 +101,7 @@ const SystemModel: FC<SystemModelProps> = ({
           hover:bg-gray-100 hover:shadow-none
           ${open && 'bg-gray-100 shadow-none'}
         `}>
-          <Settings01 className='mr-1 w-3 h-3 text-gray-500' />
+          <Settings01 className='mr-1 w-3 h-3 text-neutral-400' />
           {t('common.modelProvider.systemModelSettings')}
         </div>
       </PortalToFollowElemTrigger>
@@ -113,7 +113,7 @@ const SystemModel: FC<SystemModelProps> = ({
               <Tooltip
                 selector='model-page-system-reasoning-model-tip'
                 htmlContent={
-                  <div className='w-[261px] text-gray-500'>{t('common.modelProvider.systemReasoningModel.tip')}</div>
+                  <div className='w-[261px] text-neutral-400'>{t('common.modelProvider.systemReasoningModel.tip')}</div>
                 }
               >
                 <HelpCircle className='ml-0.5 w-[14px] h-[14px] text-gray-400' />
@@ -133,7 +133,7 @@ const SystemModel: FC<SystemModelProps> = ({
               <Tooltip
                 selector='model-page-system-embedding-model-tip'
                 htmlContent={
-                  <div className='w-[261px] text-gray-500'>{t('common.modelProvider.embeddingModel.tip')}</div>
+                  <div className='w-[261px] text-neutral-400'>{t('common.modelProvider.embeddingModel.tip')}</div>
                 }
               >
                 <HelpCircle className='ml-0.5 w-[14px] h-[14px] text-gray-400' />
@@ -153,7 +153,7 @@ const SystemModel: FC<SystemModelProps> = ({
               <Tooltip
                 selector='model-page-system-rerankModel-model-tip'
                 htmlContent={
-                  <div className='w-[261px] text-gray-500'>{t('common.modelProvider.rerankModel.tip')}</div>
+                  <div className='w-[261px] text-neutral-400'>{t('common.modelProvider.rerankModel.tip')}</div>
                 }
               >
                 <HelpCircle className='ml-0.5 w-[14px] h-[14px] text-gray-400' />
@@ -175,7 +175,7 @@ const SystemModel: FC<SystemModelProps> = ({
               <Tooltip
                 selector='model-page-system-speechToText-model-tip'
                 htmlContent={
-                  <div className='w-[261px] text-gray-500'>{t('common.modelProvider.speechToTextModel.tip')}</div>
+                  <div className='w-[261px] text-neutral-400'>{t('common.modelProvider.speechToTextModel.tip')}</div>
                 }
               >
                 <HelpCircle className='ml-0.5 w-[14px] h-[14px] text-gray-400' />

@@ -59,7 +59,7 @@ const Moderation = () => {
         {t('appDebug.feature.moderation.title')}
       </div>
       <div
-        className='grow block w-0 text-right text-xs text-gray-500 truncate'
+        className='grow block w-0 text-right text-xs text-neutral-400 truncate'
         title={renderInfo()}>
         {renderInfo()}
       </div>

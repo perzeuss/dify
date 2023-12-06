@@ -131,20 +131,20 @@ const ExtraInfo = ({ isMobile, relatedApps }: IExtraInfoProps) => {
         isMobile={isMobile}
         triggerElement={
           <div className={classNames('h-7 w-7 inline-flex justify-center items-center rounded-lg bg-transparent', isShowTips && '!bg-gray-50')}>
-            <QuestionMarkCircleIcon className='h-4 w-4 flex-shrink-0 text-gray-500' />
+            <QuestionMarkCircleIcon className='h-4 w-4 flex-shrink-0 text-neutral-400' />
           </div>
         }
       >
         <div className={classNames('mt-5 p-3', isMobile && 'border-[0.5px] border-gray-200 shadow-lg rounded-lg bg-white dark:bg-neutral-900 w-[150px]')}>
           <div className='flex items-center justify-start gap-2'>
             <div className={s.emptyIconDiv}>
-              <Squares2X2Icon className='w-3 h-3 text-gray-500' />
+              <Squares2X2Icon className='w-3 h-3 text-neutral-400' />
             </div>
             <div className={s.emptyIconDiv}>
-              <PuzzlePieceIcon className='w-3 h-3 text-gray-500' />
+              <PuzzlePieceIcon className='w-3 h-3 text-neutral-400' />
             </div>
           </div>
-          <div className='text-xs text-gray-500 mt-2'>{t('common.datasetMenus.emptyTip')}</div>
+          <div className='text-xs text-neutral-400 mt-2'>{t('common.datasetMenus.emptyTip')}</div>
           <a
             className='inline-flex items-center text-xs text-primary-600 mt-2 cursor-pointer'
             href={`https://docs.dify.ai/${locale === 'zh-Hans' ? 'v/zh-hans' : ''}/application/prompt-engineering`}

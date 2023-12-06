@@ -91,7 +91,7 @@ export default function AppSelector({ appItems, curApp }: IAppSelectorProps) {
                       border-[0.5px] border-gray-200 border-dashed
                     '
                   >
-                    <PlusIcon className='w-4 h-4 text-gray-500' />
+                    <PlusIcon className='w-4 h-4 text-neutral-400' />
                   </div>
                   <div className='font-normal text-[14px] text-gray-700 dark:text-gray-300'>{t('common.menus.newApp')}</div>
                 </div>

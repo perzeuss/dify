@@ -62,7 +62,7 @@ const IndexMethodRadio = ({
               <div className='grow text-sm text-gray-900'>{option.text}</div>
               <div className={classNames(radioClass, s.radio)} />
             </div>
-            <div className='pl-9 text-xs text-gray-500 leading-[18px]'>{option.desc}</div>
+            <div className='pl-9 text-xs text-neutral-400 leading-[18px]'>{option.desc}</div>
           </div>
         ))
       }

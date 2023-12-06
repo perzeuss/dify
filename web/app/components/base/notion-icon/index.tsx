@@ -31,7 +31,7 @@ const NotionIcon = ({
       )
     }
     return (
-      <div className={cn('flex items-center justify-center w-5 h-5 bg-gray-200 text-xs font-medium text-gray-500 rounded', className)}>{name?.[0].toLocaleUpperCase()}</div>
+      <div className={cn('flex items-center justify-center w-5 h-5 bg-gray-200 text-xs font-medium text-neutral-400 rounded', className)}>{name?.[0].toLocaleUpperCase()}</div>
     )
   }
 

@@ -72,7 +72,7 @@ const Plugins: FC<IPluginsProps> = ({
         title={
           <div className='flex space-x-1'>
             <div>{t('explore.universalChat.plugins.name')}</div>
-            <div className='text-[13px] font-normal text-gray-500'>({enabledPluginNum}/{plugins.length})</div>
+            <div className='text-[13px] font-normal text-neutral-400'>({enabledPluginNum}/{plugins.length})</div>
           </div>}
         hasHeaderBottomBorder={false}
       >

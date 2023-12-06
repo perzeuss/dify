@@ -53,7 +53,7 @@ const CSVDownload: FC<{ docForm: DocForm }> = ({ docForm }) => {
       <div className='mt-2 max-h-[500px] overflow-auto'>
         {docForm === DocForm.QA && (
           <table className='table-fixed w-full border-separate border-spacing-0 border border-gray-200 rounded-lg text-xs'>
-            <thead className='text-gray-500'>
+            <thead className='text-neutral-400'>
               <tr>
                 <td className='h-9 pl-3 pr-2 border-b border-gray-200'>{t('datasetDocuments.list.batchModal.question')}</td>
                 <td className='h-9 pl-3 pr-2 border-b border-gray-200'>{t('datasetDocuments.list.batchModal.answer')}</td>
@@ -73,7 +73,7 @@ const CSVDownload: FC<{ docForm: DocForm }> = ({ docForm }) => {
         )}
         {docForm === DocForm.TEXT && (
           <table className='table-fixed w-full border-separate border-spacing-0 border border-gray-200 rounded-lg text-xs'>
-            <thead className='text-gray-500'>
+            <thead className='text-neutral-400'>
               <tr>
                 <td className='h-9 pl-3 pr-2 border-b border-gray-200'>{t('datasetDocuments.list.batchModal.contentTitle')}</td>
               </tr>

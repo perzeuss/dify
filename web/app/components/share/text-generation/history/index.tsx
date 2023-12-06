@@ -47,9 +47,9 @@ const History = ({
         <div className="w-full border-t border-gray-300" />
       </div>
       <div className="relative flex justify-center flex-col items-center">
-        {!showHistory ? <ChevronUpIcon className="h-3 w-3 text-gray-500" aria-hidden="true" /> : <div className='h-3 w-3' />}
+        {!showHistory ? <ChevronUpIcon className="h-3 w-3 text-neutral-400" aria-hidden="true" /> : <div className='h-3 w-3' />}
         <span className="px-2 bg-white dark:bg-neutral-900 text-sm font-medium text-gray-600 cursor-pointer">{dictionary.app.textGeneration.history}</span>
-        {!showHistory ? <div className='h-3 w-3' /> : <ChevronDownIcon className="h-3 w-3 text-gray-500" aria-hidden="true" />}
+        {!showHistory ? <div className='h-3 w-3' /> : <ChevronDownIcon className="h-3 w-3 text-neutral-400" aria-hidden="true" />}
       </div>
     </div>
   }

@@ -105,7 +105,7 @@ export function Markdown(props: { content: string }) {
                       borderColor: 'rgba(0, 0, 0, 0.05)',
                     }}
                   >
-                    <div className='text-[13px] text-gray-500 font-normal'>{languageShowName}</div>
+                    <div className='text-[13px] text-neutral-400 font-normal'>{languageShowName}</div>
                     <div style={{ display: 'flex' }}>
                       {language === 'mermaid'
                         && <SVGBtn

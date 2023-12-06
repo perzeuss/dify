@@ -42,7 +42,7 @@ const Nav = ({
         <div
           className={classNames(`
             flex items-center h-7 px-2.5 cursor-pointer rounded-[10px]
-            ${isActived ? 'text-primary-600' : 'text-gray-500'}
+            ${isActived ? 'text-primary-600' : 'text-neutral-400'}
             ${curNav && isActived && 'hover:bg-primary-50'}
           `)}
           onMouseEnter={() => setHovered(true)}

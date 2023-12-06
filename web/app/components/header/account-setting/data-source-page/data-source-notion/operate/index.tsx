@@ -24,7 +24,7 @@ export default function Operate({
     cursor-pointer
   `
   const itemIconClassName = `
-  mr-2 mt-[2px] w-4 h-4 text-gray-500
+  mr-2 mt-[2px] w-4 h-4 text-neutral-400
   `
   const { t } = useTranslation()
   const { mutate } = useSWRConfig()
@@ -78,7 +78,7 @@ export default function Operate({
                       <FilePlus02 className={itemIconClassName} />
                       <div>
                         <div className='leading-5'>{t('common.dataSource.notion.changeAuthorizedPages')}</div>
-                        <div className='leading-5 text-xs text-gray-500'>
+                        <div className='leading-5 text-xs text-neutral-400'>
                           {workspace.source_info.total} {t('common.dataSource.notion.pagesAuthorized')}
                         </div>
                       </div>

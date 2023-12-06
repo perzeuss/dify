@@ -156,7 +156,7 @@ const OpeningStatement: FC<IOpeningStatementProps> = ({
             {/* Operation Bar */}
             {isFocus && (
               <div className='mt-2 flex items-center justify-between'>
-                <div className='text-xs text-gray-500'>{t('appDebug.openingStatement.varTip')}</div>
+                <div className='text-xs text-neutral-400'>{t('appDebug.openingStatement.varTip')}</div>
 
                 <div className='flex gap-2'>
                   <Button className='!h-8 text-sm' onClick={handleCancel}>{t('common.operation.cancel')}</Button>
@@ -166,7 +166,7 @@ const OpeningStatement: FC<IOpeningStatementProps> = ({
             )}
 
           </>) : (
-          <div className='pt-2 pb-1 text-xs text-gray-500'>{t('appDebug.openingStatement.noDataPlaceHolder')}</div>
+          <div className='pt-2 pb-1 text-xs text-neutral-400'>{t('appDebug.openingStatement.noDataPlaceHolder')}</div>
         )}
 
         {isShowConfirmAddVar && (

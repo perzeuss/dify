@@ -47,8 +47,8 @@ const ShareQRCode = ({ content, selectorId, className }: Props) => {
         {isShow && <div className={QrcodeStyle.qrcodeform}>
           <QRCode size={160} value={content} className={QrcodeStyle.qrcodeimage}/>
           <div className={QrcodeStyle.text}>
-            <div className={`text-gray-500 ${QrcodeStyle.scan}`}>{t('appOverview.overview.appInfo.qrcode.scan')}</div>
-            <div className={`text-gray-500 ${QrcodeStyle.scan}`}>·</div>
+            <div className={`text-neutral-400 ${QrcodeStyle.scan}`}>{t('appOverview.overview.appInfo.qrcode.scan')}</div>
+            <div className={`text-neutral-400 ${QrcodeStyle.scan}`}>·</div>
             <div className={QrcodeStyle.download} onClick={downloadQR}>{t('appOverview.overview.appInfo.qrcode.download')}</div>
           </div>
         </div>

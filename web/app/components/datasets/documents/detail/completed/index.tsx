@@ -38,7 +38,7 @@ export const SegmentIndexTag: FC<{ positionId: string | number; className?: stri
     return positionIdStr.padStart(3, '0')
   }, [positionId])
   return (
-    <div className={`text-gray-500 border border-gray-200 box-border flex items-center rounded-md italic text-[11px] pl-1 pr-1.5 font-medium ${className ?? ''}`}>
+    <div className={`text-neutral-400 border border-gray-200 box-border flex items-center rounded-md italic text-[11px] pl-1 pr-1.5 font-medium ${className ?? ''}`}>
       <HashtagIcon className='w-3 h-3 text-gray-400 fill-current mr-1 stroke-current stroke-1' />
       {localPositionId}
     </div>
@@ -93,7 +93,7 @@ const SegmentDetailComponent: FC<ISegmentDetailProps> = ({
     if (segInfo?.answer) {
       return (
         <>
-          <div className='mb-1 text-xs font-medium text-gray-500'>QUESTION</div>
+          <div className='mb-1 text-xs font-medium text-neutral-400'>QUESTION</div>
           <AutoHeightTextarea
             outerClassName='mb-4'
             className='leading-6 text-md text-gray-800'
@@ -102,7 +102,7 @@ const SegmentDetailComponent: FC<ISegmentDetailProps> = ({
             onChange={e => setQuestion(e.target.value)}
             disabled={!isEditing}
           />
-          <div className='mb-1 text-xs font-medium text-gray-500'>ANSWER</div>
+          <div className='mb-1 text-xs font-medium text-neutral-400'>ANSWER</div>
           <AutoHeightTextarea
             outerClassName='mb-4'
             className='leading-6 text-md text-gray-800'
@@ -152,13 +152,13 @@ const SegmentDetailComponent: FC<ISegmentDetailProps> = ({
           <>
             <div className='group relative flex justify-center items-center w-6 h-6 hover:bg-gray-100 dark:bg-neutral-950 rounded-md cursor-pointer'>
               <div className={cn(s.editTip, 'hidden items-center absolute -top-10 px-3 h-[34px] bg-white dark:bg-neutral-900 rounded-lg whitespace-nowrap text-xs font-semibold text-gray-700 dark:text-gray-300 group-hover:flex')}>{t('common.operation.edit')}</div>
-              <Edit03 className='w-4 h-4 text-gray-500' onClick={() => setIsEditing(true)} />
+              <Edit03 className='w-4 h-4 text-neutral-400' onClick={() => setIsEditing(true)} />
             </div>
             <div className='mx-3 w-[1px] h-3 bg-gray-200' />
           </>
         )}
         <div className='flex justify-center items-center w-6 h-6 cursor-pointer' onClick={onCancel}>
-          <XClose className='w-4 h-4 text-gray-500' />
+          <XClose className='w-4 h-4 text-neutral-400' />
         </div>
       </div>
       <SegmentIndexTag positionId={segInfo?.position || ''} className='w-fit mt-[2px] mb-6' />
@@ -184,7 +184,7 @@ const SegmentDetailComponent: FC<ISegmentDetailProps> = ({
           <div className={cn(s.commonIcon, s.bezierCurveIcon)} /><span className={s.hashText}>{t('datasetDocuments.segment.vectorHash')}{segInfo?.index_node_hash}</span>
         </div>
         <div className='flex items-center'>
-          <StatusItem status={segInfo?.enabled ? 'enabled' : 'disabled'} reverse textCls='text-gray-500 text-xs' />
+          <StatusItem status={segInfo?.enabled ? 'enabled' : 'disabled'} reverse textCls='text-neutral-400 text-xs' />
           {embeddingAvailable && (
             <>
               <Divider type='vertical' className='!h-2' />

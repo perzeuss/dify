@@ -201,7 +201,7 @@ const ModelSelector: FC<Props> = ({
                             <CubeOutline className='mr-1.5 w-4 h-4' />
                             {t('common.modelProvider.selector.rerankTip')}
                           </div>
-                          <LinkExternal01 className='w-3 h-3 text-gray-500' />
+                          <LinkExternal01 className='w-3 h-3 text-neutral-400' />
                         </div>
                       )
                       : (
@@ -213,7 +213,7 @@ const ModelSelector: FC<Props> = ({
                     <Tooltip
                       selector='model-selector-remove-tip'
                       htmlContent={
-                        <div className='w-[261px] text-gray-500'>{t('common.modelProvider.selector.tip')}</div>
+                        <div className='w-[261px] text-neutral-400'>{t('common.modelProvider.selector.tip')}</div>
                       }
                     >
                       <AlertCircle className='mr-1 w-4 h-4 text-[#F04438]' />
@@ -270,7 +270,7 @@ const ModelSelector: FC<Props> = ({
                   if (model.type === 'provider') {
                     return (
                       <div
-                        className='px-3 pt-2 pb-1 text-xs font-medium text-gray-500'
+                        className='px-3 pt-2 pb-1 text-xs font-medium text-neutral-400'
                         key={`${model.type}-${model.value}`}
                       >
                         <ProviderName provideName={model.value} />
@@ -314,7 +314,7 @@ const ModelSelector: FC<Props> = ({
                 })
               }
               {modelList.length !== 0 && (search && filteredModelList.length === 0) && (
-                <div className='px-3 pt-1.5 h-[30px] text-center text-xs text-gray-500'>{t('common.modelProvider.noModelFound', { model: search })}</div>
+                <div className='px-3 pt-1.5 h-[30px] text-center text-xs text-neutral-400'>{t('common.modelProvider.noModelFound', { model: search })}</div>
               )}
 
               {isShowAddModel && (

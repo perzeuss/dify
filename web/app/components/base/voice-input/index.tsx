@@ -164,7 +164,7 @@ const VoiceInput = ({
         <div className='grow'>
           {
             startRecord && (
-              <div className='text-sm text-gray-500'>
+              <div className='text-sm text-neutral-400'>
                 {t('common.voiceInput.speaking')}
               </div>
             )
@@ -193,7 +193,7 @@ const VoiceInput = ({
               className='flex justify-center items-center mr-1 w-8 h-8 hover:bg-gray-200 rounded-lg  cursor-pointer'
               onClick={onCancel}
             >
-              <XClose className='w-4 h-4 text-gray-500' />
+              <XClose className='w-4 h-4 text-neutral-400' />
             </div>
           )
         }

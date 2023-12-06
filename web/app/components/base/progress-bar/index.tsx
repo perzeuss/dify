@@ -12,7 +12,7 @@ const ProgressBar = ({
           style={{ width: `${percent}%` }}
         />
       </div>
-      <div className='text-xs font-medium text-gray-500'>{percent}%</div>
+      <div className='text-xs font-medium text-neutral-400'>{percent}%</div>
     </div>
   )
 }

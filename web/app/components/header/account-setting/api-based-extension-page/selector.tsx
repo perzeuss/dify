@@ -74,7 +74,7 @@ const ApiBasedExtensionSelector: FC<ApiBasedExtensionSelectorProps> = ({
         <div className='w-full rounded-lg border-[0.5px] border-gray-200 bg-white dark:bg-neutral-900 shadow-lg z-10'>
           <div className='p-1'>
             <div className='flex items-center justify-between px-3 pt-2 pb-1'>
-              <div className='text-xs font-medium text-gray-500'>
+              <div className='text-xs font-medium text-neutral-400'>
                 {t('common.apiBasedExtension.selector.title')}
               </div>
               <div
@@ -94,7 +94,7 @@ const ApiBasedExtensionSelector: FC<ApiBasedExtensionSelectorProps> = ({
                     onClick={() => handleSelect(item.id!)}
                   >
                     <div className='text-sm text-gray-900'>{item.name}</div>
-                    <div className='text-xs text-gray-500'>{item.api_endpoint}</div>
+                    <div className='text-xs text-neutral-400'>{item.api_endpoint}</div>
                   </div>
                 ))
               }

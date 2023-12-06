@@ -108,13 +108,13 @@ const SecretKeyModal = ({
 
   return (
     <Modal isShow={isShow} onClose={onClose} title={`${t('appApi.apiKeyModal.apiSecretKey')}`} className={`${s.customModal} px-8 flex flex-col`}>
-      <XMarkIcon className={`w-6 h-6 absolute cursor-pointer text-gray-500 ${s.close}`} onClick={onClose} />
-      <p className='mt-1 text-[13px] text-gray-500 font-normal leading-5 flex-shrink-0'>{t('appApi.apiKeyModal.apiSecretKeyTips')}</p>
+      <XMarkIcon className={`w-6 h-6 absolute cursor-pointer text-neutral-400 ${s.close}`} onClick={onClose} />
+      <p className='mt-1 text-[13px] text-neutral-400 font-normal leading-5 flex-shrink-0'>{t('appApi.apiKeyModal.apiSecretKeyTips')}</p>
       {!apiKeysList && <div className='mt-4'><Loading /></div>}
       {
         !!apiKeysList?.data?.length && (
           <div className='flex flex-col flex-grow mt-4 overflow-hidden'>
-            <div className='flex items-center flex-shrink-0 text-xs font-semibold text-gray-500 border-b border-solid h-9'>
+            <div className='flex items-center flex-shrink-0 text-xs font-semibold text-neutral-400 border-b border-solid h-9'>
               <div className='flex-shrink-0 w-64 px-3'>{t('appApi.apiKeyModal.secretKey')}</div>
               <div className='flex-shrink-0 px-3 w-28'>{t('appApi.apiKeyModal.created')}</div>
               <div className='flex-shrink-0 px-3 w-28'>{t('appApi.apiKeyModal.lastUsed')}</div>

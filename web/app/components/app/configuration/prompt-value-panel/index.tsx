@@ -108,7 +108,7 @@ const PromptValuePanel: FC<IPromptValuePanelProps> = ({
             <div className='text-xs font-medium text-gray-800 uppercase'>{t('appDebug.inputs.userInputField')}</div>
           </div>
           {appType === AppType.completion && promptVariables.length > 0 && !userInputFieldCollapse && (
-            <div className="mt-1 text-xs leading-normal text-gray-500">{t('appDebug.inputs.completionVarTip')}</div>
+            <div className="mt-1 text-xs leading-normal text-neutral-400">{t('appDebug.inputs.completionVarTip')}</div>
           )}
         </div>
         {!userInputFieldCollapse && (
@@ -155,7 +155,7 @@ const PromptValuePanel: FC<IPromptValuePanelProps> = ({
                   </div>
                 )
                 : (
-                  <div className='text-xs text-gray-500'>{t('appDebug.inputs.noVar')}</div>
+                  <div className='text-xs text-neutral-400'>{t('appDebug.inputs.noVar')}</div>
                 )
             }
             {
@@ -219,7 +219,7 @@ function replaceStringWithValuesWithFormat(str: string, promptVariables: PromptV
     }
 
     const valueObj: PromptVariable | undefined = promptVariables.find(v => v.key === key)
-    return `<div class='inline-block px-1 rounded-md text-gray-500' style='background: rgba(16, 24, 40, 0.05)'>${valueObj ? valueObj.name : match}</div>`
+    return `<div class='inline-block px-1 rounded-md text-neutral-400' style='background: rgba(16, 24, 40, 0.05)'>${valueObj ? valueObj.name : match}</div>`
   })
 }
 

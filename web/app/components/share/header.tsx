@@ -57,7 +57,7 @@ const Header: FC<IHeaderProps> = ({
         className='flex items-center justify-center h-8 w-8 cursor-pointer'
         onClick={() => onShowSideBar?.()}
       >
-        <Bars3Icon className="h-4 w-4 text-gray-500" />
+        <Bars3Icon className="h-4 w-4 text-neutral-400" />
       </div>
       <div className='flex items-center space-x-2'>
         <AppIcon size="small" icon={icon} background={icon_background} />
@@ -66,7 +66,7 @@ const Header: FC<IHeaderProps> = ({
       <div className='flex items-center justify-center h-8 w-8 cursor-pointer'
         onClick={() => onCreateNewChat?.()}
       >
-        <PencilSquareIcon className="h-4 w-4 text-gray-500" />
+        <PencilSquareIcon className="h-4 w-4 text-neutral-400" />
       </div>
     </div>
   )

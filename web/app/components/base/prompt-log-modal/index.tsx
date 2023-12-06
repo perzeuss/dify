@@ -48,7 +48,7 @@ const PromptLogModal: FC<PromptLogModalProps> = ({
             onClick={onCancel}
             className='flex justify-center items-center w-6 h-6 cursor-pointer'
           >
-            <XClose className='w-4 h-4 text-gray-500' />
+            <XClose className='w-4 h-4 text-neutral-400' />
           </div>
         </div>
       </div>

@@ -30,7 +30,7 @@ const CSVDownload: FC<ICSVDownloadProps> = ({
       <div className='text-sm text-gray-900 font-medium'>{t('share.generation.csvStructureTitle')}</div>
       <div className='mt-2 max-h-[500px] overflow-auto'>
         <table className='w-full border-separate border-spacing-0 border border-gray-200 rounded-lg text-xs'>
-          <thead className='text-gray-500'>
+          <thead className='text-neutral-400'>
             <tr>
               {addQueryContentVars.map((item, i) => (
                 <td key={i} className='h-9 pl-4 border-b border-gray-200'>{item.name}</td>

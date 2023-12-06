@@ -19,7 +19,7 @@ const titleClassName = `
   text-sm font-medium text-gray-900
 `
 const descriptionClassName = `
-  mt-1 text-xs font-normal text-gray-500
+  mt-1 text-xs font-normal text-neutral-400
 `
 const inputClassName = `
   mt-2 w-full px-3 py-2 bg-gray-100 rounded
@@ -140,7 +140,7 @@ export default function AccountPage() {
       {IS_CE_EDITION && (
         <div className='mb-8'>
           <div className='mb-1 text-sm font-medium text-gray-900'>{t('common.account.password')}</div>
-          <div className='mb-2 text-xs text-gray-500'>{t('common.account.passwordTip')}</div>
+          <div className='mb-2 text-xs text-neutral-400'>{t('common.account.passwordTip')}</div>
           <Button className='font-medium !text-gray-700 dark:text-gray-300 !px-3 !py-[7px] !text-[13px]' onClick={() => setEditPasswordModalVisible(true)}>{userProfile.is_password_set ? t('common.account.resetPassword') : t('common.account.setPassword')}</Button>
         </div>
       )}

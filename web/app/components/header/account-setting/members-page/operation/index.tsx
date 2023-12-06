@@ -20,7 +20,7 @@ const itemTitleClassName = `
   leading-[20px] text-sm text-gray-700 whitespace-nowrap
 `
 const itemDescClassName = `
-  leading-[18px] text-xs text-gray-500 whitespace-nowrap
+  leading-[18px] text-xs text-neutral-400 whitespace-nowrap
 `
 
 type IOperationProps = {

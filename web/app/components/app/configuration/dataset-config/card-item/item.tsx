@@ -56,13 +56,13 @@ const Item: FC<ItemProps> = ({
       <div className='grow'>
         <div className='flex items-center h-[18px]'>
           <div className='grow text-[13px] font-medium text-gray-800 truncate' title={config.name}>{config.name}</div>
-          <div className='shrink-0 text-xs text-gray-500'>
+          <div className='shrink-0 text-xs text-neutral-400'>
             {formatNumber(config.word_count)} {t('appDebug.feature.dataSet.words')} · {formatNumber(config.document_count)} {t('appDebug.feature.dataSet.textBlocks')}
           </div>
         </div>
         {/* {
           config.description && (
-            <div className='text-xs text-gray-500'>{config.description}</div>
+            <div className='text-xs text-neutral-400'>{config.description}</div>
           )
         } */}
       </div>
@@ -71,13 +71,13 @@ const Item: FC<ItemProps> = ({
           className='flex items-center justify-center mr-1 w-6 h-6 hover:bg-black/5 rounded-md cursor-pointer'
           onClick={() => setShowSettingsModal(true)}
         >
-          <Settings01 className='w-4 h-4 text-gray-500' />
+          <Settings01 className='w-4 h-4 text-neutral-400' />
         </div>
         <div
           className='group/action flex items-center justify-center w-6 h-6 hover:bg-[#FEE4E2] rounded-md cursor-pointer'
           onClick={() => onRemove(config.id)}
         >
-          <Trash03 className='w-4 h-4 text-gray-500 group-hover/action:text-[#D92D20]' />
+          <Trash03 className='w-4 h-4 text-neutral-400 group-hover/action:text-[#D92D20]' />
         </div>
       </div>
       <Drawer isOpen={showSettingsModal} onClose={() => setShowSettingsModal(false)} footer={null} mask={isMobile} panelClassname='mt-16 mx-2 sm:mr-2 mb-3 !p-0 !max-w-[640px] rounded-xl'>

@@ -18,7 +18,7 @@ const FeatureGroup: FC<IFeatureGroupProps> = ({
       <div className='mb-2'>
         <GroupName name={title} />
         {description && (
-          <div className='text-xs font-normal text-gray-500'>{description}</div>
+          <div className='text-xs font-normal text-neutral-400'>{description}</div>
         )}
       </div>
       <div className='space-y-2'>

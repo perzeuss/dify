@@ -26,7 +26,7 @@ import type { DataSet } from '@/models/datasets'
 const Divider: FC<{ name: string }> = ({ name }) => {
   const { t } = useTranslation()
   return <div className='flex items-center my-2'>
-    <span className='text-xs text-gray-500 inline-flex items-center mr-2'>
+    <span className='text-xs text-neutral-400 inline-flex items-center mr-2'>
       <EditIconSolid className='mr-1' />{t('appLog.detail.annotationTip', { user: name })}
     </span>
     <div className='h-[1px] bg-gray-200 flex-1'></div>
@@ -100,7 +100,7 @@ const Answer: FC<IAnswerProps> = ({
         content={((isWebScene || (!isUserFeedback && !isWebScene)) ? isLike ? t('appDebug.operation.cancelAgree') : t('appDebug.operation.cancelDisagree') : (!isWebScene && isUserFeedback) ? `${t('appDebug.operation.userAction')}${isLike ? t('appDebug.operation.agree') : t('appDebug.operation.disagree')}` : '') as string}
       >
         <div
-          className={`relative box-border flex items-center justify-center h-7 w-7 p-0.5 rounded-lg bg-white dark:bg-neutral-900 cursor-pointer text-gray-500 hover:text-gray-800 ${(!isWebScene && isUserFeedback) ? '!cursor-default' : ''}`}
+          className={`relative box-border flex items-center justify-center h-7 w-7 p-0.5 rounded-lg bg-white dark:bg-neutral-900 cursor-pointer text-neutral-400 hover:text-gray-800 ${(!isWebScene && isUserFeedback) ? '!cursor-default' : ''}`}
           style={{ boxShadow: '0px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 2px 4px -2px rgba(0, 0, 0, 0.05)' }}
           {...((isWebScene || (!isUserFeedback && !isWebScene))
             ? {
@@ -201,7 +201,7 @@ const Answer: FC<IAnswerProps> = ({
                 {item.isOpeningStatement && (
                   <div className='flex items-center mb-1 gap-1'>
                     <OpeningStatementIcon />
-                    <div className='text-xs text-gray-500'>{t('appDebug.openingStatement.title')}</div>
+                    <div className='text-xs text-neutral-400'>{t('appDebug.openingStatement.title')}</div>
                   </div>
                 )}
                 {(thoughts && thoughts.length > 0) && (

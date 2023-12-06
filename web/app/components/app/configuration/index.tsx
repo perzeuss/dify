@@ -656,7 +656,7 @@ const Configuration: FC = () => {
               {isMobile && (
                 <Button className='!h-8 !text-[13px] font-medium' onClick={showDebugPanel}>
                   <span className='mr-1'>{t('appDebug.operation.debugConfig')}</span>
-                  <CodeBracketIcon className="h-4 w-4 text-gray-500" />
+                  <CodeBracketIcon className="h-4 w-4 text-neutral-400" />
                 </Button>
               )}
               <Button type='primary' onClick={() => handlePublish(false)} className={cn(cannotPublish && '!bg-primary-200 !cursor-not-allowed', 'shrink-0 w-[70px] !h-8 !text-[13px] font-medium')}>{t('appDebug.operation.applyConfig')}</Button>

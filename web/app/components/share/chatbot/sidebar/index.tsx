@@ -100,7 +100,7 @@ const Sidebar: FC<ISidebarProps> = ({
         {/* pinned list */}
         {hasPinned && (
           <div className={cn('mt-4 px-4', list.length === 0 && 'flex flex-col flex-grow')}>
-            <div className='mb-1.5 leading-[18px] text-xs text-gray-500 font-medium uppercase'>{t('share.chat.pinnedTitle')}</div>
+            <div className='mb-1.5 leading-[18px] text-xs text-neutral-400 font-medium uppercase'>{t('share.chat.pinnedTitle')}</div>
             <List
               className={cn(list.length > 0 ? maxListHeight : 'flex-grow')}
               currentId={currentId}
@@ -121,7 +121,7 @@ const Sidebar: FC<ISidebarProps> = ({
         {/* unpinned list */}
         <div className={cn('mt-4 px-4', !hasPinned && 'flex flex-col flex-grow')}>
           {(hasPinned && list.length > 0) && (
-            <div className='mb-1.5 leading-[18px] text-xs text-gray-500 font-medium uppercase'>{t('share.chat.unpinnedTitle')}</div>
+            <div className='mb-1.5 leading-[18px] text-xs text-neutral-400 font-medium uppercase'>{t('share.chat.unpinnedTitle')}</div>
           )}
           <List
             className={cn(hasPinned ? maxListHeight : 'flex-grow')}

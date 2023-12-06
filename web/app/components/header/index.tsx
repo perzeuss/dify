@@ -49,7 +49,7 @@ const Header = () => {
           className='flex items-center justify-center h-8 w-8 cursor-pointer'
           onClick={toggle}
         >
-          <Bars3Icon className="h-4 w-4 text-gray-500" />
+          <Bars3Icon className="h-4 w-4 text-neutral-400" />
         </div>}
         {!isMobile && <>
           <Link href="/apps" className='flex items-center mr-4'>

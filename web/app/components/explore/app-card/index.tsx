@@ -37,7 +37,7 @@ const AppCard = ({
           <div className='absolute top-0 left-0 w-full h-full overflow-hidden text-ellipsis whitespace-nowrap'>{appBasicInfo.name}</div>
         </div>
       </div>
-      <div className='mb-3 px-[14px] h-9 text-xs leading-normal text-gray-500 line-clamp-2'>{app.description}</div>
+      <div className='mb-3 px-[14px] h-9 text-xs leading-normal text-neutral-400 line-clamp-2'>{app.description}</div>
       <div className='flex items-center flex-wrap min-h-[42px] px-[14px] pt-2 pb-[10px]'>
         <div className={s.mode}>
           <AppModeLabel mode={appBasicInfo.mode} />

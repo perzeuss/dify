@@ -107,7 +107,7 @@ const ImageList: FC<ImageListProps> = ({
                   `}
                   onClick={() => onRemove && onRemove(item._id)}
                 >
-                  <XClose className='w-3 h-3 text-gray-500' />
+                  <XClose className='w-3 h-3 text-neutral-400' />
                 </div>
               )
             }

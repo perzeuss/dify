@@ -115,7 +115,7 @@ const SettingsModal: FC<ISettingsModalProps> = ({
           />
         </div>
         <div className={`mt-6 font-medium ${s.settingTitle} text-gray-900 `}>{t(`${prefixSettings}.webDesc`)}</div>
-        <p className={`mt-1 ${s.settingsTip} text-gray-500`}>{t(`${prefixSettings}.webDescTip`)}</p>
+        <p className={`mt-1 ${s.settingsTip} text-neutral-400`}>{t(`${prefixSettings}.webDescTip`)}</p>
         <textarea
           rows={3}
           className={`mt-2 pt-2 pb-2 px-3 rounded-lg bg-gray-100 dark:bg-neutral-950 w-full ${s.settingsTip} text-gray-900`}
@@ -132,11 +132,11 @@ const SettingsModal: FC<ISettingsModalProps> = ({
         {!isShowMore && <div className='w-full cursor-pointer mt-8' onClick={() => setIsShowMore(true)}>
           <div className='flex justify-between'>
             <div className={`font-medium ${s.settingTitle} flex-grow text-gray-900`}>{t(`${prefixSettings}.more.entry`)}</div>
-            <div className='flex-shrink-0 w-4 h-4 text-gray-500'>
+            <div className='flex-shrink-0 w-4 h-4 text-neutral-400'>
               <ChevronRightIcon />
             </div>
           </div>
-          <p className={`mt-1 ${s.policy} text-gray-500`}>{t(`${prefixSettings}.more.copyright`)} & {t(`${prefixSettings}.more.privacyPolicy`)}</p>
+          <p className={`mt-1 ${s.policy} text-neutral-400`}>{t(`${prefixSettings}.more.copyright`)} & {t(`${prefixSettings}.more.privacyPolicy`)}</p>
         </div>}
         {isShowMore && <>
           <hr className='w-full mt-6' />
@@ -147,7 +147,7 @@ const SettingsModal: FC<ISettingsModalProps> = ({
             placeholder={t(`${prefixSettings}.more.copyRightPlaceholder`) as string}
           />
           <div className={`mt-8 font-medium ${s.settingTitle} text-gray-900`}>{t(`${prefixSettings}.more.privacyPolicy`)}</div>
-          <p className={`mt-1 ${s.settingsTip} text-gray-500`}>
+          <p className={`mt-1 ${s.settingsTip} text-neutral-400`}>
             <Trans
               i18nKey={`${prefixSettings}.more.privacyPolicyTip`}
               components={{ privacyPolicyLink: <Link href={'https://langgenius.ai/privacy-policy'} target='_blank' className='text-primary-600' /> }}

@@ -52,7 +52,7 @@ const ParamItem: FC<IParamIteProps> = ({ id, name, tip, step = 0.1, min = 0, max
     <div className="flex items-center justify-between flex-wrap gap-y-2">
       <div className="flex flex-col flex-shrink-0">
         <div className="flex items-center">
-          <span className="mr-[6px] text-gray-500 text-[13px] font-medium">{name}</span>
+          <span className="mr-[6px] text-neutral-400 text-[13px] font-medium">{name}</span>
           {/* Give tooltip different tip to avoiding hide bug */}
           <Tooltip htmlContent={<div className="w-[200px] whitespace-pre-wrap">{tip}</div>} position='top' selector={`param-name-tooltip-${id}`}>
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">

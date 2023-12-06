@@ -145,8 +145,8 @@ const ModelModal: FC<ModelModalProps> = ({
                     </div>
                   )
                   : (
-                    <div className='flex justify-center items-center py-3 bg-gray-50 text-xs text-gray-500'>
-                      <Lock01 className='mr-1 w-3 h-3 text-gray-500' />
+                    <div className='flex justify-center items-center py-3 bg-gray-50 text-xs text-neutral-400'>
+                      <Lock01 className='mr-1 w-3 h-3 text-neutral-400' />
                       {t('common.modelProvider.encrypted.front')}
                       <a
                         className='text-primary-600 mx-1'

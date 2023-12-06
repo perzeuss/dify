@@ -31,7 +31,7 @@ const Item: FC<IItemProps> = ({
           {icon}
           <div className='leading-[18px]'>
             <div className='text-[13px] font-medium text-gray-800'>{name}</div>
-            {description && <div className='text-xs leading-[18px] text-gray-500'>{description}</div>}
+            {description && <div className='text-xs leading-[18px] text-neutral-400'>{description}</div>}
           </div>
         </div>
         <Switch size='md' defaultValue={enabled} onChange={onChange} disabled={readonly} />

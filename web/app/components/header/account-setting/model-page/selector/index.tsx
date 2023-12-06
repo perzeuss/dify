@@ -83,7 +83,7 @@ const Selector: FC<SelectorProps> = ({
               <div
                 className={`group ${itemClassName} hover:bg-[#FEF3F2] hover:text-[#D92D20]`}
                 onClick={() => onOperate({ type: 'delete' })}>
-                <Trash03 className='mr-2 w-4 h-4 text-gray-500 group-hover:text-[#D92D20]' />
+                <Trash03 className='mr-2 w-4 h-4 text-neutral-400 group-hover:text-[#D92D20]' />
                 {deleteText || t('common.modelProvider.card.removeKey')}
               </div>
             </Popover.Button>

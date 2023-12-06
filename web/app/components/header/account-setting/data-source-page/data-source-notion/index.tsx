@@ -53,7 +53,7 @@ const DataSourceNotion = ({
           </div>
           {
             !connected && (
-              <div className='leading-5 text-xs text-gray-500'>
+              <div className='leading-5 text-xs text-neutral-400'>
                 {t('common.dataSource.notion.description')}
               </div>
             )
@@ -90,7 +90,7 @@ const DataSourceNotion = ({
       {
         connected && (
           <div className='flex items-center px-3 h-[18px]'>
-            <div className='text-xs font-medium text-gray-500'>
+            <div className='text-xs font-medium text-neutral-400'>
               {t('common.dataSource.notion.connectedWorkspace')}
             </div>
             <div className='grow ml-3 border-t border-t-gray-100' />

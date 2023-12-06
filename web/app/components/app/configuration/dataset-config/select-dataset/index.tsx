@@ -110,7 +110,7 @@ const SelectDataSet: FC<ISelectDataSetProps> = ({
             borderColor: 'rgba(0, 0, 0, 0.02',
           }}
         >
-          <span className='text-gray-500'>{t('appDebug.feature.dataSet.noDataSet')}</span>
+          <span className='text-neutral-400'>{t('appDebug.feature.dataSet.noDataSet')}</span>
           <Link href="/datasets/create" className='font-normal text-[#155EEF]'>{t('appDebug.feature.dataSet.toCreate')}</Link>
         </div>
       )}
@@ -134,11 +134,11 @@ const SelectDataSet: FC<ISelectDataSetProps> = ({
                   </div>
                   <div className={cn('max-w-[200px] text-[13px] font-medium text-gray-800 overflow-hidden text-ellipsis whitespace-nowrap', !item.embedding_available && 'opacity-50 !max-w-[120px]')}>{item.name}</div>
                   {!item.embedding_available && (
-                    <span className='ml-1 shrink-0 px-1 border boder-gray-200 rounded-md text-gray-500 text-xs font-normal leading-[18px]'>{t('dataset.unavailable')}</span>
+                    <span className='ml-1 shrink-0 px-1 border boder-gray-200 rounded-md text-neutral-400 text-xs font-normal leading-[18px]'>{t('dataset.unavailable')}</span>
                   )}
                 </div>
 
-                <div className={cn('shrink-0 flex text-xs text-gray-500 overflow-hidden whitespace-nowrap', !item.embedding_available && 'opacity-50')}>
+                <div className={cn('shrink-0 flex text-xs text-neutral-400 overflow-hidden whitespace-nowrap', !item.embedding_available && 'opacity-50')}>
                   <span className='max-w-[100px] overflow-hidden text-ellipsis whitespace-nowrap'>{formatNumber(item.word_count)}</span>
                   {t('appDebug.feature.dataSet.words')}
                   <span className='px-0.5'>·</span>

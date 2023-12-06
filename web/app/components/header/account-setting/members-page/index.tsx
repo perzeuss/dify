@@ -50,7 +50,7 @@ const MembersPage = () => {
           <div className='grow mx-2'>
             <div className='text-sm font-medium text-gray-900'>{currentWorkspace?.name}</div>
             {enableBilling && (
-              <div className='text-xs text-gray-500'>
+              <div className='text-xs text-neutral-400'>
                 {isNotUnlimitedMemberPlan
                   ? (
                     <div className='flex space-x-1'>
@@ -84,9 +84,9 @@ const MembersPage = () => {
         </div>
         <div className='overflow-x-auto'>
           <div className='flex items-center py-[7px] border-b border-gray-200 min-w-[480px]'>
-            <div className='grow px-3 text-xs font-medium text-gray-500'>{t('common.members.name')}</div>
-            <div className='shrink-0 w-[104px] text-xs font-medium text-gray-500'>{t('common.members.lastActive')}</div>
-            <div className='shrink-0 w-[96px] px-3 text-xs font-medium text-gray-500'>{t('common.members.role')}</div>
+            <div className='grow px-3 text-xs font-medium text-neutral-400'>{t('common.members.name')}</div>
+            <div className='shrink-0 w-[104px] text-xs font-medium text-neutral-400'>{t('common.members.lastActive')}</div>
+            <div className='shrink-0 w-[96px] px-3 text-xs font-medium text-neutral-400'>{t('common.members.role')}</div>
           </div>
           <div className='min-w-[480px]'>
             {
@@ -98,9 +98,9 @@ const MembersPage = () => {
                       <div className='text-[13px] font-medium text-gray-700 dark:text-gray-300 leading-[18px]'>
                         {account.name}
                         {account.status === 'pending' && <span className='ml-1 text-xs text-[#DC6803]'>{t('common.members.pending')}</span>}
-                        {userProfile.email === account.email && <span className='text-xs text-gray-500'>{t('common.members.you')}</span>}
+                        {userProfile.email === account.email && <span className='text-xs text-neutral-400'>{t('common.members.you')}</span>}
                       </div>
-                      <div className='text-xs text-gray-500 leading-[18px]'>{account.email}</div>
+                      <div className='text-xs text-neutral-400 leading-[18px]'>{account.email}</div>
                     </div>
                   </div>
                   <div className='shrink-0 flex items-center w-[104px] py-2 text-[13px] text-gray-700 dark:text-gray-300'>{dayjs(Number((account.last_login_at || account.created_at)) * 1000).locale(locale === 'zh-Hans' ? 'zh-cn' : 'en').fromNow()}</div>

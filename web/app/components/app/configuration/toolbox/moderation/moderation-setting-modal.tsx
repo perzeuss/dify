@@ -285,7 +285,7 @@ const ModerationSettingModal: FC<ModerationSettingModalProps> = ({
         localeData.type === 'keywords' && (
           <div className='py-2'>
             <div className='mb-1 text-sm font-medium text-gray-900'>{t('appDebug.feature.moderation.modal.provider.keywords')}</div>
-            <div className='mb-2 text-xs text-gray-500'>{t('appDebug.feature.moderation.modal.keywords.tip')}</div>
+            <div className='mb-2 text-xs text-neutral-400'>{t('appDebug.feature.moderation.modal.keywords.tip')}</div>
             <div className='relative px-3 py-2 h-[88px] bg-gray-100 dark:bg-neutral-950 rounded-lg'>
               <textarea
                 value={localeData.config?.keywords || ''}
@@ -294,7 +294,7 @@ const ModerationSettingModal: FC<ModerationSettingModalProps> = ({
                 placeholder={t('appDebug.feature.moderation.modal.keywords.placeholder') || ''}
               />
               <div className='absolute bottom-2 right-2 flex items-center px-1 h-5 rounded-md bg-gray-50 text-xs font-medium text-gray-300'>
-                <span>{(localeData.config?.keywords || '').split('\n').filter(Boolean).length}</span>/<span className='text-gray-500'>100 {t('appDebug.feature.moderation.modal.keywords.line')}</span>
+                <span>{(localeData.config?.keywords || '').split('\n').filter(Boolean).length}</span>/<span className='text-neutral-400'>100 {t('appDebug.feature.moderation.modal.keywords.line')}</span>
               </div>
             </div>
           </div>
@@ -308,9 +308,9 @@ const ModerationSettingModal: FC<ModerationSettingModalProps> = ({
               <a
                 href={t('common.apiBasedExtension.linkUrl') || '/'}
                 target='_blank'
-                className='group flex items-center text-xs text-gray-500 hover:text-primary-600'
+                className='group flex items-center text-xs text-neutral-400 hover:text-primary-600'
               >
-                <BookOpen01 className='mr-1 w-3 h-3 text-gray-500 group-hover:text-primary-600' />
+                <BookOpen01 className='mr-1 w-3 h-3 text-neutral-400 group-hover:text-primary-600' />
                 {t('common.apiBasedExtension.link')}
               </a>
             </div>
@@ -347,7 +347,7 @@ const ModerationSettingModal: FC<ModerationSettingModalProps> = ({
         info={(localeData.type === 'api' && t('appDebug.feature.moderation.modal.content.fromApi')) || ''}
         showPreset={!(localeData.type === 'api')}
       />
-      <div className='mt-1 mb-8 text-xs font-medium text-gray-500'>{t('appDebug.feature.moderation.modal.content.condition')}</div>
+      <div className='mt-1 mb-8 text-xs font-medium text-neutral-400'>{t('appDebug.feature.moderation.modal.content.condition')}</div>
       <div className='flex items-center justify-end'>
         <Button
           onClick={onCancel}

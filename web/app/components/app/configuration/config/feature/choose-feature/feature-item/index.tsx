@@ -36,7 +36,7 @@ const FeatureItem: FC<IFeatureItemProps> = ({
         </div>
         <div>
           <div className='text-sm font-semibold text-gray-800'>{title}</div>
-          <div className='text-xs font-normal text-gray-500'>{description}</div>
+          <div className='text-xs font-normal text-neutral-400'>{description}</div>
         </div>
       </div>
 

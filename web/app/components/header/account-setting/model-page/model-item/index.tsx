@@ -39,7 +39,7 @@ const ModelItem: FC<ModelItemProps> = ({
           {modelItem.titleIcon[locale]}
           {
             modelItem.hit && (
-              <div className='ml-2 text-xs text-gray-500'>{modelItem.hit[locale]}</div>
+              <div className='ml-2 text-xs text-neutral-400'>{modelItem.hit[locale]}</div>
             )
           }
         </div>
