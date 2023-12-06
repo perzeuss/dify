@@ -78,7 +78,7 @@ const List: FC<IListProps> = ({
             className={cn(s.item,
               isCurrent
                 ? 'bg-primary-50 text-primary-600'
-                : 'text-gray-700 hover:bg-gray-200 hover:text-gray-700',
+                : 'text-gray-300 hover:bg-gray-800 hover:text-gray-700',
               'group flex justify-between items-center rounded-md px-2 py-2 text-sm font-medium cursor-pointer',
             )}
           >

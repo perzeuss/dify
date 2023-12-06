@@ -53,7 +53,7 @@ export default function AppSelector({ isMobile }: IAppSelecotr) {
                   className={`
                     inline-flex items-center
                     rounded-[20px] py-1 pr-2.5 pl-1 text-sm
-                  text-gray-700 hover:bg-gray-200
+                  text-gray-300 hover:bg-gray-800
                     mobile:px-1
                     ${open && 'bg-gray-200'}
                   `}
