@@ -682,7 +682,7 @@ const Main: FC<IMainProps> = ({
   }
 
   return (
-    <div className='bg-gray-100 dark:bg-gray-900 h-full flex flex-col'>
+    <div className='bg-gray-100 dark:bg-neutral-950 h-full flex flex-col'>
       {!isInstalledApp && (
         <Header
           title={siteInfo.title}

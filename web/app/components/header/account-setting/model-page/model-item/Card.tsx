@@ -55,7 +55,7 @@ const Card: FC<CardProps> = ({
               <Selector
                 hiddenOptions
                 onOperate={v => onOperate({ ...v, value: model })}
-                className={open => `${open && '!bg-gray-100 dark:bg-gray-900 shadow-none'} flex justify-center items-center w-7 h-7 bg-white dark:bg-neutral-900 rounded-md border-[0.5px] border-gray-200 shadow-xs cursor-pointer hover:bg-gray-100`}
+                className={open => `${open && '!bg-gray-100 dark:bg-neutral-950 shadow-none'} flex justify-center items-center w-7 h-7 bg-white dark:bg-neutral-900 rounded-md border-[0.5px] border-gray-200 shadow-xs cursor-pointer hover:bg-gray-100`}
                 deleteText={t('common.operation.remove') || ''}
               />
             </div>

@@ -39,7 +39,7 @@ const RunBatch: FC<IRunBatchProps> = ({
     <div className='pt-4'>
       <CSVReader onParsed={handleParsed} />
       <CSVDownload vars={vars} />
-      <div className='mt-4 h-[1px] bg-gray-100 dark:bg-gray-900'></div>
+      <div className='mt-4 h-[1px] bg-gray-100 dark:bg-neutral-950'></div>
       <div className='flex justify-end'>
         <Button
           type="primary"

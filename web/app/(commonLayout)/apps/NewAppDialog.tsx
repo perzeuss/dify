@@ -123,7 +123,7 @@ const NewAppDialog = ({ show, onSuccess, onClose }: NewAppDialogProps) => {
 
       <div className='flex items-center justify-between gap-3 mb-8'>
         <AppIcon size='large' onClick={() => { setShowEmojiPicker(true) }} className='cursor-pointer' icon={emoji.icon} background={emoji.icon_background} />
-        <input ref={nameInputRef} className='h-10 px-3 text-sm font-normal bg-gray-100 dark:bg-gray-900 rounded-lg grow' placeholder={t('app.appNamePlaceholder') || ''}/>
+        <input ref={nameInputRef} className='h-10 px-3 text-sm font-normal bg-gray-100 dark:bg-neutral-950 rounded-lg grow' placeholder={t('app.appNamePlaceholder') || ''}/>
       </div>
 
       <div className='overflow-y-auto'>

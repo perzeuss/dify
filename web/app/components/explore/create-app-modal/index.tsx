@@ -65,7 +65,7 @@ const CreateAppModal = ({
             <input
               value={name}
               onChange={e => setName(e.target.value)}
-              className='h-10 px-3 text-sm font-normal bg-gray-100 dark:bg-gray-900 rounded-lg grow'
+              className='h-10 px-3 text-sm font-normal bg-gray-100 dark:bg-neutral-950 rounded-lg grow'
             />
           </div>
           {isAppsFull && <AppsFull loc='app-explore-create'/>}

@@ -20,8 +20,8 @@ const LanguageSelect: FC<ILanguageSelectProps> = ({
       trigger='click'
       htmlContent={
         <div className='w-full py-1'>
-          <div className='py-2 px-3 mx-1 flex items-center gap-2 hover:bg-gray-100 dark:bg-gray-900 rounded-lg cursor-pointer text-gray-700 dark:text-gray-300 text-sm' onClick={() => onSelect('English')}>English</div>
-          <div className='py-2 px-3 mx-1 flex items-center gap-2 hover:bg-gray-100 dark:bg-gray-900 rounded-lg cursor-pointer text-gray-700 dark:text-gray-300 text-sm' onClick={() => onSelect('Chinese')}>简体中文</div>
+          <div className='py-2 px-3 mx-1 flex items-center gap-2 hover:bg-gray-100 dark:bg-neutral-950 rounded-lg cursor-pointer text-gray-700 dark:text-gray-300 text-sm' onClick={() => onSelect('English')}>English</div>
+          <div className='py-2 px-3 mx-1 flex items-center gap-2 hover:bg-gray-100 dark:bg-neutral-950 rounded-lg cursor-pointer text-gray-700 dark:text-gray-300 text-sm' onClick={() => onSelect('Chinese')}>简体中文</div>
         </div>
       }
       btnElement={

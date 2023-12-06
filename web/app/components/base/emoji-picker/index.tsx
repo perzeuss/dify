@@ -95,7 +95,7 @@ const EmojiPicker: FC<IEmojiPickerProps> = ({
         <input
           type="search"
           id="search"
-          className='block w-full h-10 px-3 pl-10 text-sm font-normal bg-gray-100 dark:bg-gray-900 rounded-lg'
+          className='block w-full h-10 px-3 pl-10 text-sm font-normal bg-gray-100 dark:bg-neutral-950 rounded-lg'
           placeholder="Search emojis..."
           onChange={async (e: ChangeEvent<HTMLInputElement>) => {
             if (e.target.value === '') {

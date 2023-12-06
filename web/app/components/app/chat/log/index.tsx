@@ -45,7 +45,7 @@ const Log: FC<LogProps> = ({
                 p-0.5 rounded-lg border-[0.5px] border-gray-100 bg-white shadow-md cursor-pointer
               `}>
                 <div
-                  className='flex items-center justify-center rounded-md w-full h-full hover:bg-gray-100 dark:bg-gray-900'
+                  className='flex items-center justify-center rounded-md w-full h-full hover:bg-gray-100 dark:bg-neutral-950'
                   onClick={() => setShowModal(true)}
                 >
                   <File02 className='w-4 h-4 text-gray-500' />

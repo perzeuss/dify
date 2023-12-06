@@ -64,7 +64,7 @@ const TagInput: FC<TagInputProps> = ({
   }
 
   return (
-    <div className={cn('flex flex-wrap', isSpecialMode ? 'bg-gray-100 dark:bg-gray-900 min-w-[200px] rounded-lg pb-1 pl-1' : '')}>
+    <div className={cn('flex flex-wrap', isSpecialMode ? 'bg-gray-100 dark:bg-neutral-950 min-w-[200px] rounded-lg pb-1 pl-1' : '')}>
       {
         items.map((item, index) => (
           <div

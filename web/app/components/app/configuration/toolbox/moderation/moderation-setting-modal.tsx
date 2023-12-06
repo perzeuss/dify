@@ -286,7 +286,7 @@ const ModerationSettingModal: FC<ModerationSettingModalProps> = ({
           <div className='py-2'>
             <div className='mb-1 text-sm font-medium text-gray-900'>{t('appDebug.feature.moderation.modal.provider.keywords')}</div>
             <div className='mb-2 text-xs text-gray-500'>{t('appDebug.feature.moderation.modal.keywords.tip')}</div>
-            <div className='relative px-3 py-2 h-[88px] bg-gray-100 dark:bg-gray-900 rounded-lg'>
+            <div className='relative px-3 py-2 h-[88px] bg-gray-100 dark:bg-neutral-950 rounded-lg'>
               <textarea
                 value={localeData.config?.keywords || ''}
                 onChange={handleDataKeywordsChange}

@@ -50,7 +50,7 @@ const ModerationContent: FC<ModerationContentProps> = ({
                 {t('appDebug.feature.moderation.modal.content.preset')}
                 <span className='text-xs font-normal text-gray-500'>{t('appDebug.feature.moderation.modal.content.supportMarkdown')}</span>
               </div>
-              <div className='relative px-3 py-2 h-20 rounded-lg bg-gray-100 dark:bg-gray-900'>
+              <div className='relative px-3 py-2 h-20 rounded-lg bg-gray-100 dark:bg-neutral-950'>
                 <textarea
                   value={config.preset_response || ''}
                   className='block w-full h-full bg-transparent text-sm outline-none appearance-none resize-none'

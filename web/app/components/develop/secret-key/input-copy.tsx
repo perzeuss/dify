@@ -58,7 +58,7 @@ const InputCopy = ({
           className='z-10'
         >
           <div className="px-0.5 flex-shrink-0">
-            <div className={`box-border w-[30px] h-[30px] flex items-center justify-center rounded-lg hover:bg-gray-100 dark:bg-gray-900 cursor-pointer ${s.copyIcon} ${isCopied ? s.copied : ''}`} onClick={() => {
+            <div className={`box-border w-[30px] h-[30px] flex items-center justify-center rounded-lg hover:bg-gray-100 dark:bg-neutral-950 cursor-pointer ${s.copyIcon} ${isCopied ? s.copied : ''}`} onClick={() => {
               copy(value)
               setIsCopied(true)
             }}>

@@ -74,7 +74,7 @@ const Selector: FC<SelectorProps> = ({
                     ))
                   }
                 </div>
-                <div className='h-[1px] bg-gray-100 dark:bg-gray-900' />
+                <div className='h-[1px] bg-gray-100 dark:bg-neutral-950' />
               </>
             )
           }

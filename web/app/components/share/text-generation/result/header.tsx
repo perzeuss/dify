@@ -86,7 +86,7 @@ const Header: FC<IResultHeaderProps> = ({
                     rating: 'like',
                   })
                 }}
-                className='flex w-6 h-6 items-center justify-center rounded-md cursor-pointer hover:bg-gray-100 dark:bg-gray-900'>
+                className='flex w-6 h-6 items-center justify-center rounded-md cursor-pointer hover:bg-gray-100 dark:bg-neutral-950'>
                 <HandThumbUpIcon width={16} height={16} />
               </div>
             </Tooltip>
@@ -100,7 +100,7 @@ const Header: FC<IResultHeaderProps> = ({
                     rating: 'dislike',
                   })
                 }}
-                className='flex w-6 h-6 items-center justify-center rounded-md cursor-pointer hover:bg-gray-100 dark:bg-gray-900'>
+                className='flex w-6 h-6 items-center justify-center rounded-md cursor-pointer hover:bg-gray-100 dark:bg-neutral-950'>
                 <HandThumbDownIcon width={16} height={16} />
               </div>
             </Tooltip>

@@ -147,7 +147,7 @@ const SettingsModal: FC<SettingsModalProps> = ({
           <input
             value={localeCurrentDataset.name}
             onChange={e => handleValueChange('name', e.target.value)}
-            className='block px-3 w-full h-9 bg-gray-100 dark:bg-gray-900 rounded-lg text-sm text-gray-900 outline-none appearance-none'
+            className='block px-3 w-full h-9 bg-gray-100 dark:bg-neutral-950 rounded-lg text-sm text-gray-900 outline-none appearance-none'
             placeholder={t('datasetSettings.form.namePlaceholder') || ''}
           />
         </div>
@@ -159,7 +159,7 @@ const SettingsModal: FC<SettingsModalProps> = ({
             <textarea
               value={localeCurrentDataset.description || ''}
               onChange={e => handleValueChange('description', e.target.value)}
-              className='block px-3 py-2 w-full h-[88px] rounded-lg bg-gray-100 dark:bg-gray-900 text-sm outline-none appearance-none resize-none'
+              className='block px-3 py-2 w-full h-[88px] rounded-lg bg-gray-100 dark:bg-neutral-950 text-sm outline-none appearance-none resize-none'
               placeholder={t('datasetSettings.form.descPlaceholder') || ''}
             />
             <a className='mt-2 flex items-center h-[18px] px-3 text-xs text-gray-500' href="https://docs.dify.ai/advanced/datasets#how-to-write-a-good-dataset-description" target='_blank'>
@@ -201,7 +201,7 @@ const SettingsModal: FC<SettingsModalProps> = ({
               {t('datasetSettings.form.embeddingModel')}
             </div>
             <div className='grow'>
-              <div className='w-full h-9 rounded-lg bg-gray-100 dark:bg-gray-900 opacity-60'>
+              <div className='w-full h-9 rounded-lg bg-gray-100 dark:bg-neutral-950 opacity-60'>
                 <ModelSelector
                   readonly
                   value={{

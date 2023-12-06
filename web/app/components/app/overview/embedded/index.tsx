@@ -133,7 +133,7 @@ const Embedded = ({ isShow, onClose, appBaseUrl, accessToken }: Props) => {
           </div>
         </div>
       )}
-      <div className={cn('w-full bg-gray-100 dark:bg-gray-900 rounded-lg flex-col justify-start items-start inline-flex',
+      <div className={cn('w-full bg-gray-100 dark:bg-neutral-950 rounded-lg flex-col justify-start items-start inline-flex',
         'mt-6')}>
         <div className="self-stretch pl-3 pr-1 py-1 bg-gray-50 rounded-tl-lg rounded-tr-lg border border-black border-opacity-5 justify-start items-center gap-2 inline-flex">
           <div className="grow shrink basis-0 text-slate-700 text-[13px] font-medium leading-none">
@@ -144,7 +144,7 @@ const Embedded = ({ isShow, onClose, appBaseUrl, accessToken }: Props) => {
               selector={'code-copy-feedback'}
               content={(isCopied[option] ? t(`${prefixEmbedded}.copied`) : t(`${prefixEmbedded}.copy`)) || ''}
             >
-              <div className="w-8 h-8 cursor-pointer hover:bg-gray-100 dark:bg-gray-900 rounded-lg">
+              <div className="w-8 h-8 cursor-pointer hover:bg-gray-100 dark:bg-neutral-950 rounded-lg">
                 <div onClick={onClickCopy} className={`w-full h-full ${copyStyle.copyIcon} ${isCopied[option] ? copyStyle.copied : ''}`}></div>
               </div>
             </Tooltip>

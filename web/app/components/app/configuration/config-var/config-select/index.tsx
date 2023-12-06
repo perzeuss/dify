@@ -75,7 +75,7 @@ const ConfigSelect: FC<IConfigSelectProps> = ({
 
       <div
         onClick={() => { onChange([...options, '']) }}
-        className='flex items-center h-9 px-3 gap-2 rounded-lg cursor-pointer text-gray-400  bg-gray-100 dark:bg-gray-900'>
+        className='flex items-center h-9 px-3 gap-2 rounded-lg cursor-pointer text-gray-400  bg-gray-100 dark:bg-neutral-950'>
         <PlusIcon width={16} height={16}></PlusIcon>
         <div className='text-gray-500 text-[13px]'>{t('appDebug.variableConig.addOption')}</div>
       </div>

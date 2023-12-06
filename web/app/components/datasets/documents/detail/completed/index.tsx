@@ -150,7 +150,7 @@ const SegmentDetailComponent: FC<ISegmentDetailProps> = ({
         )}
         {!isEditing && !archived && embeddingAvailable && (
           <>
-            <div className='group relative flex justify-center items-center w-6 h-6 hover:bg-gray-100 dark:bg-gray-900 rounded-md cursor-pointer'>
+            <div className='group relative flex justify-center items-center w-6 h-6 hover:bg-gray-100 dark:bg-neutral-950 rounded-md cursor-pointer'>
               <div className={cn(s.editTip, 'hidden items-center absolute -top-10 px-3 h-[34px] bg-white dark:bg-neutral-900 rounded-lg whitespace-nowrap text-xs font-semibold text-gray-700 dark:text-gray-300 group-hover:flex')}>{t('common.operation.edit')}</div>
               <Edit03 className='w-4 h-4 text-gray-500' onClick={() => setIsEditing(true)} />
             </div>

@@ -213,7 +213,7 @@ const ExternalDataToolModal: FC<ExternalDataToolModalProps> = ({
           <input
             value={localeData.label || ''}
             onChange={e => handleValueChange({ label: e.target.value })}
-            className='grow block mr-2 px-3 h-9 bg-gray-100 dark:bg-gray-900 rounded-lg text-sm text-gray-900 outline-none appearance-none'
+            className='grow block mr-2 px-3 h-9 bg-gray-100 dark:bg-neutral-950 rounded-lg text-sm text-gray-900 outline-none appearance-none'
             placeholder={t('appDebug.feature.tools.modal.name.placeholder') || ''}
           />
           <AppIcon size='large'
@@ -231,7 +231,7 @@ const ExternalDataToolModal: FC<ExternalDataToolModalProps> = ({
         <input
           value={localeData.variable || ''}
           onChange={e => handleValueChange({ variable: e.target.value })}
-          className='block px-3 w-full h-9 bg-gray-100 dark:bg-gray-900 rounded-lg text-sm text-gray-900 outline-none appearance-none'
+          className='block px-3 w-full h-9 bg-gray-100 dark:bg-neutral-950 rounded-lg text-sm text-gray-900 outline-none appearance-none'
           placeholder={t('appDebug.feature.tools.modal.variableName.placeholder') || ''}
         />
       </div>

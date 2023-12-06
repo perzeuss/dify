@@ -237,7 +237,7 @@ const EmbeddingDetail: FC<Props> = ({ detail, stopPosition = 'top', datasetId: d
       <div className={s.progressContainer}>
         {new Array(10).fill('').map((_, idx) => <div
           key={idx}
-          className={cn(s.progressBgItem, isEmbedding ? 'bg-primary-50' : 'bg-gray-100 dark:bg-gray-900')}
+          className={cn(s.progressBgItem, isEmbedding ? 'bg-primary-50' : 'bg-gray-100 dark:bg-neutral-950')}
         />)}
         <div
           className={cn(

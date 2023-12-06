@@ -720,7 +720,7 @@ const Main: FC<IMainProps> = () => {
     return <Loading type='app' />
 
   return (
-    <div className='bg-gray-100 dark:bg-gray-900 h-full'>
+    <div className='bg-gray-100 dark:bg-neutral-950 h-full'>
       <div
         className={cn(
           'flex rounded-t-2xl bg-white overflow-hidden rounded-b-2xl h-full',

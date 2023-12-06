@@ -109,7 +109,7 @@ const ItemComponent = ({ index, style, data }: ListChildComponentProps<{
 
   return (
     <div
-      className={cn('group flex items-center pl-2 pr-[2px] rounded-md border border-transparent hover:bg-gray-100 dark:bg-gray-900 cursor-pointer', previewPageId === current.page_id && s['preview-item'])}
+      className={cn('group flex items-center pl-2 pr-[2px] rounded-md border border-transparent hover:bg-gray-100 dark:bg-neutral-950 cursor-pointer', previewPageId === current.page_id && s['preview-item'])}
       style={{ ...style, top: style.top as number + 8, left: 8, right: 8, width: 'calc(100% - 16px)' }}
     >
       <Checkbox

@@ -82,7 +82,7 @@ export default function AppSelector({ appItems, curApp }: IAppSelectorProps) {
             {isCurrentWorkspaceManager && <Menu.Item>
               <div className='p-1' onClick={() => setShowNewAppDialog(true)}>
                 <div
-                  className='flex items-center h-12 rounded-lg cursor-pointer hover:bg-gray-100 dark:bg-gray-900'
+                  className='flex items-center h-12 rounded-lg cursor-pointer hover:bg-gray-100 dark:bg-neutral-950'
                 >
                   <div
                     className='
