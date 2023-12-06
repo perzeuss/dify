@@ -83,7 +83,7 @@ const Quota: FC<QuotaProps> = ({
           </div>
           {renderStatus()}
         </div>
-        <div className='flex items-center text-gray-700'>
+        <div className='flex items-center text-gray-700 dark:text-gray-300'>
           <div className='mr-1 text-sm font-medium'>{renderQuota()}</div>
           <div className='mr-1 text-sm'>
             {renderUnit()}
@@ -94,7 +94,7 @@ const Quota: FC<QuotaProps> = ({
               <div className='w-[261px] text-gray-500'>{t('common.modelProvider.card.tip')}</div>
             }
           >
-            <InfoCircle className='w-3 h-3 text-gray-400 hover:text-gray-700' />
+            <InfoCircle className='w-3 h-3 text-gray-400 hover:text-gray-700 dark:text-gray-300' />
           </Tooltip>
         </div>
       </div>

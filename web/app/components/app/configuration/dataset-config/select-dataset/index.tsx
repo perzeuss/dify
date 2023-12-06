@@ -152,7 +152,7 @@ const SelectDataSet: FC<ISelectDataSetProps> = ({
       )}
       {loaded && (
         <div className='flex justify-between items-center mt-8'>
-          <div className='text-sm  font-medium text-gray-700'>
+          <div className='text-sm  font-medium text-gray-700 dark:text-gray-300'>
             {selected.length > 0 && `${selected.length} ${t('appDebug.feature.dataSet.selected')}`}
           </div>
           <div className='flex space-x-2'>

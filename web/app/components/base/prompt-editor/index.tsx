@@ -156,7 +156,7 @@ const PromptEditor: FC<PromptEditorProps> = ({
     <LexicalComposer initialConfig={{ ...initialConfig, editable }}>
       <div className='relative'>
         <RichTextPlugin
-          contentEditable={<ContentEditable className={`${className} outline-none text-sm text-gray-700 leading-6`} />}
+          contentEditable={<ContentEditable className={`${className} outline-none text-sm text-gray-700 dark:text-gray-300 leading-6`} />}
           placeholder={<Placeholder />}
           ErrorBoundary={LexicalErrorBoundary}
         />

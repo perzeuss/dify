@@ -17,7 +17,7 @@ const QuotaCard: FC<QuotaCardProps> = ({
         <div className='flex items-center h-[18px] text-xs font-medium text-gray-500'>
           {t('common.modelProvider.item.freeQuota')}
         </div>
-        <div className='flex items-center h-5 text-sm font-medium text-gray-700'>
+        <div className='flex items-center h-5 text-sm font-medium text-gray-700 dark:text-gray-300'>
           {formatNumber(remainTokens)}
           <div className='ml-1 font-normal'>Tokens</div>
         </div>

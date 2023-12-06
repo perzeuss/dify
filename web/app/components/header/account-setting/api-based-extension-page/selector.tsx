@@ -58,14 +58,14 @@ const ApiBasedExtensionSelector: FC<ApiBasedExtensionSelectorProps> = ({
                   <div className='mr-1.5 w-[270px] text-xs text-gray-400 truncate text-right'>
                     {currentItem.api_endpoint}
                   </div>
-                  <ChevronDown className={`w-4 h-4 text-gray-700 ${!open && 'opacity-60'}`} />
+                  <ChevronDown className={`w-4 h-4 text-gray-700 dark:text-gray-300 ${!open && 'opacity-60'}`} />
                 </div>
               </div>
             )
             : (
               <div className='flex items-center justify-between pl-3 pr-2.5 h-9 bg-gray-100 dark:bg-gray-900 rounded-lg text-sm text-gray-400 cursor-pointer'>
                 {t('common.apiBasedExtension.selector.placeholder')}
-                <ChevronDown className={`w-4 h-4 text-gray-700 ${!open && 'opacity-60'}`} />
+                <ChevronDown className={`w-4 h-4 text-gray-700 dark:text-gray-300 ${!open && 'opacity-60'}`} />
               </div>
             )
         }

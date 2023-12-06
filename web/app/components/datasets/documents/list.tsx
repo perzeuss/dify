@@ -83,7 +83,7 @@ export const StatusItem: FC<{
       scene === 'detail' ? s.statusItemDetail : '')
   }>
     <Indicator color={DOC_INDEX_STATUS_MAP[localStatus]?.color as IndicatorProps['color']} className={reverse ? 'ml-2' : 'mr-2'} />
-    <span className={cn('text-gray-700 text-sm', textCls)}>{DOC_INDEX_STATUS_MAP[localStatus]?.text}</span>
+    <span className={cn('text-gray-700 dark:text-gray-300 text-sm', textCls)}>{DOC_INDEX_STATUS_MAP[localStatus]?.text}</span>
     {
       errorMessage && (
         <Tooltip
@@ -92,7 +92,7 @@ export const StatusItem: FC<{
             <div className='max-w-[260px] break-all'>{errorMessage}</div>
           }
         >
-          <HelpCircle className='ml-1 w-[14px] h-[14px] text-gray-700' />
+          <HelpCircle className='ml-1 w-[14px] h-[14px] text-gray-700 dark:text-gray-300' />
         </Tooltip>
       )
     }
@@ -236,7 +236,7 @@ export const OperationAction: FC<{
         position='br'
         btnElement={
           <div className={cn(s.commonIcon)}>
-            <DotsHorizontal className='w-4 h-4 text-gray-700' />
+            <DotsHorizontal className='w-4 h-4 text-gray-700 dark:text-gray-300' />
           </div>
         }
         btnClassName={open => cn(isListScene ? s.actionIconWrapperList : s.actionIconWrapperDetail, open ? '!bg-gray-100 dark:bg-gray-900 !shadow-none' : '!bg-transparent')}
@@ -267,7 +267,7 @@ export const OperationAction: FC<{
 
 export const renderTdValue = (value: string | number | null, isEmptyStyle = false) => {
   return (
-    <div className={cn(isEmptyStyle ? 'text-gray-400' : 'text-gray-700', s.tdValue)}>
+    <div className={cn(isEmptyStyle ? 'text-gray-400' : 'text-gray-700 dark:text-gray-300', s.tdValue)}>
       {value ?? '-'}
     </div>
   )
@@ -334,7 +334,7 @@ const DocumentList: FC<IDocumentListProps> = ({ embeddingAvailable, documents = 
             <td className='w-20'>{t('datasetDocuments.list.table.header.action')}</td>
           </tr>
         </thead>
-        <tbody className="text-gray-700">
+        <tbody className="text-gray-700 dark:text-gray-300">
           {localDocs.map((doc) => {
             const suffix = doc.name.split('.').pop() || 'txt'
             return <tr

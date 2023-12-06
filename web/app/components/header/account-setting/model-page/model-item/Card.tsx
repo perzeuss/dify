@@ -36,7 +36,7 @@ const Card: FC<CardProps> = ({
         models.map(model => (
           <div key={`${model.model_name}-${model.model_type}`} className='flex mb-1 px-3 py-2 bg-white dark:bg-black rounded-lg shadow-xs last:mb-0'>
             <div className='grow'>
-              <div className='flex items-center mb-0.5 h-[18px] text-[13px] font-medium text-gray-700'>
+              <div className='flex items-center mb-0.5 h-[18px] text-[13px] font-medium text-gray-700 dark:text-gray-300'>
                 {model.model_name}
                 <div className='ml-2 px-1.5 rounded-md border border-[rgba(0,0,0,0.08)] text-xs text-gray-600'>{model.model_type}</div>
               </div>
@@ -47,7 +47,7 @@ const Card: FC<CardProps> = ({
             <div className='flex items-center'>
               <Indicator className='mr-3' />
               <Button
-                className='mr-1 !px-3 !h-7 rounded-md bg-white dark:bg-black !text-xs font-medium text-gray-700'
+                className='mr-1 !px-3 !h-7 rounded-md bg-white dark:bg-black !text-xs font-medium text-gray-700 dark:text-gray-300'
                 onClick={() => onOpenModal({ model_name: model.model_name, model_type: model.model_type, ...model.config })}
               >
                 {t('common.operation.edit')}

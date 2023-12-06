@@ -59,7 +59,7 @@ const Setting: FC<SettingProps> = ({
       {
         configurable && (
           <Button
-            className={`!px-3 !h-7 rounded-md bg-white dark:bg-black !text-xs font-medium text-gray-700 ${!!modelItem.disable && !IS_CE_EDITION && '!text-gray-300'}`}
+            className={`!px-3 !h-7 rounded-md bg-white dark:bg-black !text-xs font-medium text-gray-700 dark:text-gray-300 ${!!modelItem.disable && !IS_CE_EDITION && '!text-gray-300'}`}
             onClick={() => onOpenModal()}
             disabled={!!modelItem.disable && !IS_CE_EDITION}
           >
@@ -72,7 +72,7 @@ const Setting: FC<SettingProps> = ({
           <div className='flex items-center'>
             <Indicator className='mr-3' />
             <Button
-              className='mr-1 !px-3 !h-7 rounded-md bg-white dark:bg-black !text-xs font-medium text-gray-700'
+              className='mr-1 !px-3 !h-7 rounded-md bg-white dark:bg-black !text-xs font-medium text-gray-700 dark:text-gray-300'
               onClick={() => onOpenModal(custom.config)}
             >
               {t('common.operation.edit')}
@@ -89,7 +89,7 @@ const Setting: FC<SettingProps> = ({
       {
         !configurable && !custom?.config && (
           <Button
-            className={`!px-3 !h-7 rounded-md bg-white dark:bg-black !text-xs font-medium text-gray-700 ${!!modelItem.disable && !IS_CE_EDITION && '!text-gray-300'}`}
+            className={`!px-3 !h-7 rounded-md bg-white dark:bg-black !text-xs font-medium text-gray-700 dark:text-gray-300 ${!!modelItem.disable && !IS_CE_EDITION && '!text-gray-300'}`}
             onClick={() => onOpenModal()}
             disabled={!!modelItem.disable && !IS_CE_EDITION}
           >

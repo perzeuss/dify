@@ -25,7 +25,7 @@ const ParamsConfig: FC = () => {
       }}
     >
       <PortalToFollowElemTrigger onClick={() => setOpen(v => !v)}>
-        <div className={cn('flex items-center rounded-md h-7 px-3 space-x-1 text-gray-700 cursor-pointer hover:bg-gray-200', open && 'bg-gray-200')}>
+        <div className={cn('flex items-center rounded-md h-7 px-3 space-x-1 text-gray-700 dark:text-gray-300 cursor-pointer hover:bg-gray-200', open && 'bg-gray-200')}>
           <Settings01 className='w-3.5 h-3.5 ' />
           <div className='ml-1 leading-[18px] text-xs font-medium '>{t('appDebug.vision.settings')}</div>
         </div>

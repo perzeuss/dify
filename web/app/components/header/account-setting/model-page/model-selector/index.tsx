@@ -222,12 +222,12 @@ const ModelSelector: FC<Props> = ({
                 }
                 {
                   !readonly && !whenEmptyGoToSetting && (
-                    <ChevronDown className={`w-4 h-4 text-gray-700 ${open ? 'opacity-100' : 'opacity-60'}`} />
+                    <ChevronDown className={`w-4 h-4 text-gray-700 dark:text-gray-300 ${open ? 'opacity-100' : 'opacity-60'}`} />
                   )
                 }
                 {
                   whenEmptyGoToSetting && (value && value.modelName && value.providerName) && (
-                    <ChevronDown className={`w-4 h-4 text-gray-700 ${open ? 'opacity-100' : 'opacity-60'}`} />
+                    <ChevronDown className={`w-4 h-4 text-gray-700 dark:text-gray-300 ${open ? 'opacity-100' : 'opacity-60'}`} />
                   )
                 }
               </>

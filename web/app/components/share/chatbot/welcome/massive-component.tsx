@@ -15,7 +15,7 @@ export const AppInfo: FC<{ siteInfo: SiteInfo }> = ({ siteInfo }) => {
   const { t } = useTranslation()
   return (
     <div>
-      <div className='flex items-center py-2 text-xl font-medium text-gray-700 rounded-md'>👏 {t('share.common.welcome')} {siteInfo.title}</div>
+      <div className='flex items-center py-2 text-xl font-medium text-gray-700 dark:text-gray-300 rounded-md'>👏 {t('share.common.welcome')} {siteInfo.title}</div>
       <p className='text-sm text-gray-500'>{siteInfo.description}</p>
     </div>
   )
@@ -24,7 +24,7 @@ export const AppInfo: FC<{ siteInfo: SiteInfo }> = ({ siteInfo }) => {
 export const PromptTemplate: FC<{ html: string }> = ({ html }) => {
   return (
     <div
-      className={' box-border text-sm text-gray-700'}
+      className={' box-border text-sm text-gray-700 dark:text-gray-300'}
       dangerouslySetInnerHTML={{ __html: html }}
     ></div>
   )

@@ -89,7 +89,7 @@ const APIKeyInfoPanel: FC = () => {
       {/* Call times info */}
       {isCloud && (
         <div className='my-5'>
-          <div className='flex items-center h-5 space-x-2 text-sm text-gray-700 font-medium'>
+          <div className='flex items-center h-5 space-x-2 text-sm text-gray-700 dark:text-gray-300 font-medium'>
             <div>{t(`appOverview.apiKeyInfo.${unit === 'times' ? 'callTimes' : 'usedToken'}`)}</div>
             <div>·</div>
             <div className={cn('font-semibold', exhausted && 'text-[#D92D20]')}>{formatNumber(used)}/{formatNumber(total)}</div>

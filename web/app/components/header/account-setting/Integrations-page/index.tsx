@@ -43,7 +43,7 @@ export default function IntegrationsPage() {
               {
                 !integrate.is_bound && (
                   <Link 
-                    className='flex items-center h-8 px-[7px] bg-white dark:bg-black rounded-lg border border-gray-200 text-xs font-medium text-gray-700 cursor-pointer'
+                    className='flex items-center h-8 px-[7px] bg-white dark:bg-black rounded-lg border border-gray-200 text-xs font-medium text-gray-700 dark:text-gray-300 cursor-pointer'
                     href={integrate.link}
                     target={'_blank'}>
                     {t('common.integrations.connect')}

@@ -41,7 +41,7 @@ const Thought: FC<IThoughtProps> = ({
       if (item.tool.startsWith('dataset-')) {
         const dataSetId = item.tool.replace('dataset-', '')
         const datasetName = dataSets?.find(item => item.id === dataSetId)?.name || 'unknown dataset'
-        return t('explore.universalChat.thought.res.dataset').replace('{datasetName}', `<span class="text-gray-700">${datasetName}</span>`)
+        return t('explore.universalChat.thought.res.dataset').replace('{datasetName}', `<span class="text-gray-700 dark:text-gray-300">${datasetName}</span>`)
       }
       switch (item.tool) {
         case 'web_reader':

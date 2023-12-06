@@ -43,7 +43,7 @@ const SegmentAdd: FC<ISegmentAddProps> = ({
           </div>
         )}
         {importStatus === ProcessStatus.COMPLETED && (
-          <div className='inline-flex items-center mr-2 px-3 py-[6px] text-gray-700 bg-[#F6FEF9] rounded-lg border border-black/5'>
+          <div className='inline-flex items-center mr-2 px-3 py-[6px] text-gray-700 dark:text-gray-300 bg-[#F6FEF9] rounded-lg border border-black/5'>
             <CheckCircle className='mr-2 w-4 h-4 text-[#039855]' />
             <span className='font-medium text-[13px] leading-[18px]'>{t('datasetDocuments.list.batchModal.completed')}</span>
             <span className='pl-2 font-medium text-[13px] leading-[18px] text-[#155EEF] cursor-pointer' onClick={clearProcessStatus}>{t('datasetDocuments.list.batchModal.ok')}</span>
@@ -66,13 +66,13 @@ const SegmentAdd: FC<ISegmentAddProps> = ({
       trigger='click'
       htmlContent={
         <div className='w-full py-1'>
-          <div className='py-2 px-3 mx-1 flex items-center gap-2 hover:bg-gray-100 dark:bg-gray-900 rounded-lg cursor-pointer text-gray-700 text-sm' onClick={showNewSegmentModal}>{t('datasetDocuments.list.action.add')}</div>
-          <div className='py-2 px-3 mx-1 flex items-center gap-2 hover:bg-gray-100 dark:bg-gray-900 rounded-lg cursor-pointer text-gray-700 text-sm' onClick={showBatchModal}>{t('datasetDocuments.list.action.batchAdd')}</div>
+          <div className='py-2 px-3 mx-1 flex items-center gap-2 hover:bg-gray-100 dark:bg-gray-900 rounded-lg cursor-pointer text-gray-700 dark:text-gray-300 text-sm' onClick={showNewSegmentModal}>{t('datasetDocuments.list.action.add')}</div>
+          <div className='py-2 px-3 mx-1 flex items-center gap-2 hover:bg-gray-100 dark:bg-gray-900 rounded-lg cursor-pointer text-gray-700 dark:text-gray-300 text-sm' onClick={showBatchModal}>{t('datasetDocuments.list.action.batchAdd')}</div>
         </div>
       }
       btnElement={
         <div className='inline-flex items-center'>
-          <FilePlus02 className='w-4 h-4 text-gray-700' />
+          <FilePlus02 className='w-4 h-4 text-gray-700 dark:text-gray-300' />
           <span className='pl-1'>{t('datasetDocuments.list.action.addButton')}</span>
         </div>
       }

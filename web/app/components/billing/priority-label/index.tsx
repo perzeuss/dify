@@ -29,7 +29,7 @@ const PriorityLabel = () => {
   return (
     <TooltipPlus popupContent={
       <div>
-        <div className='mb-1 text-xs font-semibold text-gray-700'>{`${t('billing.plansCommon.documentProcessingPriority')}: ${t(`billing.plansCommon.priority.${priority}`)}`}</div>
+        <div className='mb-1 text-xs font-semibold text-gray-700 dark:text-gray-300'>{`${t('billing.plansCommon.documentProcessingPriority')}: ${t(`billing.plansCommon.priority.${priority}`)}`}</div>
         {
           priority !== DocumentProcessingPriority.topPriority && (
             <div className='text-xs text-gray-500'>{t('billing.plansCommon.documentProcessingPriorityTip')}</div>

@@ -37,7 +37,7 @@ const GithubStar = () => {
     <a
       href='https://github.com/langgenius/dify'
       target='_blank'
-      className='flex items-center leading-[18px] border border-gray-200 rounded-md text-xs text-gray-700 font-semibold overflow-hidden'>
+      className='flex items-center leading-[18px] border border-gray-200 rounded-md text-xs text-gray-700 dark:text-gray-300 font-semibold overflow-hidden'>
       <div className='flex items-center px-2 py-1 bg-gray-100 dark:bg-gray-900'>
         <Github className='mr-1 w-[18px] h-[18px]' />
         Star

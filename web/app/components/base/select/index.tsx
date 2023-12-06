@@ -118,7 +118,7 @@ const Select: FC<ISelectProps> = ({
                 value={item}
                 className={({ active }: { active: boolean }) =>
                   classNames(
-                    'relative cursor-default select-none py-2 pl-3 pr-9 rounded-lg hover:bg-gray-100 text-gray-700 dark:text-gray-300',
+                    'relative cursor-default select-none py-2 pl-3 pr-9 rounded-lg hover:bg-gray-100 text-gray-700 dark:text-gray-300 dark:text-gray-300',
                     active ? 'bg-gray-100' : '',
                   )
                 }
@@ -129,7 +129,7 @@ const Select: FC<ISelectProps> = ({
                     {selected && (
                       <span
                         className={classNames(
-                          'absolute inset-y-0 right-0 flex items-center pr-4 text-gray-700 dark:text-gray-300',
+                          'absolute inset-y-0 right-0 flex items-center pr-4 text-gray-700 dark:text-gray-300 dark:text-gray-300',
                         )}
                       >
                         <CheckIcon className="h-5 w-5" aria-hidden="true" />
@@ -211,7 +211,7 @@ const SimpleSelect: FC<ISelectProps> = ({
                     {selected && (
                       <span
                         className={classNames(
-                          'absolute inset-y-0 right-0 flex items-center pr-4 text-gray-700 dark:text-gray-300',
+                          'absolute inset-y-0 right-0 flex items-center pr-4 text-gray-700 dark:text-gray-300 dark:text-gray-300',
                         )}
                       >
                         <CheckIcon className="h-5 w-5" aria-hidden="true" />

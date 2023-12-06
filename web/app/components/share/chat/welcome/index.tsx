@@ -98,7 +98,7 @@ const Welcome: FC<IWelcomeProps> = ({
       <div className='space-y-3'>
         {promptConfig.prompt_variables.map(item => (
           <div className='tablet:flex items-start mobile:space-y-2 tablet:space-y-0 mobile:text-xs tablet:text-sm' key={item.key}>
-            <label className={`flex-shrink-0 flex items-center tablet:leading-9 mobile:text-gray-700 tablet:text-gray-900 mobile:font-medium pc:font-normal ${s.formLabel}`}>{item.name}</label>
+            <label className={`flex-shrink-0 flex items-center tablet:leading-9 mobile:text-gray-700 dark:text-gray-300 tablet:text-gray-900 mobile:font-medium pc:font-normal ${s.formLabel}`}>{item.name}</label>
             {item.type === 'select'
               && (
                 <Select
@@ -265,7 +265,7 @@ const Welcome: FC<IWelcomeProps> = ({
             <PromptTemplate html={highLightPromoptTemplate} />
             {isFold && (
               <div className='flex items-center justify-between mt-3 border-t border-indigo-100 pt-4 text-xs text-indigo-600'>
-                <span className='text-gray-700'>{t('share.chat.configStatusDes')}</span>
+                <span className='text-gray-700 dark:text-gray-300'>{t('share.chat.configStatusDes')}</span>
                 <EditBtn onClick={() => setIsFold(false)} />
               </div>
             )}

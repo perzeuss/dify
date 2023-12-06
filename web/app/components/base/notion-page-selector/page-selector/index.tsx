@@ -124,7 +124,7 @@ const ItemComponent = ({ index, style, data }: ListChildComponentProps<{
         src={current.page_icon}
       />
       <div
-        className='grow text-sm font-medium text-gray-700 truncate'
+        className='grow text-sm font-medium text-gray-700 dark:text-gray-300 truncate'
         title={current.page_name}
       >
         {current.page_name}
@@ -132,7 +132,7 @@ const ItemComponent = ({ index, style, data }: ListChildComponentProps<{
       {
         canPreview && (
           <div
-            className='shrink-0 hidden group-hover:flex items-center ml-1 px-2 h-6 rounded-md text-xs font-medium text-gray-500 cursor-pointer hover:bg-gray-50 hover:text-gray-700'
+            className='shrink-0 hidden group-hover:flex items-center ml-1 px-2 h-6 rounded-md text-xs font-medium text-gray-500 cursor-pointer hover:bg-gray-50 hover:text-gray-700 dark:text-gray-300'
             onClick={() => handlePreview(index)}>
             {t('common.dataSource.notion.selector.preview')}
           </div>

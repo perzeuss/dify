@@ -67,7 +67,7 @@ const ConfirmCommon: FC<ConfirmCommonProps> = ({
               {
                 showOperateCancel && (
                   <Button
-                    className='mr-2 min-w-24 text-sm font-medium !text-gray-700'
+                    className='mr-2 min-w-24 text-sm font-medium !text-gray-700 dark:text-gray-300'
                     onClick={onCancel}
                   >
                     {t('common.operation.cancel')}

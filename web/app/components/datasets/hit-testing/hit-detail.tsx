@@ -102,7 +102,7 @@ const HitDetail: FC<IHitDetailProps> = ({ segInfo, vectorInfo }) => {
           </span>
         </div>
         <div
-          className={cn(s.numberInfo, 'w-[400px] truncate text-gray-700 mt-1')}
+          className={cn(s.numberInfo, 'w-[400px] truncate text-gray-700 dark:text-gray-300 mt-1')}
         >
           {segInfo?.index_node_hash}
         </div>

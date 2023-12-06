@@ -29,7 +29,7 @@ const NoData: FC<INoDataProps> = ({
         {markIcon}
       </div>
       <div className='mt-2'>
-        <span className='text-gray-700 font-semibold'>{t('share.generation.savedNoData.title')}</span>
+        <span className='text-gray-700 dark:text-gray-300 font-semibold'>{t('share.generation.savedNoData.title')}</span>
         {lightIcon}
       </div>
       <div className='mt-2 text-gray-500 text-[13px] font-normal'>

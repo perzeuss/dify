@@ -21,13 +21,13 @@ const HistoryCard = (
 ) => {
   return (
     <div className='p-4 h-32 bg-gray-50 border-gray-200 rounded-lg relative flex flex-col justify-between items-center cursor-pointer'>
-      <div className='text-gray-700 text-sm'>
+      <div className='text-gray-700 dark:text-gray-300 text-sm'>
         {history.source}
       </div>
       <div className="absolute inset-0 flex items-center m-4" aria-hidden="true">
         <div className="w-full border-t border-gray-100" />
       </div>
-      <div className='text-gray-700 text-sm'>
+      <div className='text-gray-700 dark:text-gray-300 text-sm'>
         {history.target}
       </div>
     </div>

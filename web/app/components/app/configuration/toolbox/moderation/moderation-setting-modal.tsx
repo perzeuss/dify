@@ -267,7 +267,7 @@ const ModerationSettingModal: FC<ModerationSettingModalProps> = ({
           !isLoading && !openaiProviderConfiged && localeData.type === 'openai_moderation' && (
             <div className='flex items-center mt-2 px-3 py-2 bg-[#FFFAEB] rounded-lg border border-[#FEF0C7]'>
               <InfoCircle className='mr-1 w-4 h-4 text-[#F79009]' />
-              <div className='flex items-center text-xs font-medium text-gray-700'>
+              <div className='flex items-center text-xs font-medium text-gray-700 dark:text-gray-300'>
                 {t('appDebug.feature.moderation.modal.openaiNotConfig.before')}
                 <span
                   className='text-primary-600 cursor-pointer'

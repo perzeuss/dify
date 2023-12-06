@@ -252,7 +252,7 @@ const SettingsModal: FC<SettingsModalProps> = ({
         <div className='absolute z-10 left-[30px] right-[30px] bottom-[76px] flex h-10 items-center px-3 rounded-lg border border-[#FEF0C7] bg-[#FFFAEB] shadow-lg justify-between'>
           <div className='flex items-center'>
             <AlertTriangle className='mr-1 w-3 h-3 text-[#F79009]' />
-            <div className='leading-[18px] text-xs font-medium text-gray-700'>{t('appDebug.datasetConfig.retrieveChangeTip')}</div>
+            <div className='leading-[18px] text-xs font-medium text-gray-700 dark:text-gray-300'>{t('appDebug.datasetConfig.retrieveChangeTip')}</div>
           </div>
           <div className='p-1 cursor-pointer' onClick={(e) => {
             setIsHideChangedTip(true)

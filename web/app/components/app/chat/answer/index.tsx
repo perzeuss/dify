@@ -235,7 +235,7 @@ const Answer: FC<IAnswerProps> = ({
                       value={inputValue}
                       onChange={e => setInputValue(e.target.value)}
                       minHeight={58}
-                      className={`${cn(s.textArea)} !py-2 resize-none block w-full !px-3 bg-gray-50 border border-gray-200 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm text-gray-700 tracking-[0.2px]`}
+                      className={`${cn(s.textArea)} !py-2 resize-none block w-full !px-3 bg-gray-50 border border-gray-200 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm text-gray-700 dark:text-gray-300 tracking-[0.2px]`}
                     />
                     <div className="mt-2 flex flex-row">
                       <Button

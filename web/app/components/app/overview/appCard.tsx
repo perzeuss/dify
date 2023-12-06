@@ -164,7 +164,7 @@ function AppCard({
             </div>
             <div className="w-full h-9 pl-2 pr-0.5 py-0.5 bg-black bg-opacity-[0.02] rounded-lg border border-black border-opacity-5 justify-start items-center inline-flex">
               <div className="h-4 px-2 justify-start items-start gap-2 flex flex-1 min-w-0">
-                <div className="text-gray-700 text-xs font-medium text-ellipsis overflow-hidden whitespace-nowrap">
+                <div className="text-gray-700 dark:text-gray-300 text-xs font-medium text-ellipsis overflow-hidden whitespace-nowrap">
                   {isApp ? appUrl : apiUrl}
                 </div>
               </div>
@@ -197,7 +197,7 @@ function AppCard({
           </div>
         </div>
         <div className={'pt-2 flex flex-row items-center flex-wrap gap-y-2'}>
-          {!isApp && <SecretKeyButton className='flex-shrink-0 !h-8 bg-white dark:bg-black mr-2' textCls='!text-gray-700 font-medium' iconCls='stroke-[1.2px]' appId={appInfo.id} />}
+          {!isApp && <SecretKeyButton className='flex-shrink-0 !h-8 bg-white dark:bg-black mr-2' textCls='!text-gray-700 dark:text-gray-300 font-medium' iconCls='stroke-[1.2px]' appId={appInfo.id} />}
           {OPERATIONS_MAP[cardType].map((op) => {
             const disabled
               = op.opName === t('appOverview.overview.appInfo.settings.entry')
@@ -205,7 +205,7 @@ function AppCard({
                 : !runningStatus
             return (
               <Button
-                className="mr-2 border-[0.5px] !h-8 hover:outline hover:outline-[0.5px] hover:outline-gray-300 text-gray-700 font-medium bg-white dark:bg-black shadow-[0px_1px_2px_0px_rgba(16,24,40,0.05)]"
+                className="mr-2 border-[0.5px] !h-8 hover:outline hover:outline-[0.5px] hover:outline-gray-300 text-gray-700 dark:text-gray-300 font-medium bg-white dark:bg-black shadow-[0px_1px_2px_0px_rgba(16,24,40,0.05)]"
                 key={op.opName}
                 onClick={genClickFuncByName(op.opName)}
                 disabled={disabled}

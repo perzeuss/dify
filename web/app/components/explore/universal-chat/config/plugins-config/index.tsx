@@ -53,7 +53,7 @@ const Plugins: FC<IPluginsProps> = ({
     if (key === 'google_search' && !isSerpApiValid && !readonly) {
       res.readonly = true
       res.more = (
-        <div className='border-t border-[#FEF0C7] flex items-center h-[34px] pl-2 bg-[#FFFAEB] text-gray-700 text-xs '>
+        <div className='border-t border-[#FEF0C7] flex items-center h-[34px] pl-2 bg-[#FFFAEB] text-gray-700 dark:text-gray-300 text-xs '>
           <span className='whitespace-pre'>{t('explore.universalChat.plugins.google_search.more.left')}</span>
           <span className='cursor-pointer text-[#155EEF]' onClick={() => setShowAccountSettingModal({ payload: 'plugin', onCancelCallback: async () => await checkSerpApiKey() })}>{t('explore.universalChat.plugins.google_search.more.link')}</span>
           <span className='whitespace-pre'>{t('explore.universalChat.plugins.google_search.more.right')}</span>

@@ -69,7 +69,7 @@ const TagInput: FC<TagInputProps> = ({
         items.map((item, index) => (
           <div
             key={item}
-            className={cn('flex items-center mr-1 mt-1 px-2 py-1 text-sm text-gray-700 border border-gray-200', isSpecialMode ? 'bg-white dark:bg-black rounded-md' : 'rounded-lg')}>
+            className={cn('flex items-center mr-1 mt-1 px-2 py-1 text-sm text-gray-700 dark:text-gray-300 border border-gray-200', isSpecialMode ? 'bg-white dark:bg-black rounded-md' : 'rounded-lg')}>
             {item}
             {
               !disableRemove && (

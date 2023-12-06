@@ -50,7 +50,7 @@ const ModelCard: FC<ModelCardProps> = ({
           ? (
             <div className='flex items-center px-4 h-12'>
               <Indicator color='green' className='mr-2' />
-              <div className='grow text-[13px] font-medium text-gray-700'>API key</div>
+              <div className='grow text-[13px] font-medium text-gray-700 dark:text-gray-300'>API key</div>
               <div
                 className='mr-1 px-2 leading-6 rounded-md text-xs font-medium text-gray-500 hover:bg-gray-50 cursor-pointer'
                 onClick={() => onOpenModal(custom?.config)}

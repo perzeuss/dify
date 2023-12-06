@@ -199,7 +199,7 @@ function DetailPanel<T extends ChatConversationFullDetailResponse | CompletionCo
     <div className='border-b border-gray-100 py-4 px-6 flex items-center justify-between'>
       <div>
         <div className='text-gray-500 text-[10px] leading-[14px]'>{isChatMode ? t('appLog.detail.conversationId') : t('appLog.detail.time')}</div>
-        <div className='text-gray-700 text-[13px] leading-[18px]'>{isChatMode ? detail.id?.split('-').slice(-1)[0] : dayjs.unix(detail.created_at).format(t('appLog.dateTimeFormat') as string)}</div>
+        <div className='text-gray-700 dark:text-gray-300 text-[13px] leading-[18px]'>{isChatMode ? detail.id?.split('-').slice(-1)[0] : dayjs.unix(detail.created_at).format(t('appLog.dateTimeFormat') as string)}</div>
       </div>
       <div className='flex items-center flex-wrap gap-y-1 justify-end'>
         <div
@@ -224,13 +224,13 @@ function DetailPanel<T extends ChatConversationFullDetailResponse | CompletionCo
             <InformationCircleIcon className='h-4 w-4 text-gray-800 ml-1.5' />
           </>}
           htmlContent={<div className='w-[280px]'>
-            <div className='flex justify-between py-2 px-4 font-medium text-sm text-gray-700'>
+            <div className='flex justify-between py-2 px-4 font-medium text-sm text-gray-700 dark:text-gray-300'>
               <span>Tone of responses</span>
               <div>{targetTone}</div>
             </div>
             {['temperature', 'top_p', 'presence_penalty', 'max_tokens', 'stop'].map((param: string, index: number) => {
               return <div className='flex justify-between py-2 px-4 bg-gray-50' key={index}>
-                <span className='text-xs text-gray-700'>{PARAM_MAP[param as keyof typeof PARAM_MAP]}</span>
+                <span className='text-xs text-gray-700 dark:text-gray-300'>{PARAM_MAP[param as keyof typeof PARAM_MAP]}</span>
                 <span className='text-gray-800 font-medium text-xs'>{getParamValue(param)}</span>
               </div>
             })}
@@ -433,7 +433,7 @@ const ConversationList: FC<IConversationList> = ({ logs, appDetail, onRefresh })
         className={(isHighlight && !isChatMode) ? '' : '!hidden'}
         selector={`highlight-${randomString(16)}`}
       >
-        <div className={cn(isEmptyStyle ? 'text-gray-400' : 'text-gray-700', !isHighlight ? '' : 'bg-orange-100', 'text-sm overflow-hidden text-ellipsis whitespace-nowrap')}>
+        <div className={cn(isEmptyStyle ? 'text-gray-400' : 'text-gray-700 dark:text-gray-300', !isHighlight ? '' : 'bg-orange-100', 'text-sm overflow-hidden text-ellipsis whitespace-nowrap')}>
           {value || '-'}
         </div>
       </Tooltip>

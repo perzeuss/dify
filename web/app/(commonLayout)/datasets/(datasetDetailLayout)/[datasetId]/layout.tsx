@@ -118,7 +118,7 @@ const ExtraInfo = ({ isMobile, relatedApps }: IExtraInfoProps) => {
         {!isMobile && <div className={s.subTitle}>{relatedApps?.total || '--'} {t('common.datasetMenus.relatedApp')}</div>}
         {isMobile && <div className={classNames(s.subTitle, 'flex items-center justify-center !px-0 gap-1')}>
           {relatedApps?.total || '--'}
-          <PaperClipIcon className='h-4 w-4 text-gray-700' />
+          <PaperClipIcon className='h-4 w-4 text-gray-700 dark:text-gray-300' />
         </div>}
         {relatedApps?.data?.map((item, index) => (<LikedItem key={index} isMobile={isMobile} detail={item} />))}
       </>

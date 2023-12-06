@@ -115,7 +115,7 @@ export default function AccountPage() {
         <div className='mr-3'>
           <AppIcon size='tiny' />
         </div>
-        <div className='mt-[3px] text-xs font-medium text-gray-700 leading-[18px]'>{item.name}</div>
+        <div className='mt-[3px] text-xs font-medium text-gray-700 dark:text-gray-300 leading-[18px]'>{item.name}</div>
       </div>
     )
   }
@@ -141,7 +141,7 @@ export default function AccountPage() {
         <div className='mb-8'>
           <div className='mb-1 text-sm font-medium text-gray-900'>{t('common.account.password')}</div>
           <div className='mb-2 text-xs text-gray-500'>{t('common.account.passwordTip')}</div>
-          <Button className='font-medium !text-gray-700 !px-3 !py-[7px] !text-[13px]' onClick={() => setEditPasswordModalVisible(true)}>{userProfile.is_password_set ? t('common.account.resetPassword') : t('common.account.setPassword')}</Button>
+          <Button className='font-medium !text-gray-700 dark:text-gray-300 !px-3 !py-[7px] !text-[13px]' onClick={() => setEditPasswordModalVisible(true)}>{userProfile.is_password_set ? t('common.account.resetPassword') : t('common.account.setPassword')}</Button>
         </div>
       )}
       {!!apps.length && (

@@ -187,7 +187,7 @@ const AdvancedPromptInput: FC<Props> = ({
             </div>
           )}
 
-        <div className={cn(editorHeight, 'px-4 min-h-[102px] overflow-y-auto text-sm text-gray-700')}>
+        <div className={cn(editorHeight, 'px-4 min-h-[102px] overflow-y-auto text-sm text-gray-700 dark:text-gray-300')}>
           <PromptEditor
             className={editorHeight}
             value={value}

@@ -16,7 +16,7 @@ const AdvancedModeWarning: FC = () => {
       <div className='mb-2 text-xs leading-[18px] font-bold text-[#DC6803]'>{t('appDebug.promptMode.advancedWarning.title')}</div>
       <div className='flex justify-between items-center'>
         <div className='text-xs leading-[18px] '>
-          <span className='text-gray-700'>{t('appDebug.promptMode.advancedWarning.description')}</span>
+          <span className='text-gray-700 dark:text-gray-300'>{t('appDebug.promptMode.advancedWarning.description')}</span>
           <a
             className='font-medium text-[#155EEF]'
             href={`https://docs.dify.ai/${locale === 'zh-Hans' ? 'v/zh-hans/' : ''}advanced/prompt-engineering`}

@@ -30,8 +30,8 @@ const Billing: FC = () => {
       {enableBilling && isCurrentWorkspaceManager && billingUrl && (
         <a className='mt-5 flex px-6 justify-between h-12 items-center bg-gray-50 rounded-xl cursor-pointer' href={billingUrl} target='_blank'>
           <div className='flex items-center'>
-            <ReceiptList className='w-4 h-4 text-gray-700' />
-            <div className='ml-2 text-sm font-normal text-gray-700'>{t('billing.viewBilling')}</div>
+            <ReceiptList className='w-4 h-4 text-gray-700 dark:text-gray-300' />
+            <div className='ml-2 text-sm font-normal text-gray-700 dark:text-gray-300'>{t('billing.viewBilling')}</div>
           </div>
           <LinkExternal01 className='w-3 h-3' />
         </a>

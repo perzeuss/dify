@@ -130,7 +130,7 @@ const OneMoreStep = () => {
             </div>
           </div>
           <div className='mb-4'>
-            <label htmlFor="timezone" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="timezone" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
               {t('login.timezone')}
             </label>
             <div className="relative mt-1 rounded-md shadow-sm">

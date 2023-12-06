@@ -27,7 +27,7 @@ const Input = ({ value, defaultValue, onChange, className = '', wrapperClassName
   const { t } = useTranslation()
   return (
     <div className={`relative inline-flex w-full ${wrapperClassName}`}>
-      {showPrefix && <span className={s.prefix}>{prefixIcon ?? <GlassIcon className='h-3.5 w-3.5 stroke-current text-gray-700 stroke-2' />}</span>}
+      {showPrefix && <span className={s.prefix}>{prefixIcon ?? <GlassIcon className='h-3.5 w-3.5 stroke-current text-gray-700 dark:text-gray-300 stroke-2' />}</span>}
       <input
         type={type ?? 'text'}
         className={`${s.input} ${showPrefix ? '!pl-7' : ''} ${className}`}

@@ -45,8 +45,8 @@ const UsageInfo: FC<Props> = ({
     <div className={className}>
       <div className='flex justify-between h-5 items-center'>
         <div className='flex items-center'>
-          <Icon className='w-4 h-4 text-gray-700' />
-          <div className='mx-1 leading-5 text-sm font-medium text-gray-700'>{name}</div>
+          <Icon className='w-4 h-4 text-gray-700 dark:text-gray-300' />
+          <div className='mx-1 leading-5 text-sm font-medium text-gray-700 dark:text-gray-300'>{name}</div>
           {tooltip && (
             <Tooltip htmlContent={<div className='w-[180px]'>
               {tooltip}

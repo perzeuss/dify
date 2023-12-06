@@ -33,7 +33,7 @@ const MoreLikeThis: FC = () => {
       noBodySpacing
     >
       {!isHideTip && (
-        <div className='flex justify-between items-center h-9 px-3 rounded-b-xl bg-[#FFFAEB] text-xs text-gray-700'>
+        <div className='flex justify-between items-center h-9 px-3 rounded-b-xl bg-[#FFFAEB] text-xs text-gray-700 dark:text-gray-300'>
           <div className='flex  items-center space-x-2'>
             <div>{warningIcon}</div>
             <div>{t('appDebug.feature.moreLikeThis.tip')}</div>

@@ -44,7 +44,7 @@ const Selector: FC<SelectorProps> = ({
               ${open && 'bg-gray-50'}
               ${className && className(open)}
             `}>
-              <DotsHorizontal className='w-3 h-3 text-gray-700' />
+              <DotsHorizontal className='w-3 h-3 text-gray-700 dark:text-gray-300' />
             </div>
           )
         }
@@ -60,7 +60,7 @@ const Selector: FC<SelectorProps> = ({
             !hiddenOptions && (
               <>
                 <div className='p-1'>
-                  <div className='px-3 pt-2 pb-1 text-sm font-medium text-gray-700'>{t('common.modelProvider.card.priorityUse')}</div>
+                  <div className='px-3 pt-2 pb-1 text-sm font-medium text-gray-700 dark:text-gray-300'>{t('common.modelProvider.card.priorityUse')}</div>
                   {
                     options.map(option => (
                       <Popover.Button as={Fragment} key={option.key}>

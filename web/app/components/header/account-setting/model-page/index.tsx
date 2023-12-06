@@ -211,7 +211,7 @@ const ModelPage = () => {
         {
           defaultModelNotConfigured
             ? (
-              <div className='flex items-center text-xs font-medium text-gray-700'>
+              <div className='flex items-center text-xs font-medium text-gray-700 dark:text-gray-300'>
                 <AlertTriangle className='mr-1 w-3 h-3 text-[#F79009]' />
                 {t('common.modelProvider.notConfigured')}
               </div>

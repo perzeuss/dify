@@ -23,7 +23,7 @@ export type IAppSelecotr = {
 
 export default function AppSelector({ isMobile }: IAppSelecotr) {
   const itemClassName = `
-    flex items-center w-full h-9 px-3 text-gray-700 text-[14px]
+    flex items-center w-full h-9 px-3 text-gray-700 dark:text-gray-300 text-[14px]
     rounded-lg font-normal hover:bg-gray-50 cursor-pointer
   `
   const router = useRouter()
@@ -61,7 +61,7 @@ export default function AppSelector({ isMobile }: IAppSelecotr) {
                   <Avatar name={userProfile.name} className='sm:mr-2 mr-0' size={32} />
                   {!isMobile && <>
                     {userProfile.name}
-                    <ChevronDown className="w-3 h-3 ml-1 text-gray-700"/>
+                    <ChevronDown className="w-3 h-3 ml-1 text-gray-700 dark:text-gray-300"/>
                   </>}
                 </Menu.Button>
               </div>
@@ -130,7 +130,7 @@ export default function AppSelector({ isMobile }: IAppSelecotr) {
                       <div
                         className='flex items-center justify-between h-9 px-3 rounded-lg cursor-pointer group hover:bg-gray-50'
                       >
-                        <div className='font-normal text-[14px] text-gray-700'>{t('common.userProfile.logout')}</div>
+                        <div className='font-normal text-[14px] text-gray-700 dark:text-gray-300'>{t('common.userProfile.logout')}</div>
                         <LogOut01 className='hidden w-[14px] h-[14px] text-gray-500 group-hover:flex' />
                       </div>
                     </div>

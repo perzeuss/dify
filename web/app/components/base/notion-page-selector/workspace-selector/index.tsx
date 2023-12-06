@@ -31,7 +31,7 @@ export default function WorkspaceSelector({
                 src={currentWorkspace?.workspace_icon}
                 name={currentWorkspace?.workspace_name}
               />
-              <div className='mr-1 w-[90px] text-left text-sm font-medium text-gray-700 truncate' title={currentWorkspace?.workspace_name}>{currentWorkspace?.workspace_name}</div>
+              <div className='mr-1 w-[90px] text-left text-sm font-medium text-gray-700 dark:text-gray-300 truncate' title={currentWorkspace?.workspace_name}>{currentWorkspace?.workspace_name}</div>
               <div className='mr-1 px-1 h-[18px] bg-primary-50 rounded-lg text-xs font-medium text-primary-600'>{currentWorkspace?.pages.length}</div>
               <div className={cn(s['down-arrow'], 'mr-2 w-3 h-3')} />
             </Menu.Button>
@@ -65,7 +65,7 @@ export default function WorkspaceSelector({
                             src={item.workspace_icon}
                             name={item.workspace_name}
                           />
-                          <div className='grow mr-2 text-sm text-gray-700 truncate' title={item.workspace_name}>{item.workspace_name}</div>
+                          <div className='grow mr-2 text-sm text-gray-700 dark:text-gray-300 truncate' title={item.workspace_name}>{item.workspace_name}</div>
                           <div className='shrink-0 text-xs font-medium text-primary-600'>
                             {item.pages.length} {t('common.dataSource.notion.selector.pageSelected')}
                           </div>

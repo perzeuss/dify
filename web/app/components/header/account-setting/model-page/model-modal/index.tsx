@@ -123,7 +123,7 @@ const ModelModal: FC<ModelModalProps> = ({
                   <LinkExternal02 className='ml-1 w-3 h-3' />
                 </a>
                 <div>
-                  <Button className='mr-2 !h-9 !text-sm font-medium text-gray-700' onClick={onCancel}>{t('common.operation.cancel')}</Button>
+                  <Button className='mr-2 !h-9 !text-sm font-medium text-gray-700 dark:text-gray-300' onClick={onCancel}>{t('common.operation.cancel')}</Button>
                   <Button
                     className='!h-9 !text-sm font-medium'
                     type='primary'

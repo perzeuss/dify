@@ -205,7 +205,7 @@ const SegmentCard: FC<ISegmentCardProps> = ({
                     extension={(detail?.document?.name || '').split('.').pop() || 'txt'}
                     wrapperCls='w-full'
                     iconCls="!h-4 !w-4 !bg-contain"
-                    textCls="text-xs text-gray-700 !font-normal overflow-hidden whitespace-nowrap text-ellipsis"
+                    textCls="text-xs text-gray-700 dark:text-gray-300 !font-normal overflow-hidden whitespace-nowrap text-ellipsis"
                   />
                   <div className={cn(s.chartLinkText, 'group-hover:inline-flex')}>
                     {t('datasetHitTesting.viewChart')}

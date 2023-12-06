@@ -200,7 +200,7 @@ const ConfigVar: FC<IConfigVarProps> = ({ promptVariables, readonly, onPromptVar
 
               </tr>
             </thead>
-            <tbody className="text-gray-700">
+            <tbody className="text-gray-700 dark:text-gray-300">
               {promptVariables.map(({ key, name, type, required }, index) => (
                 <tr key={index} className="h-9 leading-9">
                   <td className="w-[160px] border-b border-gray-100 pl-3">
@@ -219,7 +219,7 @@ const ConfigVar: FC<IConfigVarProps> = ({ promptVariables, readonly, onPromptVar
                           />
                         )
                         : (
-                          <div className='h-6 leading-6 text-[13px] text-gray-700'>{key}</div>
+                          <div className='h-6 leading-6 text-[13px] text-gray-700 dark:text-gray-300'>{key}</div>
                         )}
                     </div>
                   </td>
@@ -235,7 +235,7 @@ const ConfigVar: FC<IConfigVarProps> = ({ promptVariables, readonly, onPromptVar
                           className="h-6 leading-6 block w-full rounded-md border-0 py-1.5 text-gray-900  placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-inset focus:ring-gray-200"
                         />)
                       : (
-                        <div className='h-6 leading-6 text-[13px] text-gray-700'>{name}</div>
+                        <div className='h-6 leading-6 text-[13px] text-gray-700 dark:text-gray-300'>{name}</div>
                       )}
                   </td>
                   {!readonly && (

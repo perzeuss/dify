@@ -203,7 +203,7 @@ const EmbeddingProcess: FC<Props> = ({ datasetId, batchId, documents = [], index
             <div className='shrink-0 flex items-center justify-center w-8 h-8 bg-[#FFF6ED] rounded-lg'>
               <ZapFast className='w-4 h-4 text-[#FB6514]' />
             </div>
-            <div className='grow mx-3 text-[13px] font-medium text-gray-700'>
+            <div className='grow mx-3 text-[13px] font-medium text-gray-700 dark:text-gray-300'>
               {t('billing.plansCommon.documentProcessingPriorityUpgrade')}
             </div>
             <UpgradeBtn loc='knowledge-speed-up' />

@@ -117,7 +117,7 @@ const Tools = () => {
           )
         }
         <div
-          className='flex items-center h-7 px-3 text-xs font-medium text-gray-700 cursor-pointer'
+          className='flex items-center h-7 px-3 text-xs font-medium text-gray-700 dark:text-gray-300 cursor-pointer'
           onClick={() => handleOpenExternalDataToolModal({}, -1)}
         >
           <Plus className='mr-[5px] w-3.5 h-3.5 ' />

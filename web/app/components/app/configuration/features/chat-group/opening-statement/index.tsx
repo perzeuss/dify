@@ -132,7 +132,7 @@ const OpeningStatement: FC<IOpeningStatementProps> = ({
       hasHeaderBottomBorder={!hasValue}
       isFocus={isFocus}
     >
-      <div className='text-gray-700 text-sm'>
+      <div className='text-gray-700 dark:text-gray-300 text-sm'>
         {(hasValue || (!hasValue && isFocus)) ? (
           <>
             {isFocus

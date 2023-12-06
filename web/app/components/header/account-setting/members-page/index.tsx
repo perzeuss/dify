@@ -55,7 +55,7 @@ const MembersPage = () => {
                   ? (
                     <div className='flex space-x-1'>
                       <div>{t('billing.plansCommon.member')}{locale === 'en' && accounts.length > 1 && 's'}</div>
-                      <div className='text-gray-700'>{accounts.length}</div>
+                      <div className='text-gray-700 dark:text-gray-300'>{accounts.length}</div>
                       <div>/</div>
                       <div>{plan.total.teamMembers === NUM_INFINITE ? t('billing.plansCommon.unlimited') : plan.total.teamMembers}</div>
                     </div>
@@ -95,7 +95,7 @@ const MembersPage = () => {
                   <div className='grow flex items-center py-2 px-3'>
                     <Avatar size={24} className='mr-2' name={account.name} />
                     <div className=''>
-                      <div className='text-[13px] font-medium text-gray-700 leading-[18px]'>
+                      <div className='text-[13px] font-medium text-gray-700 dark:text-gray-300 leading-[18px]'>
                         {account.name}
                         {account.status === 'pending' && <span className='ml-1 text-xs text-[#DC6803]'>{t('common.members.pending')}</span>}
                         {userProfile.email === account.email && <span className='text-xs text-gray-500'>{t('common.members.you')}</span>}
@@ -103,12 +103,12 @@ const MembersPage = () => {
                       <div className='text-xs text-gray-500 leading-[18px]'>{account.email}</div>
                     </div>
                   </div>
-                  <div className='shrink-0 flex items-center w-[104px] py-2 text-[13px] text-gray-700'>{dayjs(Number((account.last_login_at || account.created_at)) * 1000).locale(locale === 'zh-Hans' ? 'zh-cn' : 'en').fromNow()}</div>
+                  <div className='shrink-0 flex items-center w-[104px] py-2 text-[13px] text-gray-700 dark:text-gray-300'>{dayjs(Number((account.last_login_at || account.created_at)) * 1000).locale(locale === 'zh-Hans' ? 'zh-cn' : 'en').fromNow()}</div>
                   <div className='shrink-0 w-[96px] flex items-center'>
                     {
                       (owner && account.role !== 'owner')
                         ? <Operation member={account} onOperate={mutate} />
-                        : <div className='px-3 text-[13px] text-gray-700'>{RoleMap[account.role] || RoleMap.normal}</div>
+                        : <div className='px-3 text-[13px] text-gray-700 dark:text-gray-300'>{RoleMap[account.role] || RoleMap.normal}</div>
                     }
                   </div>
                 </div>

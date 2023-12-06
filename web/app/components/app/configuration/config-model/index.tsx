@@ -402,7 +402,7 @@ const ConfigModel: FC<IConfigModelProps> = ({
             maxTokenSettingTipVisible && (
               <div className='flex py-2 pr-4 pl-5 rounded-bl-xl rounded-br-xl bg-[#FFFAEB] border-t border-[#FEF0C7]'>
                 <AlertTriangle className='shrink-0 mr-2 mt-[3px] w-3 h-3 text-[#F79009]' />
-                <div className='mr-2 text-xs font-medium text-gray-700'>{t('common.model.params.maxTokenSettingTip')}</div>
+                <div className='mr-2 text-xs font-medium text-gray-700 dark:text-gray-300'>{t('common.model.params.maxTokenSettingTip')}</div>
               </div>
             )
           }

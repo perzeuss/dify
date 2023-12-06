@@ -37,7 +37,7 @@ const MessageTypeSelector: FC<Props> = ({
                 setHide()
                 onChange(type)
               }}
-              className='flex items-center h-9 min-w-[44px] px-3 rounded-lg cursor-pointer text-sm font-medium text-gray-700 uppercase hover:bg-gray-50'
+              className='flex items-center h-9 min-w-[44px] px-3 rounded-lg cursor-pointer text-sm font-medium text-gray-700 dark:text-gray-300 uppercase hover:bg-gray-50'
             >{type}</div>
           ))
           }

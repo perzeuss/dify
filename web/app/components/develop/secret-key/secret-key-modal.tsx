@@ -122,7 +122,7 @@ const SecretKeyModal = ({
             </div>
             <div className='flex-grow overflow-auto'>
               {apiKeysList.data.map(api => (
-                <div className='flex items-center text-sm font-normal text-gray-700 border-b border-solid h-9' key={api.id}>
+                <div className='flex items-center text-sm font-normal text-gray-700 dark:text-gray-300 border-b border-solid h-9' key={api.id}>
                   <div className='flex-shrink-0 w-64 px-3 font-mono truncate'>{generateToken(api.token)}</div>
                   <div className='flex-shrink-0 px-3 truncate w-28'>{formatDate(api.created_at)}</div>
                   {/* <div className='flex-shrink-0 px-3 truncate w-28'>{dayjs((+api.created_at) * 1000).format('MMM D, YYYY')}</div> */}

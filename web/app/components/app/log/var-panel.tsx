@@ -47,7 +47,7 @@ const VarPanel: FC<Props> = ({
 
           {message_files.length > 0 && (
             <div className='mt-1 flex py-2'>
-              <div className='shrink-0 w-[128px] leading-[18px] text-[13px] font-medium text-gray-700'>{t('appLog.detail.uploadImages')}</div>
+              <div className='shrink-0 w-[128px] leading-[18px] text-[13px] font-medium text-gray-700 dark:text-gray-300'>{t('appLog.detail.uploadImages')}</div>
               <div className="flex space-x-2">
                 {message_files.map((url, index) => (
                   <div

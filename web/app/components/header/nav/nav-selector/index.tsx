@@ -24,7 +24,7 @@ export type INavSelectorProps = {
 }
 
 const itemClassName = `
-  flex items-center w-full h-10 px-3 text-gray-700 text-[14px]
+  flex items-center w-full h-10 px-3 text-gray-700 dark:text-gray-300 text-[14px]
   rounded-lg font-normal hover:bg-gray-100 cursor-pointer truncate
 `
 
@@ -97,7 +97,7 @@ const NavSelector = ({ curNav, navs, createText, onCreate, onLoadmore }: INavSel
                 >
                   <PlusIcon className='w-4 h-4 text-gray-500' />
                 </div>
-                <div className='font-normal text-[14px] text-gray-700'>{createText}</div>
+                <div className='font-normal text-[14px] text-gray-700 dark:text-gray-300'>{createText}</div>
               </div>
             </div>
           </Menu.Item>}

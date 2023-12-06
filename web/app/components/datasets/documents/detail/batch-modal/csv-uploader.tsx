@@ -110,7 +110,7 @@ const CSVUploader: FC<Props> = ({
               <span className='shrink-0 text-gray-500'>.csv</span>
             </div>
             <div className='hidden group-hover:flex items-center'>
-              <Button className='!h-8 !px-3 !py-[6px] bg-white dark:bg-black !text-[13px] !leading-[18px] text-gray-700' onClick={selectHandle}>{t('datasetCreation.stepOne.uploader.change')}</Button>
+              <Button className='!h-8 !px-3 !py-[6px] bg-white dark:bg-black !text-[13px] !leading-[18px] text-gray-700 dark:text-gray-300' onClick={selectHandle}>{t('datasetCreation.stepOne.uploader.change')}</Button>
               <div className='mx-2 w-px h-4 bg-gray-200' />
               <div className='p-2 cursor-pointer' onClick={removeFile}>
                 <Trash03 className='w-4 h-4 text-gray-500' />
