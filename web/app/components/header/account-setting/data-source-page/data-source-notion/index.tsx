@@ -102,7 +102,7 @@ const DataSourceNotion = ({
           <div className='px-3 pt-2 pb-3'>
             {
               workspaces.map(workspace => (
-                <div className={cn(s['workspace-item'], 'flex items-center mb-1 py-1 pr-1 bg-white dark:bg-black rounded-lg')} key={workspace.id}>
+                <div className={cn(s['workspace-item'], 'flex items-center mb-1 py-1 pr-1 bg-white dark:bg-neutral-900 rounded-lg')} key={workspace.id}>
                   <NotionIcon
                     className='ml-3 mr-[6px]'
                     src={workspace.source_info.workspace_icon}

@@ -121,7 +121,7 @@ const SelectDataSet: FC<ISelectDataSetProps> = ({
             {datasets.map(item => (
               <div
                 key={item.id}
-                className={cn(s.item, selected.some(i => i.id === item.id) && s.selected, 'flex justify-between items-center h-10 px-2 rounded-lg bg-white dark:bg-black border border-gray-200  cursor-pointer', !item.embedding_available && s.disabled)}
+                className={cn(s.item, selected.some(i => i.id === item.id) && s.selected, 'flex justify-between items-center h-10 px-2 rounded-lg bg-white dark:bg-neutral-900 border border-gray-200  cursor-pointer', !item.embedding_available && s.disabled)}
                 onClick={() => {
                   if (!item.embedding_available)
                     return

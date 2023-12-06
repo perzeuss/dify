@@ -38,7 +38,7 @@ const Item: FC<ItemProps> = ({
   }
 
   return (
-    <div className='group relative flex items-center mb-1 last-of-type:mb-0  pl-2.5 py-2 pr-3 w-full bg-white dark:bg-black rounded-lg border-[0.5px] border-gray-200 shadow-xs'>
+    <div className='group relative flex items-center mb-1 last-of-type:mb-0  pl-2.5 py-2 pr-3 w-full bg-white dark:bg-neutral-900 rounded-lg border-[0.5px] border-gray-200 shadow-xs'>
       {
         config.data_source_type === DataSourceType.FILE && (
           <div className='shrink-0 flex items-center justify-center mr-2 w-6 h-6 bg-[#F5F8FF] rounded-md border-[0.5px] border-[#E0EAFF]'>

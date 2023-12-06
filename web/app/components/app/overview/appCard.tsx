@@ -197,7 +197,7 @@ function AppCard({
           </div>
         </div>
         <div className={'pt-2 flex flex-row items-center flex-wrap gap-y-2'}>
-          {!isApp && <SecretKeyButton className='flex-shrink-0 !h-8 bg-white dark:bg-black mr-2' textCls='!text-gray-700 dark:text-gray-300 font-medium' iconCls='stroke-[1.2px]' appId={appInfo.id} />}
+          {!isApp && <SecretKeyButton className='flex-shrink-0 !h-8 bg-white dark:bg-neutral-900 mr-2' textCls='!text-gray-700 dark:text-gray-300 font-medium' iconCls='stroke-[1.2px]' appId={appInfo.id} />}
           {OPERATIONS_MAP[cardType].map((op) => {
             const disabled
               = op.opName === t('appOverview.overview.appInfo.settings.entry')
@@ -205,7 +205,7 @@ function AppCard({
                 : !runningStatus
             return (
               <Button
-                className="mr-2 border-[0.5px] !h-8 hover:outline hover:outline-[0.5px] hover:outline-gray-300 text-gray-700 dark:text-gray-300 font-medium bg-white dark:bg-black shadow-[0px_1px_2px_0px_rgba(16,24,40,0.05)]"
+                className="mr-2 border-[0.5px] !h-8 hover:outline hover:outline-[0.5px] hover:outline-gray-300 text-gray-700 dark:text-gray-300 font-medium bg-white dark:bg-neutral-900 shadow-[0px_1px_2px_0px_rgba(16,24,40,0.05)]"
                 key={op.opName}
                 onClick={genClickFuncByName(op.opName)}
                 disabled={disabled}

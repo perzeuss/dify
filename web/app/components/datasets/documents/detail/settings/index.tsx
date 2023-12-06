@@ -63,7 +63,7 @@ const DocumentSettings = ({ datasetId, documentId }: DocumentSettingsProps) => {
 
   return (
     <div className='flex' style={{ height: 'calc(100vh - 56px)' }}>
-      <div className="grow bg-white dark:bg-black">
+      <div className="grow bg-white dark:bg-neutral-900">
         {!documentDetail && <Loading type='app' />}
         {dataset && documentDetail && (
           <StepTwo

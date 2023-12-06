@@ -132,7 +132,7 @@ const BlockInput: FC<IBlockInputProps> = ({
     </div>)
 
   return (
-    <div className={classNames('block-input w-full overflow-y-auto bg-white dark:bg-black border-none rounded-xl')}>
+    <div className={classNames('block-input w-full overflow-y-auto bg-white dark:bg-neutral-900 border-none rounded-xl')}>
       {textAreaContent}
       {/* footer */}
       {!readonly && (

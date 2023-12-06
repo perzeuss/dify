@@ -24,7 +24,7 @@ const Pricing: FC<Props> = ({
 
   return createPortal(
     <div
-      className='fixed inset-0 flex bg-white dark:bg-black z-[1000] overflow-auto'
+      className='fixed inset-0 flex bg-white dark:bg-neutral-900 z-[1000] overflow-auto'
       onClick={e => e.stopPropagation()}
     >
       <GridMask wrapperClassName='grow'>

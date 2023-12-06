@@ -58,7 +58,7 @@ const PasteImageLinkButton: FC<PasteImageLinkButtonProps> = ({
         </div>
       </PortalToFollowElemTrigger>
       <PortalToFollowElemContent className='z-10'>
-        <div className='p-2 w-[320px] bg-white dark:bg-black border-[0.5px] border-gray-200 rounded-lg shadow-lg'>
+        <div className='p-2 w-[320px] bg-white dark:bg-neutral-900 border-[0.5px] border-gray-200 rounded-lg shadow-lg'>
           <ImageLinkInput onUpload={handleUpload} />
         </div>
       </PortalToFollowElemContent>

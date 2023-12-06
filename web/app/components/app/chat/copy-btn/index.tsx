@@ -28,7 +28,7 @@ const CopyBtn = ({
         className='z-10'
       >
         <div
-          className={'box-border p-0.5 flex items-center justify-center rounded-md bg-white dark:bg-black cursor-pointer'}
+          className={'box-border p-0.5 flex items-center justify-center rounded-md bg-white dark:bg-neutral-900 cursor-pointer'}
           style={!isPlain
             ? {
               boxShadow: '0px 4px 8px -2px rgba(16, 24, 40, 0.1), 0px 2px 4px -2px rgba(16, 24, 40, 0.06)',

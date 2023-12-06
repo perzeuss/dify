@@ -748,7 +748,7 @@ const Main: FC<IMainProps> = () => {
         }>
           {(!isNewConversation || isResponsing || errorHappened) && (
             <div className='mb-5 antialiased font-sans shrink-0 relative mobile:min-h-[48px] tablet:min-h-[64px]'>
-              <div className='absolute z-10 top-0 left-0 right-0 flex items-center justify-between border-b border-gray-100 mobile:h-12 tablet:h-16 px-8 bg-white dark:bg-black'>
+              <div className='absolute z-10 top-0 left-0 right-0 flex items-center justify-between border-b border-gray-100 mobile:h-12 tablet:h-16 px-8 bg-white dark:bg-neutral-900'>
                 <div className='text-gray-900'>{conversationName}</div>
                 <div className='flex items-center shrink-0 ml-2 space-x-2'>
                   <ConfigSummary

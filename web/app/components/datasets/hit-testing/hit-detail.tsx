@@ -94,7 +94,7 @@ const HitDetail: FC<IHitDetailProps> = ({ segInfo, vectorInfo }) => {
             })}
         </div>
       </div>
-      <div className="flex-1 bg-white dark:bg-black p-6">
+      <div className="flex-1 bg-white dark:bg-neutral-900 p-6">
         <div className="flex items-center">
           <div className={cn(s.commonIcon, s.bezierCurveIcon)} />
           <span className={s.numberInfo}>

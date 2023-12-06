@@ -103,10 +103,10 @@ const DatasetUpdateForm = ({ datasetId }: DatasetUpdateFormProps) => {
 
   return (
     <div className='flex' style={{ height: 'calc(100vh - 56px)' }}>
-      <div className="flex flex-col w-11 sm:w-56 overflow-y-auto bg-white dark:bg-black border-r border-gray-200 shrink-0">
+      <div className="flex flex-col w-11 sm:w-56 overflow-y-auto bg-white dark:bg-neutral-900 border-r border-gray-200 shrink-0">
         <StepsNavBar step={step} datasetId={datasetId} />
       </div>
-      <div className="grow bg-white dark:bg-black">
+      <div className="grow bg-white dark:bg-neutral-900">
         {step === 1 && <StepOne
           hasConnection={hasConnection}
           onSetting={() => setShowAccountSettingModal({ payload: 'data-source' })}

@@ -83,7 +83,7 @@ const OneMoreStep = () => {
       </div>
 
       <div className="w-full mx-auto mt-6">
-        <div className="bg-white dark:bg-black">
+        <div className="bg-white dark:bg-neutral-900">
           <div className="mb-5">
             <label className="my-2 flex items-center justify-between text-sm font-medium text-gray-900">
               {t('login.invitationCode')}

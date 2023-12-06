@@ -105,7 +105,7 @@ function CodePanelHeader({ tag, label }: { tag: string; label: string }) {
     return null
 
   return (
-    <div className="flex h-9 items-center gap-2 border-y border-t-transparent border-b-white/7.5 bg-zinc-900 bg-white/2.5 px-4 dark:border-b-white/5 dark:bg-white dark:bg-black/1">
+    <div className="flex h-9 items-center gap-2 border-y border-t-transparent border-b-white/7.5 bg-zinc-900 bg-white/2.5 px-4 dark:border-b-white/5 dark:bg-white dark:bg-neutral-900/1">
       {tag && (
         <div className="flex dark">
           <Tag variant="small">{tag}</Tag>
@@ -132,7 +132,7 @@ function CodePanel({ tag, label, code, children, targetCode }: ICodePanelProps) 
   const child = Children.only(children)
 
   return (
-    <div className="group dark:bg-white dark:bg-black/2.5">
+    <div className="group dark:bg-white dark:bg-neutral-900/2.5">
       <CodePanelHeader
         tag={child.props.tag ?? tag}
         label={child.props.label ?? label}

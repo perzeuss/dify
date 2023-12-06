@@ -221,7 +221,7 @@ const VariablePicker: FC<VariablePickerProps> = ({
       ) =>
         (anchorElementRef.current && mergedOptions.length)
           ? ReactDOM.createPortal(
-            <div className='mt-[25px] w-[240px] bg-white dark:bg-black rounded-lg border-[0.5px] border-gray-200 shadow-lg'>
+            <div className='mt-[25px] w-[240px] bg-white dark:bg-neutral-900 rounded-lg border-[0.5px] border-gray-200 shadow-lg'>
               {
                 !!options.length && (
                   <>

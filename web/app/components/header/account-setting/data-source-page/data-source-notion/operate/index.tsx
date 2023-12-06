@@ -65,7 +65,7 @@ export default function Operate({
               <Menu.Items
                 className="
                   absolute right-0 top-9 w-60 max-w-80
-                  divide-y divide-gray-100 origin-top-right rounded-lg bg-white dark:bg-black
+                  divide-y divide-gray-100 origin-top-right rounded-lg bg-white dark:bg-neutral-900
                   shadow-lg
                 "
               >

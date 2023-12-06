@@ -45,7 +45,7 @@ export default function Drawer({
         <Dialog.Overlay
           className={`z-40 fixed inset-0 ${!mask ? '' : 'bg-black bg-opacity-30'}`}
         />
-        <div className={`z-50 flex flex-col justify-between bg-white dark:bg-black w-full
+        <div className={`z-50 flex flex-col justify-between bg-white dark:bg-neutral-900 w-full
         max-w-sm p-6 overflow-hidden text-left align-middle
         shadow-xl ${panelClassname}`}>
           <>

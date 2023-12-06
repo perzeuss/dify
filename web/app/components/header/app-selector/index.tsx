@@ -56,7 +56,7 @@ export default function AppSelector({ appItems, curApp }: IAppSelectorProps) {
           <Menu.Items
             className="
               absolute -left-11 right-0 mt-1.5 w-60 max-w-80
-              divide-y divide-gray-100 origin-top-right rounded-lg bg-white dark:bg-black
+              divide-y divide-gray-100 origin-top-right rounded-lg bg-white dark:bg-neutral-900
               shadow-lg
             "
           >
@@ -69,7 +69,7 @@ export default function AppSelector({ appItems, curApp }: IAppSelectorProps) {
                     }>
                       <div className='relative w-6 h-6 mr-2 bg-[#D5F5F6] rounded-[6px]'>
                         <AppIcon size='tiny' />
-                        <div className='flex justify-center items-center absolute -right-0.5 -bottom-0.5 w-2.5 h-2.5 bg-white dark:bg-black rounded'>
+                        <div className='flex justify-center items-center absolute -right-0.5 -bottom-0.5 w-2.5 h-2.5 bg-white dark:bg-neutral-900 rounded'>
                           <Indicator />
                         </div>
                       </div>

@@ -117,7 +117,7 @@ const SettingsModal: FC<SettingsModalProps> = ({
 
   return (
     <div
-      className='overflow-hidden w-full flex flex-col bg-white dark:bg-black border-[0.5px] border-gray-200 rounded-xl shadow-xl'
+      className='overflow-hidden w-full flex flex-col bg-white dark:bg-neutral-900 border-[0.5px] border-gray-200 rounded-xl shadow-xl'
       style={{
         height: 'calc(100vh - 72px)',
       }}
@@ -265,7 +265,7 @@ const SettingsModal: FC<SettingsModalProps> = ({
       )}
 
       <div
-        className='sticky z-[5] bottom-0 w-full flex justify-end py-4 px-6 border-t bg-white dark:bg-black '
+        className='sticky z-[5] bottom-0 w-full flex justify-end py-4 px-6 border-t bg-white dark:bg-neutral-900 '
         style={{
           borderColor: 'rgba(0, 0, 0, 0.05)',
         }}

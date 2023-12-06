@@ -42,7 +42,7 @@ const GithubStar = () => {
         <Github className='mr-1 w-[18px] h-[18px]' />
         Star
       </div>
-      <div className='px-2 py-1 bg-white dark:bg-black border-l border-gray-200'>{`${githubRepo.stargazers_count}`.replace(/\B(?=(\d{3})+(?!\d))/g, ',')}</div>
+      <div className='px-2 py-1 bg-white dark:bg-neutral-900 border-l border-gray-200'>{`${githubRepo.stargazers_count}`.replace(/\B(?=(\d{3})+(?!\d))/g, ',')}</div>
     </a>
   )
 }

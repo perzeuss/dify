@@ -504,7 +504,7 @@ const StepTwo = ({
           <span>{t('datasetCreation.steps.two')}</span>
           {isMobile && (
             <Button
-              className='border-[0.5px] !h-8 hover:outline hover:outline-[0.5px] hover:outline-gray-300 text-gray-700 dark:text-gray-300 font-medium bg-white dark:bg-black shadow-[0px_1px_2px_0px_rgba(16,24,40,0.05)]'
+              className='border-[0.5px] !h-8 hover:outline hover:outline-[0.5px] hover:outline-gray-300 text-gray-700 dark:text-gray-300 font-medium bg-white dark:bg-neutral-900 shadow-[0px_1px_2px_0px_rgba(16,24,40,0.05)]'
               onClick={setShowPreview}
             >
               <Tooltip selector='data-preview-toggle'>

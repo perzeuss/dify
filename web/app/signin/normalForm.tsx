@@ -145,7 +145,7 @@ const NormalForm = () => {
       </div>
 
       <div className="w-full mx-auto mt-8">
-        <div className="bg-white dark:bg-black ">
+        <div className="bg-white dark:bg-neutral-900 ">
           {!IS_CE_EDITION && (
             <div className="flex flex-col gap-3 mt-6">
               <div className='w-full'>
@@ -196,7 +196,7 @@ const NormalForm = () => {
                   <div className="w-full border-t border-gray-300" />
                 </div>
                 <div className="relative flex justify-center text-sm">
-                  <span className="px-2 text-gray-300 bg-white dark:bg-black">OR</span>
+                  <span className="px-2 text-gray-300 bg-white dark:bg-neutral-900">OR</span>
                 </div>
               </div> */}
 

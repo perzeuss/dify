@@ -35,7 +35,7 @@ const Tooltip: FC<TooltipProps> = ({
       <ReactTooltip
         id={selector}
         content={content}
-        className={classNames('!z-[999] !bg-white dark:bg-black !text-xs !font-normal !text-gray-700 dark:text-gray-300 !shadow-lg !opacity-100', className)}
+        className={classNames('!z-[999] !bg-white dark:bg-neutral-900 !text-xs !font-normal !text-gray-700 dark:text-gray-300 !shadow-lg !opacity-100', className)}
         place={position}
         clickable={clickable}
         isOpen={disabled ? false : undefined}

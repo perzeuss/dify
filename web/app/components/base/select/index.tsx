@@ -111,7 +111,7 @@ const Select: FC<ISelectProps> = ({
         </div>
 
         {filteredItems.length > 0 && (
-          <Combobox.Options className={`absolute z-10 mt-1 px-1 max-h-60 w-full overflow-auto rounded-md bg-white dark:bg-black py-1 text-base shadow-lg border-gray-200 border-[0.5px] focus:outline-none sm:text-sm ${overlayClassName}`}>
+          <Combobox.Options className={`absolute z-10 mt-1 px-1 max-h-60 w-full overflow-auto rounded-md bg-white dark:bg-neutral-900 py-1 text-base shadow-lg border-gray-200 border-[0.5px] focus:outline-none sm:text-sm ${overlayClassName}`}>
             {filteredItems.map((item: Item) => (
               <Combobox.Option
                 key={item.value}
@@ -194,7 +194,7 @@ const SimpleSelect: FC<ISelectProps> = ({
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
         >
-          <Listbox.Options className="absolute z-10 mt-1 px-1 max-h-60 w-full overflow-auto rounded-md bg-white dark:bg-black py-1 text-base shadow-lg border-gray-200 border-[0.5px] focus:outline-none sm:text-sm">
+          <Listbox.Options className="absolute z-10 mt-1 px-1 max-h-60 w-full overflow-auto rounded-md bg-white dark:bg-neutral-900 py-1 text-base shadow-lg border-gray-200 border-[0.5px] focus:outline-none sm:text-sm">
             {items.map((item: Item) => (
               <Listbox.Option
                 key={item.value}
@@ -274,7 +274,7 @@ const PortalSelect: FC<PortalSelectProps> = ({
       </PortalToFollowElemTrigger>
       <PortalToFollowElemContent className={`z-20 ${popupClassName}`}>
         <div
-          className='px-1 py-1 max-h-60 overflow-auto rounded-md bg-white dark:bg-black text-base shadow-lg border-gray-200 border-[0.5px] focus:outline-none sm:text-sm'
+          className='px-1 py-1 max-h-60 overflow-auto rounded-md bg-white dark:bg-neutral-900 text-base shadow-lg border-gray-200 border-[0.5px] focus:outline-none sm:text-sm'
         >
           {items.map((item: Item) => (
             <div

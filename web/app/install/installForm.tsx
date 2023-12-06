@@ -87,7 +87,7 @@ const InstallForm = () => {
         </div>
 
         <div className="grow mt-8 sm:mx-auto sm:w-full sm:max-w-md">
-          <div className="bg-white dark:bg-black ">
+          <div className="bg-white dark:bg-neutral-900 ">
             <form onSubmit={() => { }}>
               <div className='mb-5'>
                 <label htmlFor="email" className="my-2 flex items-center justify-between text-sm font-medium text-gray-900">

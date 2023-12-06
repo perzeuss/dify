@@ -558,7 +558,7 @@ const Main: FC<IMainProps> = ({
         isMobile={isMobile}
       />
 
-      <div className={'flex bg-white dark:bg-black overflow-hidden'}>
+      <div className={'flex bg-white dark:bg-neutral-900 overflow-hidden'}>
         <div className={cn(
           isInstalledApp ? 'h-full' : 'h-[calc(100vh_-_3rem)]',
           'flex-grow flex flex-col overflow-y-auto',
@@ -584,7 +584,7 @@ const Main: FC<IMainProps> = ({
                   {t('share.chat.temporarySystemIssue')}
                 </div>
                 <div
-                  className='flex items-center px-3 h-7 bg-white dark:bg-black shadow-xs rounded-md text-xs font-medium text-gray-700 dark:text-gray-300 cursor-pointer'
+                  className='flex items-center px-3 h-7 bg-white dark:bg-neutral-900 shadow-xs rounded-md text-xs font-medium text-gray-700 dark:text-gray-300 cursor-pointer'
                   onClick={handleReload}
                 >
                   {t('share.chat.tryToSolve')}

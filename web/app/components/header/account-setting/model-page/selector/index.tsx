@@ -55,7 +55,7 @@ const Selector: FC<SelectorProps> = ({
         leaveFrom='opacity-100'
         leaveTo='opacity-0'
       >
-        <Popover.Panel className='absolute top-7 right-0 w-[192px] bg-white dark:bg-black border-[0.5px] border-gray-200 rounded-lg shadow-lg z-10'>
+        <Popover.Panel className='absolute top-7 right-0 w-[192px] bg-white dark:bg-neutral-900 border-[0.5px] border-gray-200 rounded-lg shadow-lg z-10'>
           {
             !hiddenOptions && (
               <>

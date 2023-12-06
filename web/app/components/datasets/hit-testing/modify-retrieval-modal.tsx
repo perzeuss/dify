@@ -66,7 +66,7 @@ const ModifyRetrievalModal: FC<Props> = ({
 
   return (
     <div
-      className='w-full flex flex-col bg-white dark:bg-black border-[0.5px] border-gray-200 rounded-xl shadow-xl'
+      className='w-full flex flex-col bg-white dark:bg-neutral-900 border-[0.5px] border-gray-200 rounded-xl shadow-xl'
       style={{
         height: 'calc(100vh - 72px)',
       }}

@@ -107,7 +107,7 @@ const HitTesting: FC<Props> = ({ datasetId }: Props) => {
               <>
                 <div className='grow overflow-y-auto'>
                   <table className={`w-full border-collapse border-0 mt-3 ${s.table}`}>
-                    <thead className="sticky top-0 h-8 bg-white dark:bg-black leading-8 border-b border-gray-200 text-gray-500 font-bold">
+                    <thead className="sticky top-0 h-8 bg-white dark:bg-neutral-900 leading-8 border-b border-gray-200 text-gray-500 font-bold">
                       <tr>
                         <td className='w-28'>{t('datasetHitTesting.table.header.source')}</td>
                         <td>{t('datasetHitTesting.table.header.text')}</td>
