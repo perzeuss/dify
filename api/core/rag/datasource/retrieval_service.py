@@ -16,7 +16,7 @@ default_retrieval_model = {
         'reranking_provider_name': '',
         'reranking_model_name': ''
     },
-    'top_k': 2,
+    'top_k': 30,
     'score_threshold_enabled': False
 }
 
@@ -39,7 +39,7 @@ class RetrievalService:
                 'flask_app': current_app._get_current_object(),
                 'dataset_id': dataset_id,
                 'query': query,
-                'top_k': top_k,
+                'top_k': 30,
                 'all_documents': all_documents
             })
             threads.append(keyword_thread)
@@ -50,7 +50,7 @@ class RetrievalService:
                 'flask_app': current_app._get_current_object(),
                 'dataset_id': dataset_id,
                 'query': query,
-                'top_k': top_k,
+                'top_k': 30,
                 'score_threshold': score_threshold,
                 'reranking_model': reranking_model,
                 'all_documents': all_documents,
@@ -67,7 +67,7 @@ class RetrievalService:
                 'query': query,
                 'retrival_method': retrival_method,
                 'score_threshold': score_threshold,
-                'top_k': top_k,
+                'top_k': 30,
                 'reranking_model': reranking_model,
                 'all_documents': all_documents
             })
@@ -83,7 +83,7 @@ class RetrievalService:
                 query=query,
                 documents=all_documents,
                 score_threshold=score_threshold,
-                top_n=top_k
+                top_n=30
             )
         return all_documents
 
@@ -101,7 +101,7 @@ class RetrievalService:
 
             documents = keyword.search(
                 query,
-                top_k=top_k
+                top_k=30
             )
             all_documents.extend(documents)
 
@@ -121,7 +121,7 @@ class RetrievalService:
             documents = vector.search_by_vector(
                 query,
                 search_type='similarity_score_threshold',
-                top_k=top_k,
+                top_k=30,
                 score_threshold=score_threshold,
                 filter={
                     'group_id': [dataset.id]
@@ -155,7 +155,7 @@ class RetrievalService:
 
             documents = vector_processor.search_by_full_text(
                 query,
-                top_k=top_k
+                top_k=30
             )
             if documents:
                 if reranking_model and retrival_method == 'full_text_search':
