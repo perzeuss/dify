@@ -145,6 +145,7 @@ export type ModelConfig = {
   completion_prompt_config: CompletionPromptConfig | {}
   user_input_form: UserInputFormItem[]
   dataset_query_variable?: string
+  external_data_tools?: any
   more_like_this: {
     enabled: boolean
   }
@@ -339,10 +340,10 @@ export enum TransferMethod {
 export const ALLOW_FILE_EXTENSIONS = ['png', 'jpg', 'jpeg', 'webp', 'gif']
 
 export type VisionSettings = {
-  enabled: boolean
-  number_limits: number
+  enabled?: boolean
+  number_limits?: number
   detail: Resolution
-  transfer_methods: TransferMethod[]
+  transfer_methods?: TransferMethod[]
   image_file_size_limit?: number | string
 }
 
