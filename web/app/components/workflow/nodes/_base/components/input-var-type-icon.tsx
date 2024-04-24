@@ -1,7 +1,7 @@
 'use client'
 import type { FC } from 'react'
 import React from 'react'
-import { InputVarType } from '../../../types'
+import { InputVarType } from '@/app/components/workflow/types'
 import { AlignLeft, LetterSpacing01 } from '@/app/components/base/icons/src/vender/line/editor'
 import { CheckDone01, Hash02 } from '@/app/components/base/icons/src/vender/line/general'
 

@@ -16,7 +16,7 @@ import {
 } from '../store'
 import { useWorkflowRun } from '../hooks'
 import type { StartNodeType } from '../nodes/start/types'
-import { TransferMethod } from '../../base/text-generation/types'
+import { TransferMethod } from '@/app/components/base/text-generation/types'
 import Button from '@/app/components/base/button'
 import { useFeatures } from '@/app/components/base/features/hooks'
 

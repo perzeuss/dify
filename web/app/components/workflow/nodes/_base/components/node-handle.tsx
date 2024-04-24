@@ -9,16 +9,16 @@ import {
   Handle,
   Position,
 } from 'reactflow'
-import { BlockEnum } from '../../../types'
-import type { Node } from '../../../types'
-import BlockSelector from '../../../block-selector'
-import type { ToolDefaultValue } from '../../../block-selector/types'
+import { BlockEnum } from '@/app/components/workflow/types'
+import type { Node } from '@/app/components/workflow/types'
+import BlockSelector from '@/app/components/workflow/block-selector'
+import type { ToolDefaultValue } from '@/app/components/workflow/block-selector/types'
 import {
   useNodesExtraData,
   useNodesInteractions,
   useNodesReadOnly,
-} from '../../../hooks'
-import { useStore } from '../../../store'
+} from '@/app/components/workflow/hooks'
+import { useStore } from '@/app/components/workflow/store'
 
 type NodeHandleProps = {
   handleId: string

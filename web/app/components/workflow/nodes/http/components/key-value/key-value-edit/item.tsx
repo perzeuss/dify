@@ -4,7 +4,7 @@ import React, { useCallback } from 'react'
 import { useTranslation } from 'react-i18next'
 import cn from 'classnames'
 import produce from 'immer'
-import type { KeyValue } from '../../../types'
+import type { KeyValue } from '@/app/components/workflow/nodes/http/types'
 import InputItem from './input-item'
 
 const i18nPrefix = 'workflow.nodes.http'

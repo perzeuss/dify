@@ -3,7 +3,7 @@ import type { FC } from 'react'
 import React, { useCallback } from 'react'
 import produce from 'immer'
 import cn from 'classnames'
-import type { Var, VarType } from '../../../types'
+import type { Var, VarType } from '@/app/components/workflow/types'
 import Item from './condition-item'
 import type { Condition, LogicalOperator } from '@/app/components/workflow/nodes/if-else/types'
 

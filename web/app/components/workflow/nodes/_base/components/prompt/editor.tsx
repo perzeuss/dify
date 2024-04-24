@@ -9,7 +9,7 @@ import {
   BlockEnum,
   type Node,
   type NodeOutPutVar,
-} from '../../../../types'
+} from '@/app/components/workflow/types'
 import ToggleExpandBtn from '@/app/components/workflow/nodes/_base/components/toggle-expand-btn'
 import useToggleExpend from '@/app/components/workflow/nodes/_base/hooks/use-toggle-expend'
 import PromptEditor from '@/app/components/base/prompt-editor'

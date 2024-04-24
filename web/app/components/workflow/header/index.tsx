@@ -15,8 +15,8 @@ import {
   useNodesSyncDraft,
   useWorkflowRun,
 } from '../hooks'
-import AppPublisher from '../../app/app-publisher'
-import { ToastContext } from '../../base/toast'
+import AppPublisher from '@/app/components/app/app-publisher'
+import { ToastContext } from '@/app/components/base/toast'
 import RunAndHistory from './run-and-history'
 import EditingTitle from './editing-title'
 import RunningTitle from './running-title'

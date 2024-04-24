@@ -4,7 +4,7 @@ import React, { useCallback, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import cn from 'classnames'
 import type { MultipleRetrievalConfig, SingleRetrievalConfig } from '../types'
-import type { ModelConfig } from '../../../types'
+import type { ModelConfig } from '@/app/components/workflow/types'
 import {
   PortalToFollowElem,
   PortalToFollowElemContent,

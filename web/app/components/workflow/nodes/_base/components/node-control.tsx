@@ -9,9 +9,9 @@ import {
   useNodeDataUpdate,
   useNodesInteractions,
   useNodesSyncDraft,
-} from '../../../hooks'
-import type { Node } from '../../../types'
-import { canRunBySingle } from '../../../utils'
+} from '@/app/components/workflow/hooks'
+import type { Node } from '@/app/components/workflow/types'
+import { canRunBySingle } from '@/app/components/workflow/utils'
 import PanelOperator from './panel-operator'
 import {
   Play,

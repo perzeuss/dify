@@ -5,13 +5,13 @@ import {
   useEdges,
   useStoreApi,
 } from 'reactflow'
-import { useToolIcon } from '../../../../hooks'
-import BlockIcon from '../../../../block-icon'
+import { useToolIcon } from '@/app/components/workflow/hooks'
+import BlockIcon from '@/app/components/workflow/block-icon'
 import type {
   Branch,
   Node,
-} from '../../../../types'
-import { BlockEnum } from '../../../../types'
+} from '@/app/components/workflow/types'
+import { BlockEnum } from '@/app/components/workflow/types'
 import Add from './add'
 import Item from './item'
 import Line from './line'
