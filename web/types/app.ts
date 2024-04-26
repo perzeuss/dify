@@ -2,6 +2,7 @@ import type { AnnotationReplyConfig, ChatPromptConfig, CompletionPromptConfig, D
 import type { CollectionType } from '@/app/components/tools/types'
 import type { LanguagesSupported } from '@/i18n/language'
 import type { Tag } from '@/app/components/base/tag-management/constant'
+import type { ExternalDataTool } from '@/models/common'
 
 export enum ProviderType {
   openai = 'openai',
@@ -147,6 +148,7 @@ export type ModelConfig = {
   completion_prompt_config: CompletionPromptConfig | {}
   user_input_form: UserInputFormItem[]
   dataset_query_variable?: string
+  external_data_tools?: ExternalDataTool[]
   more_like_this: {
     enabled: boolean
   }
