@@ -36,6 +36,7 @@ import {
   useNodesReadOnly,
   useWorkflow,
 } from './use-workflow'
+import { dataWithoutPrivateFields } from '@/utils/node-data'
 
 export const useNodesInteractions = () => {
   const { t } = useTranslation()
@@ -463,6 +464,7 @@ export const useNodesInteractions = () => {
         y: 0,
       },
     })
+
     if (prevNodeId && !nextNodeId) {
       const prevNodeIndex = nodes.findIndex(node => node.id === prevNodeId)
       const prevNode = nodes[prevNodeIndex]
@@ -752,35 +754,55 @@ export const useNodesInteractions = () => {
       setNodes,
     } = store.getState()
 
-    const nodesToPaste: Node[] = []
     const nodes = getNodes()
+    let newNodes = produce(getNodes(), (draft: Node[]) => {
+      draft.forEach((node) => {
+        // without this line, some nodes could be rendered on top of the pasted nodes
+        node.selected = false
+        node.data = {
+          ...node.data,
+          selected: false,
+        }
+      })
+    })
 
     for (const nodeToPaste of clipboardElements) {
       const nodeType = nodeToPaste.data.type
       const nodesWithSameType = nodes.filter(node => node.data.type === nodeType)
-
-      const newNode = generateNewNode({
-        data: {
-          ...NODES_INITIAL_DATA[nodeType],
-          ...nodeToPaste.data,
-          _connectedSourceHandleIds: [],
-          _connectedTargetHandleIds: [],
-          title: nodesWithSameType.length > 0 ? `${t(`workflow.blocks.${nodeType}`)} ${nodesWithSameType.length + 1}` : t(`workflow.blocks.${nodeType}`),
-          selected: true,
-        },
-        position: {
-          x: nodeToPaste.position.x + 10,
-          y: nodeToPaste.position.y + 10,
-        },
-      })
-      nodesToPaste.push(newNode)
+      const selectedNode = nodes.find(node => node.data.selected)
+      if (clipboardElements.length === 1 && selectedNode?.data.type === nodeToPaste.data.type && selectedNode?.id !== nodeToPaste.id) {
+        // paste data to the selected node instead of creating a new node
+        newNodes = produce(getNodes(), (draft: Node[]) => {
+          draft.forEach((node) => {
+            if (node.id === selectedNode.id) {
+              node.data = {
+                ...node.data,
+                ...dataWithoutPrivateFields(nodeToPaste.data),
+                selected: true,
+              }
+            }
+          })
+        })
+      }
+      else {
+        const newNode = generateNewNode({
+          data: {
+            ...NODES_INITIAL_DATA[nodeType],
+            ...dataWithoutPrivateFields(nodeToPaste.data),
+            title: nodesWithSameType.length > 0 ? `${t(`workflow.blocks.${nodeType}`)} ${nodesWithSameType.length + 1}` : t(`workflow.blocks.${nodeType}`),
+            selected: true,
+          },
+          position: {
+            x: nodeToPaste.position.x + 10,
+            y: nodeToPaste.position.y + 10,
+          },
+        })
+        newNodes = [...newNodes, newNode]
+      }
+      setNodes(newNodes)
     }
 
-    setNodes([...nodes.map((n: Node) => ({ ...n, selected: false, data: { ...n.data, selected: false } })), ...nodesToPaste])
-
     handleSyncWorkflowDraft()
-
-    return nodesToPaste
   }, [getNodesReadOnly, handleSyncWorkflowDraft, store, t, workflowStore])
 
   const handleNodeDuplicateSelected = useCallback(() => {
