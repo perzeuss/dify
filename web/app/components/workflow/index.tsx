@@ -32,16 +32,11 @@ import type {
 } from './types'
 import { WorkflowContextProvider } from './context'
 import {
-  useEdgesInteractions,
-  useNodesInteractions,
   useNodesReadOnly,
   useNodesSyncDraft,
-  usePanelInteractions,
-  useSelectionInteractions,
   useWorkflow,
   useWorkflowInit,
   useWorkflowReadOnly,
-  useWorkflowStartRun,
   useWorkflowUpdate,
 } from './hooks'
 import Header from './header'
@@ -68,6 +63,7 @@ import {
   ITERATION_CHILDREN_Z_INDEX,
   WORKFLOW_DATA_UPDATE,
 } from './constants'
+import { useWorkflowEvents } from './hooks/use-workflow-events'
 import Loading from '@/app/components/base/loading'
 import { FeaturesProvider } from '@/app/components/base/features'
 import type { Features as FeaturesData } from '@/app/components/base/features/types'
@@ -166,6 +162,7 @@ const Workflow: FC<WorkflowProps> = memo(({
   })
 
   const {
+    // Node Events
     handleNodeDragStart,
     handleNodeDrag,
     handleNodeDragStop,
@@ -180,25 +177,28 @@ const Workflow: FC<WorkflowProps> = memo(({
     handleNodesPaste,
     handleNodesDuplicate,
     handleNodesDelete,
-  } = useNodesInteractions()
-  const {
+
+    // Edge Events
     handleEdgeEnter,
     handleEdgeLeave,
     handleEdgeDelete,
     handleEdgesChange,
-  } = useEdgesInteractions()
-  const {
+
+    // Selection Events
     handleSelectionStart,
     handleSelectionChange,
     handleSelectionDrag,
-  } = useSelectionInteractions()
-  const {
+
+    // Panel Events
     handlePaneContextMenu,
-  } = usePanelInteractions()
+
+    // Workflow Events
+    handleStartWorkflowRun,
+  } = useWorkflowEvents()
+
   const {
     isValidConnection,
   } = useWorkflow()
-  const { handleStartWorkflowRun } = useWorkflowStartRun()
 
   useOnViewportChange({
     onEnd: () => {
