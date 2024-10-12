@@ -1,0 +1,21 @@
+name: Cypress Tests
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+      - feat/9253-introduce-cypress-e2e-integration-tests
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Checkout (GitHub)
+        uses: actions/checkout@v3
+
+      - name: Build and run dev container task
+        uses: devcontainers/ci@v0.3
+        with:
+          runCmd: cd web && yarn test:e2e:ci
