@@ -11,7 +11,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-
       - name: Checkout (GitHub)
         uses: actions/checkout@v3
 
@@ -19,3 +18,15 @@ jobs:
         uses: devcontainers/ci@v0.3
         with:
           runCmd: cd web && yarn test:e2e:ci
+
+      - name: Upload Cypress videos
+        uses: actions/upload-artifact@v3
+        with:
+          name: cypress-videos
+          path: web/cypress/videos/**/*.mp4
+      
+      - name: Upload Cypress screenshots
+        uses: actions/upload-artifact@v3
+        with:
+          name: cypress-screenshots
+          path: web/cypress/screenshots/**/*.png
