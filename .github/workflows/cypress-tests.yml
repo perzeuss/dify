@@ -8,11 +8,11 @@ on:
       - feat/9253-introduce-cypress-e2e-integration-tests
 
 jobs:
-  build:
+  e2e-tests:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout (GitHub)
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Build and run dev container task
         uses: devcontainers/ci@v0.3
