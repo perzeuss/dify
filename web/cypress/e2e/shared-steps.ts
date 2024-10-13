@@ -84,9 +84,7 @@ When('I click the {string}', (dataTestId: string) => {
  * Expect outcomes that are observable after the user interacts with the system.
  */
 Then('I should be redirected to {string}', (path: string) => {
-  cy.location('pathname').should('eq', path, {
-    timeout: 10000, // it might take a while for nextjs to compile the page on first visit
-  })
+  cy.location('pathname').should('eq', path)
 })
 
 Then('I should stay on page {string}', (path: string) => {

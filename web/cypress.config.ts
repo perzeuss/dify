@@ -12,6 +12,8 @@ export default defineConfig({
     env: {
       SLOW_DOWN: false,
     },
+    // it might take a while for nextjs to compile the page on first visit
+    defaultCommandTimeout: 10000,
     async setupNodeEvents(
       on: Cypress.PluginEvents,
       config: Cypress.PluginConfigOptions,
