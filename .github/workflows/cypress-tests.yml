@@ -24,9 +24,9 @@ jobs:
       - name: Build and run dev container task
         uses: devcontainers/ci@v0.3
         with:
-        imageName: ghcr.io/${{ env.DOCKER_NAMESPACE }}/${{ env.DEVCONTAINER_IMAGE_NAME }}
-        cacheFrom: ghcr.io/${{ env.DOCKER_NAMESPACE }}/${{ env.DEVCONTAINER_IMAGE_NAME }}
-        push: always
+          imageName: ghcr.io/${{ env.DOCKER_NAMESPACE }}/${{ env.DEVCONTAINER_IMAGE_NAME }}
+          cacheFrom: ghcr.io/${{ env.DOCKER_NAMESPACE }}/${{ env.DEVCONTAINER_IMAGE_NAME }}
+          push: always
           runCmd: cd web && yarn test:e2e:ci
 
       - name: Upload Cypress videos
