@@ -10,6 +10,8 @@ on:
 jobs:
   e2e-tests:
     runs-on: ubuntu-latest
+    env:
+      CYPRESS_COMMAND_TIMEOUT: ${{ vars.CYPRESS_COMMAND_TIMEOUT }}
     steps:
       - name: Checkout (GitHub)
         uses: actions/checkout@v4
