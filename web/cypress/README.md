@@ -76,14 +76,14 @@ yarn test:e2e:wsl
 ##ä# Scripts
 Hrere are all script that can be used to run the tests. Dependencies are the services that need to be running before executing the script. Services executed are the services that are started by the script.
 
-| Script                | Dependencies                   | Services Executed                                    |
-|-----------------------|--------------------------------|------------------------------------------------------|
-| `yarn cy:open`        | `web` `api` `databases`                           | none          |
-| `yarn cy:run`        | `web` `api` `databases`                           | none|
-| `yarn cy:open:wsl`    | `web` `api` `databases`  VcXsrv                        | none                 |
-| `yarn test:e2e`      | none                           | `web` `api` `databases`                        |
-| `yarn test:e2e:ci`   | None                           | `web` `api` `databases`                        |
-| `yarn test:e2e:wsl`  | VcXsrv                        | `web` `api` `databases`                      |
+| Script              | Dependencies                    | Services Executed       |
+|---------------------|---------------------------------|-------------------------|
+| `yarn cy:open`      | `web` `api` `databases`         | none                    |
+| `yarn cy:run`       | `web` `api` `databases`         | none                    |
+| `yarn cy:open:wsl`  | `web` `api` `databases`  VcXsrv | none                    |
+| `yarn test:e2e`     | none                            | `web` `api` `databases` |
+| `yarn test:e2e:ci`  | None                            | `web` `api` `databases` |
+| `yarn test:e2e:wsl` | VcXsrv                          | `web` `api` `databases` |
 
 
 
