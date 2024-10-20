@@ -24,6 +24,23 @@ jobs:
           username: ${{ github.repository_owner }}
           password: ${{ secrets.CYPRESS_CONTAINER_REGISTRY_TOKEN }}
 
+      - name: Cache Node.js modules
+        uses: actions/cache@v3
+        with:
+          path: |
+            web/node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('web/package-lock.json', 'web/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+  
+      - name: Cache Python virtual environment
+        uses: actions/cache@v3
+        with:
+          path: api/.venv
+          key: ${{ runner.os }}-venv-${{ hashFiles('api/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-venv-
+
       - name: Build and run dev container task
         uses: devcontainers/ci@v0.3
         with:
