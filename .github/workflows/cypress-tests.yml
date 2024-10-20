@@ -14,9 +14,19 @@ jobs:
       - name: Checkout (GitHub)
         uses: actions/checkout@v4
 
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v2 
+        with:
+          registry: ghcr.io
+          username: ${{ github.repository_owner }}
+          password: ${{ secrets.CYPRESS_CONTAINER_REGISTRY_TOKEN }}
+
       - name: Build and run dev container task
         uses: devcontainers/ci@v0.3
         with:
+        imageName: ghcr.io/${{ env.DOCKER_NAMESPACE }}/${{ env.DEVCONTAINER_IMAGE_NAME }}
+        cacheFrom: ghcr.io/${{ env.DOCKER_NAMESPACE }}/${{ env.DEVCONTAINER_IMAGE_NAME }}
+        push: always
           runCmd: cd web && yarn test:e2e:ci
 
       - name: Upload Cypress videos
