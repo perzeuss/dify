@@ -35,11 +35,11 @@ jobs:
         with:
           name: cypress-videos
           path: web/cypress/videos/**/*.mp4
-        if: always()
+        if: failure()
       
       - name: Upload Cypress screenshots
         uses: actions/upload-artifact@v3
         with:
           name: cypress-screenshots
           path: web/cypress/screenshots/**/*.png
-        if: always()
+        if: failure()
