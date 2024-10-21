@@ -115,6 +115,7 @@ export default function MailAndPasswordAuth({ isInvite, allowRegistration }: Mai
           id="email"
           type="email"
           autoComplete="email"
+          data-testid="email-input"
           placeholder={t('login.emailPlaceholder') || ''}
           tabIndex={1}
         />
@@ -139,6 +140,7 @@ export default function MailAndPasswordAuth({ isInvite, allowRegistration }: Mai
           }}
           type={showPassword ? 'text' : 'password'}
           autoComplete="current-password"
+          data-testid="password-input"
           placeholder={t('login.passwordPlaceholder') || ''}
           tabIndex={2}
         />
@@ -146,6 +148,7 @@ export default function MailAndPasswordAuth({ isInvite, allowRegistration }: Mai
           <Button
             type="button"
             variant='ghost'
+            data-testid="login-button"
             onClick={() => setShowPassword(!showPassword)}
           >
             {showPassword ? '👀' : '😝'}
